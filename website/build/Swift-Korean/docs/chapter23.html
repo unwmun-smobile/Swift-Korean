@@ -1,0 +1,577 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>프로토콜 · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="*프로토콜*은 특정한 일이나 기능의 일부에 대한 메소드나 속성이나 다른 요구사항들의 전체적인 모습을 정의한다."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="프로토콜 · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="*프로토콜*은 특정한 일이나 기능의 일부에 대한 메소드나 속성이나 다른 요구사항들의 전체적인 모습을 정의한다."/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">프로토콜</h1></header><article><div><span><p><em>프로토콜</em>은 특정한 일이나 기능의 일부에 대한 메소드나 속성이나 다른 요구사항들의 전체적인 모습을 정의한다.
+실제로 이런 요구사항들의 구현을 제공하지는 않고, 그 구현이 어떻게 보일지에 대해 명시한다.
+이 요구사항들을 실제로 구현된 클래스, 구조체, 열거형 등에 그 프로토콜이 <em>적용</em>될 수 있다.
+프로토콜의 요구사항을 만족하면 어떤 타입이라도 그 프로토콜에 <em>일치한다(conform)</em>라고 말한다.</p>
+<p>프로토콜은 특정한 인스턴스 속성들, 인스턴스 메소드들, 타입 메소드들, 연산자들, 인덱스참조(subscript) 등을 갖는 타입을 가져야한다.</p>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-문법"></a><a href="#프로토콜-문법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 문법</h3>
+<p>프로토콜을 클래스, 구조체, 열거체와 매우 비슷한 방법으로 정의한다.</p>
+<pre><code class="hljs css languages- swfit"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">SomeProtocol</span> </span>{
+    <span class="hljs-comment">// 프로토콜 정의가 여기 온다</span>
+}
+</code></pre>
+<p>타입을 정의하는 곳에서 타입의 이름 뒤에 콜론(:)으로 구분해서 프로토콜의 이름을 써서 프로토콜을 커스텀 타입에 적용시킨다. 여러 프로토콜을 쉼표(,)로 구분해서 사용할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">SomeStructure</span>: <span class="hljs-title">FirstProtocol</span>, <span class="hljs-title">AnotherProtocol</span> </span>{
+    <span class="hljs-comment">// 구조체 정의가 여기 온다</span>
+}
+</code></pre>
+<p>클래스가 부모를 가질 때는 프로토콜들 앞에 부모 클래스를 명시하고 쉼표로 구분해서 적용한다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span>: <span class="hljs-title">SomeSuperclass</span>, <span class="hljs-title">FirstProtocol</span>, <span class="hljs-title">AnotherProtocol</span> </span>{
+    <span class="hljs-comment">// 클래스 정의가 여기 온다</span>
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="속성-요구사항"></a><a href="#속성-요구사항" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>속성 요구사항</h3>
+<p>프로토콜은 특정한 이름과 속성을 갖는 인스턴스 속성과 타입 속성을 제공하는 타입이 될 수 있다. 프로토콜에는 이 속성이 저장된 속성이어야하는지 계산된 속성이어야 하는지에 대해 명시하지 않는다. 단지 속성의 이름과 타입만 명시할 뿐이다. 또한 각 속성에 대해 읽기(gettable)인지 읽기/쓰기(gettable/settable)가 필요한지 명시할 수 한다.</p>
+<p>프로토콜의 속성에 읽기나 읽기/쓰기에 대한 명시가 있다면 그 속성은 저장된 상수값이나 읽기전용(read-only)의 계산된 값을 넣을 수 없다.
+만약 읽기가 필요하다고만 명시가 되어있고 어떤 종류의 속성도 가능하며 필요하면 읽기를 만들어도 괜찮다.</p>
+<p>속성 요구사항은 항상 <code>var</code> 키워드가 앞에 있는 변수 속성으로 선언된다. 읽기/쓰기 속성은 타입 뒤에 <code>{ get set }</code>을 써서 명시하며, 읽기는 <code>{ get }</code>으로 명시한다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">SomeProtocol</span> </span>{
+    <span class="hljs-keyword">var</span> mustBeSettable: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> <span class="hljs-keyword">set</span> }
+    <span class="hljs-keyword">var</span> doesNotNeedToBeSettable: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> }
+}
+</code></pre>
+<p>타입 속성은 <code>class</code> 키워드를 붙여서 정의할 수 있다. 구조체나 열거형에서 구현할 때는 <code>static</code>을 붙이면 된다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">AnotherProtocol</span> </span>{
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">var</span> <span class="hljs-title">someTypeProperty</span>: <span class="hljs-title">Int</span> </span>{ <span class="hljs-keyword">get</span> <span class="hljs-keyword">set</span> }
+}
+</code></pre>
+<p>인스턴스 속성 하나만 필요로 하는 프로토콜 예제가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">FullyNamed</span> </span>{
+    <span class="hljs-keyword">var</span> fullName: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
+}
+</code></pre>
+<p><code>FullyNamed</code> 프로토콜은 이름이 맞으면 종류에 관계없는 속성을 정의한다. 어떤 <code>종류</code>여야하는지 명시하지는 않았고 그저 풀네임을 젱고할 수만 있으면 된다. <code>String</code> 타입의 읽기 가능한 <code>fullName</code>이라는 인스턴스 속성을 가진 <code>FullNamed</code>라는 요구사항만 명시되어있다.</p>
+<p><code>FullyNamed</code> 프로토콜이 적용되어있고 일치하는 간단한 구조체 예제다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span>: <span class="hljs-title">FullyNamed</span> </span>{
+    <span class="hljs-keyword">var</span> fullName: <span class="hljs-type">String</span>
+}
+<span class="hljs-keyword">let</span> john = <span class="hljs-type">Person</span>(fullName: <span class="hljs-string">"John Appleseed"</span>)
+<span class="hljs-comment">// john.fullName is "John Appleseed’</span>
+</code></pre>
+<p>이 예제에서는 <code>Person</code>이라고 불리는 구조체를 정의했고, 특정한 이름을 갖는다고 나타나있다. <code>FullyNamed</code> 프로토콜을 정의 첫번째 줄에 적용한 것이 보인다.</p>
+<p><code>Person</code>의 인스턴스들은 <code>String</code> 타입의 <code>fullName</code> 속성 하나를 갖는다. <code>FullNamed</code> 프로토콜의 요구사항 하나와 일치하며, <code>Person</code>이 확실하게 프로토콜에 일치한다는 것을 의미한다. (스위프트에서는 프로토콜의 요구사항이 채워지지 않으면 컴파일타임에 에러를 낸다.)</p>
+<p>조금 더 복잡한 클래스가 있고, <code>FullNamed</code> 프로토콜을 적용했고 일치한다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Starship</span>: <span class="hljs-title">FullyNamed</span> </span>{
+    <span class="hljs-keyword">var</span> <span class="hljs-keyword">prefix</span>: <span class="hljs-type">String</span>?
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>, <span class="hljs-keyword">prefix</span>: <span class="hljs-type">String</span>? = <span class="hljs-literal">nil</span>) {
+        <span class="hljs-keyword">self</span>.name = name
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">prefix</span> = <span class="hljs-keyword">prefix</span>
+    }
+    <span class="hljs-keyword">var</span> fullName: <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> (<span class="hljs-keyword">prefix</span> ? <span class="hljs-keyword">prefix</span>! + <span class="hljs-string">" "</span> : <span class="hljs-string">""</span>) + name
+    }
+}
+<span class="hljs-keyword">var</span> ncc1701 = <span class="hljs-type">Starship</span>(name: <span class="hljs-string">"Enterprise"</span>, <span class="hljs-keyword">prefix</span>: <span class="hljs-string">"USS"</span>)
+<span class="hljs-comment">// ncc1701.fullName is "USS Enterprise’</span>
+</code></pre>
+<p>이 클래스에서는 계산된 읽기전용 속성으로 <code>fullName</code> 속성을 구현했다.
+각 <code>Starship</code> 클래스 인스턴스는 <code>name</code>을 필수로 <code>prefix</code>를 옵션으로 갖는다. <code>prefix</code> 값이 존재하면 <code>name</code>의 앞에 붙여서 우주선의 풀네임을 만들어 <code>fullName</code> 속성이 된다.</p>
+<h3><a class="anchor" aria-hidden="true" id="메소드-요구사항"></a><a href="#메소드-요구사항" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메소드 요구사항</h3>
+<p>프로토콜은 일치하는 타입을 구현하기 위해 인스턴스 메소드들과 타입 메소드들을 요구사항으로 명시할 수 있다.
+중괄호나 메소드 구현체(body)만 없을 뿐, 일반적인 인스턴스 메소드나 타입 메소드를 정의하는 것과 정확히 같은 방법으로 정의된다.
+일반적인 메소드와 같은 규칙으로 가변길이의 변수도 가능하다.</p>
+<blockquote>
+<p>노트</p>
+<p>프로토콜은 일반적인 메소드들과 같은 문법을 사용하지만 인자로 기본값을 명시할 수 없다.</p>
+</blockquote>
+<p>프로토콜에서 타입 속성을 정의할 때처럼 <code>class</code> 키워드를 타입 메소드 앞에 붙여주면 된다. 구조체나 열거형에서 구현할 때는 <code>static</code>을 붙여주면 된다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">SomeProtocol</span> </span>{
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">func</span> <span class="hljs-title">someTypeMethod</span>()
+}
+</span></code></pre>
+<p>인스턴스 메소드 하나만 있는 프로토콜의 예제다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">RandomNumberGenerator</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">random</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Double</span>
+}
+</code></pre>
+<p><code>RandomNumberGenerator</code> 프로토콜은 <code>Double</code>을 리턴하는 <code>random</code> 인스턴스 메소드를 갖는 어떤 타입에도 일치할 수 있다. (프로토콜에서는 명시되지 않았지만 <code>0.0</code>에서 <code>1.0</code> 사이의 값을 리턴할 것이라고 추정된다.)</p>
+<p><code>RandomNumberGenerator</code> 프로토콜만으로는 어떻게 난수를 생성할지에 대한 정보가 없다. 단지 새로운 난수를 만들어서 제공하는 발생기를 필요로 할 뿐이다.</p>
+<p><code>RandomNumberGenerator</code> 프로토콜을 적용하고 일치하는 클래스 구현체가 있다. <em>선형 합동 생성기(linear congruential generator)</em>라는 의사난수 생성 알고리즘을 구현했다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LinearCongruentialGenerator</span>: <span class="hljs-title">RandomNumberGenerator</span> </span>{
+    <span class="hljs-keyword">var</span> lastRandom = <span class="hljs-number">42.0</span>
+    <span class="hljs-keyword">let</span> m = <span class="hljs-number">139968.0</span>
+    <span class="hljs-keyword">let</span> a = <span class="hljs-number">3877.0</span>
+    <span class="hljs-keyword">let</span> <span class="hljs-built_in">c</span> = <span class="hljs-number">29573.0</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">random</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Double</span> {
+        lastRandom = ((lastRandom * a + <span class="hljs-built_in">c</span>) % m)
+        <span class="hljs-keyword">return</span> lastRandom / m
+    }
+}
+<span class="hljs-keyword">let</span> generator = <span class="hljs-type">LinearCongruentialGenerator</span>()
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"Here's a random number: <span class="hljs-subst">\(generator.random()</span>)"</span>)
+<span class="hljs-comment">// prints "Here's a random number: 0.37464991998171"</span>
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"And another one: <span class="hljs-subst">\(generator.random()</span>)"</span>)
+<span class="hljs-comment">// prints "And another one: 0.729023776863283"</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="변이mutating-메소드"></a><a href="#변이mutating-메소드" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>변이(mutating) 메소드</h3>
+<p>가끔 메소드에서 자신의 인스턴스를 수정(혹은 <em>변이</em>)할 필요가 있다. 밸류 타입(즉, 구조체와 열거형)의 인스턴스 메소드에서 메소드의 <code>func</code> 앞에 <code>mutating</code> 키워드를 써서 소속된 인스턴스를 바꾸거나 인스턴스의 속성을 수정할 수 있게 명시한다. 이 과정은 <a href="#">인스턴스 메소드 내에서 밸류 타입의 수정</a>에서 설졍되어있다.</p>
+<p>프로토콜이 적용된 타입의 인스턴스를 변이할 수 있다고 인스턴스 메소드에 명시하려면 프로토콜 정의세ㅓ <code>mutating</code> 키워드를 추가하면 된다. 이 프로토콜이 적용된 구조체와 열거형은 요구사항을 만족한다.</p>
+<blockquote>
+<p>노트</p>
+<p>프로토콜을 <code>mutating</code>이라고 명시하면 클래스에서 메소드를 구현할 때는 <code>mutating</code> 키워드를 쓰지 않아도 된다.
+<code>mutating</code> 키워드는 구조체와 열거형에서만 쓰인다.</p>
+</blockquote>
+<p>아래에는 <code>Togglable</code>이라는 프로토콜 예제인데, <code>toggle</code>이라는 인스턴스 메소드 하나만 정의되어있다. 이름에서 알 수 있듯 <code>toggle</code> 메소드는 보통 타입의 속성을 변환하는 것인데 프로토콜에 일치하는 타입의 속성을 토글하거나 반전한다.</p>
+<p><code>toggle</code> 메소드는 <code>Togglable</code> 프로토콜 정의에서 <code>mutating</code> 키워드로 이 메소드를 호출했을 때 인스턴스의 상태가 변이될 것을 예상할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Togglable</span> </span>{
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">toggle</span><span class="hljs-params">()</span></span>
+}
+</code></pre>
+<p><code>Togglable</code> 프로토콜을 구조체나 열거형으로 구현하려면, <code>mutating</code>이 명시된 <code>toggle</code> 메소드를 구현해야 프로토콜에 일치할 수 있다.</p>
+<p>아래 예제는 <code>OnOffSwitch</code>라는 열거형이다. 이 열거형은 <code>On</code>과 <code>Off</code> 두가지 상태 사이를 토글한다. 열거형의 <code>toggle</code> 구현체는 <code>Togglable</code> 프로토콜의 요구사항에 맞게 <code>mutating</code>이 명시되어 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">OnOffSwitch</span>: <span class="hljs-title">Togglable</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Off</span>, <span class="hljs-type">On</span>
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">toggle</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">switch</span> <span class="hljs-keyword">self</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Off</span>:
+            <span class="hljs-keyword">self</span> = <span class="hljs-type">On</span>
+        <span class="hljs-keyword">case</span> <span class="hljs-type">On</span>:
+            <span class="hljs-keyword">self</span> = <span class="hljs-type">Off</span>
+        }
+    }
+}
+<span class="hljs-keyword">var</span> lightSwitch = <span class="hljs-type">OnOffSwitch</span>.<span class="hljs-type">Off</span>
+lightSwitch.toggle()
+<span class="hljs-comment">// lightSwitch은 이제 .On과 같다.</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="타입으로서의-프로토콜"></a><a href="#타입으로서의-프로토콜" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입으로서의 프로토콜</h3>
+<p>프로토콜은 그 자체로 어떤 기능도 갖고 있지 않다. 하지만 어떤 프로토콜도 코드에서 다른 타입처럼 쓰일 수 있다.</p>
+<p>왜냐하면 프로토콜도 타입이므로 다른 타입들이 쓰이는 곳에서 사용될 수 있다.</p>
+<ul>
+<li>함수, 메소드, 생성자에서 인자의 타입 혹은 리턴 타입으로</li>
+<li>상수, 변수, 속성의 타입으로</li>
+<li>배열, 사전, 다른 컨테이너에서 요소의 타입으로
+사용될 수 있다.</li>
+</ul>
+<blockquote>
+<p>노트</p>
+<p>프로토콜이 타입이므로 스위프트의 다른 타입(<code>Int</code>, <code>String</code>, <code>Double</code>같은)처럼 이름을 대문자(<code>FullyNamed</code>나 <code>RandomNumberGenerator</code>처럼)로 사용할 수 있다.</p>
+</blockquote>
+<p>타입으로 프로토콜을 사용하는 예제다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dice</span> </span>{
+    <span class="hljs-keyword">let</span> sides: <span class="hljs-type">Int</span>
+    <span class="hljs-keyword">let</span> generator: <span class="hljs-type">RandomNumberGenerator</span>
+    <span class="hljs-keyword">init</span>(sides: <span class="hljs-type">Int</span>, generator: <span class="hljs-type">RandomNumberGenerator</span>) {
+        <span class="hljs-keyword">self</span>.sides = sides
+        <span class="hljs-keyword">self</span>.generator = generator
+    }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">roll</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">Int</span>(generator.random() * <span class="hljs-type">Double</span>(sides)) + <span class="hljs-number">1</span>
+    }
+}
+</code></pre>
+<p>이 예제에서는 <em>n</em>면체의 <code>Dice</code>라는 새로운 클래스가 정의되어있다. <code>Dice</code>의 인스턴스는 면을 얼마나 가지고 있는지를 나타내는 <code>sides</code>라는 정수 속성과 주사위를 굴렸을 때 난수를 생성해주는 <code>generator</code> 속성을 가지고 있다.</p>
+<p><code>generator</code> 속성은 <code>RandomNumberGenerator</code> 타입의 속성이다. 그러므로 <code>RandomNumberGenerator</code> 프로토콜을 적용한 <em>어떤</em> 타입의 인스턴스라도 할당할 수 있다.</p>
+<p><code>Dice</code>는 초기 상태를 설정하는 생성자도 가지고 있다. 생성자는 <code>RandomNumberGenerator</code> 타입의 <code>generator</code>를 인자로 받는다.
+새로운 <code>Dice</code> 인스턴스를 만들 때 프로토콜에 일치하는 어떤 타입도 인자로 넘길 수 있다.</p>
+<p><code>Dice</code>는 하나의 인스턴스 메소드 <code>roll</code>이 있는데, 1에서 면의 수 사이에 해당하는 정수를 리턴한다. 이 메소드에서는 생성기의 <code>random</code> 메소드를 호출해서 <code>0.0</code>과 <code>1.0</code> 사이의 난수를 받아 정확한 범위의 값을 만든다. <code>generator</code>가 <code>RandomNumberGenerator</code>를 적용하고 있기 때문에 확실하게 <code>rondom</code> 메소드를 가지고 있다.</p>
+<p>여기 <code>LinearCongruentialGenerator</code> 인스턴스를 난수생성기로 받는 6면체의 <code>Dice</code> 클래스가 어떻게 사용되는지 예제가 있다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">var</span> d6 = <span class="hljs-type">Dice</span>(sides: <span class="hljs-number">6</span>, generator: <span class="hljs-type">LinearCongruentialGenerator</span>())
+<span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">5</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"랜덤한 주사위값은 <span class="hljs-subst">\(d6.roll()</span>)"</span>)
+}
+<span class="hljs-comment">// 랜덤한 주사위값은 3</span>
+<span class="hljs-comment">// 랜덤한 주사위값은 5</span>
+<span class="hljs-comment">// 랜덤한 주사위값은 4</span>
+<span class="hljs-comment">// 랜덤한 주사위값은 5</span>
+<span class="hljs-comment">// 랜덤한 주사위값은 4</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="위임-delegation"></a><a href="#위임-delegation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>위임 (Delegation)</h3>
+<p>위임은 클래스나 구조체가 다른 타입의 인스턴스에게 책임의 일부를 넘길(혹은 <em>위임할</em>) 수 있는 디자인 패턴이다. 이 디자인 패턴에서는 위임된 책임을 캡슐화하는 프로토콜을 정의하는데, 거기에 일치하는 타입(대리자delegate로 알려진)은 위임받은 기능이 있다고 보장된다. 위임은 특정 액션에 대해 응답하거나, 외부에서 온 정보가 어떤 타입인지에 관계없이 데이터를 처리할 때 사용할 수 있다.</p>
+<p>아래에 주사위를 사용한 보드게임에 두가지 프로토콜이 정의되어있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">DiceGame</span> </span>{
+    <span class="hljs-keyword">var</span> dice: <span class="hljs-type">Dice</span> { <span class="hljs-keyword">get</span> }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">play</span><span class="hljs-params">()</span></span>
+}
+<span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">DiceGameDelegate</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">gameDidStart</span><span class="hljs-params">(game: DiceGame)</span></span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">game</span><span class="hljs-params">(game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)</span></span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">gameDidEnd</span><span class="hljs-params">(game: DiceGame)</span></span>
+}
+</code></pre>
+<p><code>DiceGame</code> 프로토콜은 주사위를 포함하는 어떤 게임에도 적용할 수 있는 프로토콜이다. <code>DiceGameDelegate</code> 프로토콜은 <code>DiceGame</code>의 진행을 기록할 수 있는 어떤 타입에도 적용할 수 있는 프로토콜이다.</p>
+<p>앞서 <a href="#">흐름 제어</a>에서 소개되었던 <em>뱀과 사다리</em>의 수정 버전이다. 이 버전에서는 주사위 굴리기를 위해 <code>Dice</code> 인스턴스를 사용한 <code>DiceGame</code> 프로토콜을 적용했고 과정을 <code>DiceGameDelegate</code>에 알리기 위해 <code>DiceGame</code> 프로토콜을 적용했다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SnakesAndLadders</span>: <span class="hljs-title">DiceGame</span> </span>{
+    <span class="hljs-keyword">let</span> finalSquare = <span class="hljs-number">25</span>
+    <span class="hljs-keyword">let</span> dice = <span class="hljs-type">Dice</span>(sides: <span class="hljs-number">6</span>, generator: <span class="hljs-type">LinearCongruentialGenerator</span>())
+    <span class="hljs-keyword">var</span> square = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> board: <span class="hljs-type">Int</span>[]
+    <span class="hljs-keyword">init</span>() {
+        board = <span class="hljs-type">Int</span>[](<span class="hljs-built_in">count</span>: finalSquare + <span class="hljs-number">1</span>, repeatedValue: <span class="hljs-number">0</span>)
+        board[<span class="hljs-number">03</span>] = +<span class="hljs-number">08</span>; board[<span class="hljs-number">06</span>] = +<span class="hljs-number">11</span>; board[<span class="hljs-number">09</span>] = +<span class="hljs-number">09</span>; board[<span class="hljs-number">10</span>] = +<span class="hljs-number">02</span>
+        board[<span class="hljs-number">14</span>] = -<span class="hljs-number">10</span>; board[<span class="hljs-number">19</span>] = -<span class="hljs-number">11</span>; board[<span class="hljs-number">22</span>] = -<span class="hljs-number">02</span>; board[<span class="hljs-number">24</span>] = -<span class="hljs-number">08</span>
+    }
+    <span class="hljs-keyword">var</span> delegate: <span class="hljs-type">DiceGameDelegate</span>?
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">play</span><span class="hljs-params">()</span></span> {
+        square = <span class="hljs-number">0</span>
+        delegate?.gameDidStart(<span class="hljs-keyword">self</span>)
+        gameLoop: <span class="hljs-keyword">while</span> square != finalSquare {
+            <span class="hljs-keyword">let</span> diceRoll = dice.roll()
+            delegate?.game(<span class="hljs-keyword">self</span>, didStartNewTurnWithDiceRoll: diceRoll)
+            <span class="hljs-keyword">switch</span> square + diceRoll {
+            <span class="hljs-keyword">case</span> finalSquare:
+                <span class="hljs-keyword">break</span> gameLoop
+            <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> newSquare <span class="hljs-keyword">where</span> newSquare &gt; finalSquare:
+                <span class="hljs-keyword">continue</span> gameLoop
+            <span class="hljs-keyword">default</span>:
+                square += diceRoll
+                square += board[square]
+            }
+        }
+        delegate?.gameDidEnd(<span class="hljs-keyword">self</span>)
+    }
+}
+</code></pre>
+<p><em>뱀과 사다리</em> 게임에 대한 설명을 원하면 <a href="#">흐름 제어</a> 챕터의 <a href="#">break</a> 섹션에 나와있다.</p>
+<p>이 버전에서는 <code>DiceGame</code>을 적용한 <code>SnakesAndLadders</code>라는 클래스로 이루어졌다. <code>dice</code> 속성과 <code>play</code> 메소드을 가지고 있어 프로토콜에 일치한다. (<code>dice</code> 속성은 상수 속성으로 선언되었는데, 일단 생성되고 난 뒤에 변경될 필요가 없으며 프로토콜의 요구는 읽기만 가능하면 된다.)</p>
+<p><em>뱀과 사다리</em> 게임보드 설정은 클래스의 <code>init()</code> 생성자 내에서 이루어진다. 게임 로직 전체는 프로토콜의 <code>play</code> 메소드 내로 옮겨졌고, 주사위를 굴린 값을 얻기 위해 <code>dice</code> 속성을 필요로 하는 프로토콜을 사용한다.</p>
+<p><code>delegate</code> 속성은 <code>DiceGameDelegate</code> 옵션으로 되어있는데, 게임을 실행하는데 대리자가 꼭 필요하지는 않아서이다. 옵션값이기 때문에 <code>delegate</code> 속성은 자동으로 <code>nil</code>을 초기값으로 받는다. 그리고 나서 게임을 초기화할 때 적절한 위임자를 속성으로 받을 수도 있다.</p>
+<p><code>DiceGameDelegate</code>는 게임의 진행을 기록하기 위해 3가지 메소드를 제공한다. <code>play</code> 메소드 내부에서 사용되며 새로운 게임을 시작할 때, 턴이 시작될 때, 게임이 끝날 때 호출된다.</p>
+<p><code>delegate</code> 속성은 <code>DiceGameDelegate</code> 타입의 옵션값이기 때문에 <code>play</code> 메소드는 대리자에서 메소드를 호출할 때마다 옵션 연쇄를 사용한다. <code>delegate</code> 속성이 nil이면, 이 대리자는 에러없이 호출을 실패한다. <code>deleagte</code> 속성이 nil이 아니면 메소드를 호출하고 <code>SnakesAndLadders</code> 인스턴스를 인자로 넘긴다.</p>
+<p>다음 예제는 <code>DiceGameTracker</code>라는 클래스로, <code>DiceGameDelegate</code> 프로토콜이 적용되었다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DiceGameTracker</span>: <span class="hljs-title">DiceGameDelegate</span> </span>{
+    <span class="hljs-keyword">var</span> numberOfTurns = <span class="hljs-number">0</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">gameDidStart</span><span class="hljs-params">(game: DiceGame)</span></span> {
+        numberOfTurns = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">if</span> game <span class="hljs-keyword">is</span> <span class="hljs-type">SnakesAndLadders</span> {
+            <span class="hljs-built_in">println</span>(<span class="hljs-string">"뱀과 사다리의 새 게임을 시작한다"</span>)
+        }
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"게임은 <span class="hljs-subst">\(game.dice.sides)</span>면체 주사위를 사용할 것이다"</span>)
+    }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">game</span><span class="hljs-params">(game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)</span></span> {
+        ++numberOfTurns
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"주사위는 <span class="hljs-subst">\(diceRoll)</span>"</span>)
+    }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">gameDidEnd</span><span class="hljs-params">(game: DiceGame)</span></span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"게임은 <span class="hljs-subst">\(numberOfTurns)</span>턴을 사용했다"</span>)
+    }
+}
+</code></pre>
+<p><code>DiceGameTracker</code>에서는 <code>DiceGameDelegate</code>에서 필요한 세가지 메소드를 모두 구현되어있다. 세가지 메소드를 사용해서 게임에서 몇턴이 진행되었는지 기록한다. 게임이 시작하면 <code>numberOfTurns</code> 속성을 0을 초괴화하고, 새 턴이 시작할 때마다 증가시키고, 게임이 끝났을 때 총 몇턴이 지났는지 출력한다.</p>
+<p>위에서 나온 <code>gameDidStart</code>의 구현에서는 <code>game</code> 인자를 사용해 게임을 플레이하려고 할 때 안내 문구를 출력한다. <code>game</code> 인자는 <code>SnakesAndLadders</code>타입이 아니라 <code>DiceGame</code>타입을 갖는다. <code>gameDidStart</code>는 <code>DiceGame</code> 프로토콜에 있는 메소드와 속성들만 사용하고 접근한다. 하지만 메소드에서는 타입 케스팅을 통해 인스턴스가 어떤 타입인지 확인할 수도 있다. 이 예제에서는 <code>game</code>이 실제로 <code>SnakesAndLadders</code>의 인스턴스인지 확인하고 맞다면 적절한 문구를 출력한다.</p>
+<p><code>gameDidStart</code>는 인자로 받은 <code>game</code>의 <code>dice</code> 속성에도 접근한다. <code>game</code>은 <code>DiceGame</code> 프로토콜에 일치한다고 되어있으니 <code>dice</code> 속성을 가지고 있을 것이고 <code>gameDidStart</code> 메소드는 어떤 종류의 게임인지에 관계없이 주사위의 <code>sides</code> 속성을 출력할 수 있다.</p>
+<p><code>DiceGameTracker</code>가 어떻게 작동하는지 아래 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">let</span> tracker = <span class="hljs-type">DiceGameTracker</span>()
+<span class="hljs-keyword">let</span> game = <span class="hljs-type">SnakesAndLadders</span>()
+game.delegate = tracker
+game.play()
+<span class="hljs-comment">// 뱀과 사다리 새 게임을 시작한다</span>
+<span class="hljs-comment">// 게임은 6면체 주사위를 사용할 것이다</span>
+<span class="hljs-comment">// 주사위는 3</span>
+<span class="hljs-comment">// 주사위는 5</span>
+<span class="hljs-comment">// 주사위는 4</span>
+<span class="hljs-comment">// 주사위는 5</span>
+<span class="hljs-comment">// 게임은 4턴을 사용했다</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="확장을-프로토콜-일치에-추가"></a><a href="#확장을-프로토콜-일치에-추가" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>확장을 프로토콜 일치에 추가</h3>
+<p>이미 존재하는 타입의 소스에 접근할 수 없어도 그 타입에 프로토콜을 적용하고 일치하도록 확장할 수 있다.
+확장은 새 속성들, 메소드들, 인덱스 참조 등을 이미 존재하는 타입에 추가할 수 있고, 프로토콜에서 필요로 하는 요구사항들을 추가할 수도 있다.
+확장에 대해 더 많은 정보는 <a href="#">확장</a> 챕터에 있다.</p>
+<blockquote>
+<p>노트</p>
+<p>확장을 타입에 추가하는 순간 이미 만들어놓은 인스턴스들에서도 프로토콜이 적용되고 일치하게 된다.</p>
+</blockquote>
+<p>예를 들어, <code>TextRepresentable</code>이라는 프로토콜은 타입을 텍스트로 표현하는 방법을 구현할 수 있다. 인스턴스의 설명이 될 수도 있고, 현재 상태의 텍스트 표현이 될 수도 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">TextRepresentable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">asText</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span>
+}
+</code></pre>
+<p>위에서 본 <code>Dice</code> 클래스에 <code>TextRepresentable</code>을 적용하고 일치시킬 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Dice</span>: <span class="hljs-title">TextRepresentable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">asText</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"<span class="hljs-subst">\(sides)</span>면체 주사위"</span>
+    }
+}
+</code></pre>
+<p>확장은 <code>Dice</code>를 위에서 구현했던 것과 정확히 같은 방법으로 새로운 프로토콜을 적용한다. 프로토콜 이름 뒤에 콜론으로 구분해서 프로토콜의 이름을 적고 중괄호 안에 프로토콜의 요구사항들 전부를 구현하면 된다.</p>
+<p>이제 어떤 <code>Dice</code> 인스턴스들도 <code>TextRepresentable</code>로 처리할 수 있다.</p>
+<pre><code class="hljs">let d12 = Dice(sides: <span class="hljs-number">12</span>, generator: LinearCongruentialGenerator())
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(d12.asText()</span></span>)
+<span class="hljs-comment">// "12면체 주사위" 출력</span>
+</code></pre>
+<p>비슷하게 <code>SnakesAndLadders</code> 게임 클래스도 <code>TextRepresentable</code> 프로토콜을 적용하고 일치하도록 확장할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">SnakesAndLadders</span>: <span class="hljs-title">TextRepresentable</span> </span>{
+    funcs asText() -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"뱀과 사다리 게임은 <span class="hljs-subst">\(finalSquare)</span>"</span>칸
+    }
+}
+<span class="hljs-built_in">println</span>(game.asText())
+<span class="hljs-comment">// "뱀과 사다리 게임은 25칸" 출력</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="확장과-동시에-프로토콜-적용-선언"></a><a href="#확장과-동시에-프로토콜-적용-선언" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>확장과 동시에 프로토콜 적용 선언</h3>
+<p>타입이 이미 프로토콜의 모든 요구사항에 일치하고 있지만 프로토콜을 적용한다고 명시하지 않았을 때, 빈 확장과 함께 프로토콜을 적용시킬 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Hamster</span> </span>{
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">asText</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"햄스터 이름은 <span class="hljs-subst">\(name)</span>"</span>
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Hamster</span>: <span class="hljs-title">TextRepresentable</span> </span>{}
+</code></pre>
+<p>이제 <code>Hamster</code>의 인스턴스들은 <code>TextRepresentable</code>을 타입으로 사용할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">let</span> simonTheHamster = <span class="hljs-type">Hamster</span>(name: <span class="hljs-string">"Simon"</span>)
+<span class="hljs-keyword">let</span> somethingTextRepresentable: <span class="hljs-type">TextRepresentable</span> = simonTheHamster
+<span class="hljs-built_in">println</span>(somethingTextRepresentable.asText())
+<span class="hljs-comment">// "햄스터 이름은 Simon" 출력</span>
+</code></pre>
+<blockquote>
+<p>노트</p>
+<p>타입에서 요구사항을 만족했다고 자동으로 프토토콜이 적용되지는 않는다. 항상 명시적으로 프로토콜의 적용을 선언해줘야 한다.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-타입의-콜렉션collection-들"></a><a href="#프로토콜-타입의-콜렉션collection-들" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 타입의 콜렉션(Collection)들</h3>
+<p>프로토콜은 <a href="#">타입으로서의 프로토콜</a>에서 이야기한 것처럼 배열이나 사전같은 콜렉션에 저장되는 타입으로 사용할 수 있다.
+여기 <code>TextRepresentable</code>의 배열을 만든 예제가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">let</span> things: <span class="hljs-type">TextRepresentable</span>[] = [game, d12, simonTheHamster]
+</code></pre>
+<p>배열에서 아이템들을 반복하면서 각 아이템을 텍스트로 출력하는 것이 가능하다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">for</span> thing <span class="hljs-keyword">in</span> things {
+    <span class="hljs-built_in">println</span>(thing.asText())
+}
+<span class="hljs-comment">// 뱀과 사다리 게임은 25칸</span>
+<span class="hljs-comment">// 12면체 주사위</span>
+<span class="hljs-comment">// 햄스터 이름은 Simon</span>
+</code></pre>
+<p><code>thing</code> 상수는 <code>Dice</code>나 <code>DiceGame</code>이나 <code>Hamster</code> 타입이 아니고 <code>TextRepresentable</code> 타입이다. 하지만 <code>TextRepresentable</code>은 <code>asText</code> 메소드를 가지고 있기 때문에 반복문에서 <code>thing.asText</code>를 안전하게 호출할 수 있다.</p>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-상속"></a><a href="#프로토콜-상속" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 상속</h3>
+<p>프로토콜은 하나 이상의 프로토콜을 <em>상속</em>받을 수 있고, 그 요구사항들 위에 다른 요구사항을 추가할 수도 있다. 프로토콜 상속 문법은 클래스 상속의 문법과 비슷하지만 쉼표를 구분해서 여러 프로토콜을 나열할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">InheritingProtocol</span>: <span class="hljs-title">SomeProtocol</span>, <span class="hljs-title">AnotherProtocol</span> </span>{
+    <span class="hljs-comment">// 프로토콜 정의가 여기 온다</span>
+}
+</code></pre>
+<p>위의 <code>TextRepresentable</code> 프로토콜을 상속받는 예제가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">PrettyTextRepresentable</span>: <span class="hljs-title">TextRepresentable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">asPrettyText</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span>
+}
+</code></pre>
+<p>이 예제에서는 <code>TextRepresentable</code>을 상속받는 <code>PrettyTextRepresentable</code>라는 새로운 프로토콜을 정의한다. <code>PrettyTextRepresentable</code>을 적용한 것들은 <code>TextRepresentable</code>의 요구사항을 모두 만족해야하고, 추가로 <code>PrettyTextRepresentable</code>의 요구사항도 만족해야한다. 이 예제에서는 <code>String</code>을 리턴하는 <code>asPrettyText</code>라는 인스턴스 메소드 하나가 요구사항으로 추가되었다.</p>
+<p><code>PrettyTextRepresentable</code>를 적용하고 일치하게 <code>SnakesAndLadders</code> 클래스를 확장할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">SnakesAndLadders</span>: <span class="hljs-title">PrettyTextRepresentable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">asPrettyText</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">var</span> output = asText() + <span class="hljs-string">":\n"</span>
+        <span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...finalSquare {
+            <span class="hljs-keyword">switch</span> board[index] {
+            <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> ladder <span class="hljs-keyword">where</span> ladder &gt; <span class="hljs-number">0</span>:
+                output += <span class="hljs-string">"▲ "</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> snake <span class="hljs-keyword">where</span> snake &lt; <span class="hljs-number">0</span>:
+                output += <span class="hljs-string">"▼ "</span>
+            <span class="hljs-keyword">default</span>:
+                output += <span class="hljs-string">"○ "</span>
+            }
+        }
+        <span class="hljs-keyword">return</span> output
+    }
+}
+</code></pre>
+<p>이 확장은 <code>PrettyTextRepresentable</code> 프로토콜을 적용하고 <code>SnakesAndLadders</code> 타입에서 <code>asPrettyText</code> 메소드를 구현했다. <code>PrettyTextRepresentable</code>가 적용되었다면 <code>TextRepresentable</code>도 적용해야하므로, <code>asPrettyText</code>의 구현이 <code>TextRepresentable</code>의 <code>asText</code> 메소드를 호출하는 것으로 시작한다. <code>asText</code>에 콜론과 줄넘김을 붙이는 것을 시작으로 출력값을 만든다. 보드의 배열을 돌면서 각 칸에 해당하는 특수문자(emoji)를 붙인다.</p>
+<ul>
+<li>칸의 값이 0보다 크고 사다리면 ▲로 표시</li>
+<li>칸의 값이 0보다 작고 뱀 머리면 ▼로 표시</li>
+<li>그 외에, 칸의 값이 0이고 &quot;비어있는&quot; 칸이면 ○으로 표시</li>
+</ul>
+<p>이제 메소드구현으로 <code>SnakesAndLadders</code> 인스턴스의 내역을 보기좋게 표시하는데 사용할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-built_in">println</span>(game.asPrettyText())
+<span class="hljs-comment">// 뱀과 사다리 게임은 25칸:</span>
+<span class="hljs-comment">// ○ ○ ▲ ○ ○ ▲ ○ ○ ▲ ▲ ○ ○ ○ ▼ ○ ○ ○ ○ ▼ ○ ○ ▼ ○ ▼ ○</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-합성"></a><a href="#프로토콜-합성" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 합성</h3>
+<p>한번에 여러 프로토콜에 일치하는 타입이 필요할 때 유용하게 쓸 수 있다. <em>프로토콜 합성</em>으로 여러 프로토콜을 하나의 요구사항으로 합칠 수 있다. 프로토콜 합성은 <code>protocol&lt;SomeProtocol, AnotherProtocol&gt;</code>같은 형태를 가진다. 꺾쇠(&lt;&gt;) 안에 쉼표로 구분해서 원하는만큼 프로토콜을 명시할 수 있다.</p>
+<p>여기 <code>Named</code>와 <code>Aged</code> 두가지 프로토콜을 합성해서 하나의 함수 파라미터로 사용하는 예제가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Named</span> </span>{
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
+}
+<span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Aged</span> </span>{
+    <span class="hljs-keyword">var</span> age: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> }
+}
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span>: <span class="hljs-title">Named</span>, <span class="hljs-title">Aged</span> </span>{
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">var</span> age: <span class="hljs-type">Int</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">wishHappyBirthday</span><span class="hljs-params">(celebrator: <span class="hljs-keyword">protocol</span>&lt;Named, Aged&gt;)</span></span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(celebrator.name)</span>의 <span class="hljs-subst">\(celebrator.age)</span>번째 생일을 축하합니다!"</span>)
+}
+<span class="hljs-keyword">let</span> birthdayPerson = <span class="hljs-type">Person</span>(name: <span class="hljs-string">"Malcolm"</span>, age: <span class="hljs-number">21</span>)
+wishHappyBirthday(birthdayPerson)
+<span class="hljs-comment">// "Malcolm의 21번째 생일을 축하합니다!" 출력</span>
+</code></pre>
+<p>이 예제에서는 <code>String</code> 타입의 <code>name</code>이라는 읽기 속성 하나를 요구사항으로 가지는 <code>Named</code>라는 프로토콜을 정의한다. 또한 <code>Int</code> 타입의 <code>age</code>라는 읽기 속성 하나를 요구사항으로 가지는 <code>Aged</code>도 정의한다. 두 프로토콜 모두 <code>Person</code> 구조체에 적용된다.</p>
+<p><code>wishHappyBirthday</code>라는 함수를 만들어서 <code>celebrator</code>라는 인자를 하나 받는다. 이 인자의 타입은 <code>protocol&lt;Named, Aged&gt;</code>이며 &quot;<code>Named</code>와 <code>Aged</code> 프로토콜에 모두 일치하는 어떤 타입&quot;을 의미한다. 어떤 특정한 타입이 인자로 넘어오는지는 관계없으나 요구하는 프로토콜 양쪽 다 일치해야한다.</p>
+<p>그리고나서 <code>birthdayPerson</code>이라는 <code>Person</code>의 인스턴스를 만들어서 <code>wishHappyBirthday</code>라는 함수의 인자로 넘긴다. <code>Person</code>이 프로토콜 양쪽 다 일치하기 때문에 유효하며 <code>wishHappyBirthday</code> 함수에서 생일축하 인사를 출력할 수 있다.</p>
+<blockquote>
+<p>노트</p>
+<p>프로토콜 합성은 새로 영구적으로 프토토콜 타입을 만드는 것이 아니다. 합성에 있는 모든 프로토콜의 요구사항을 합친 하나의 프로토콜을 임시로 만드는 것이다.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-일치를-확인하기"></a><a href="#프로토콜-일치를-확인하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 일치를 확인하기</h3>
+<p><a href="#">타입 캐스팅</a>에서 설명했던 것처럼 특정 프로토콜로 캐스팅하기 위해서 프로토콜 일치를 확인하는데 <code>is</code>와 <code>as</code> 연산자를 사용할 수 있다. 타입을 확인하고 캐스팅하는 것과 정확히 같은 방법으로 프로토콜을 확인하고 캐스팅할 수 있다.</p>
+<ul>
+<li><code>is</code> 연산자에서는 인스턴스가 프로토콜과 일치하면 <code>true</code>, 아니면 <code>false</code>를 리턴</li>
+<li>'as?' 다운캐스팅 연산자는 프로토콜 타입의 옵션값을 리턴하는데 인스턴스가 프로토콜과 일치하지 않으면 <code>nil</code>이 된다</li>
+<li><code>as</code> 연산자는 강제로 다운캐스팅하고 실패하면 런타임 에러가 난다.</li>
+</ul>
+<p><code>Double</code> 타입의 <code>area</code> 읽기 속성 하나를 요구사항으로 갖는 <code>HasArea</code> 프로토콜 예제가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-meta">@objc</span> <span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">HasArea</span> </span>{
+    <span class="hljs-keyword">var</span> area: <span class="hljs-type">Double</span> { <span class="hljs-keyword">get</span> }
+}
+</code></pre>
+<blockquote>
+<p>노트</p>
+<p><code>HasArea</code> 프로토콜 앞에 보이듯 프로토콜 일치를 확인하기 위해서는 <code>@objc</code> 속성(attribute)을 명시해줘야한다.
+<em>코코아와 Objective-C를 스위프트와 사용하기(Using Swift with Cocoa and Objective-C)</em>에서 설명하듯 이 속성은 Objective-C 코드에서 인식할 수 있을 것이라는 것을 명시한다.
+Objective-C를 함께 쓰지 않더라도 프로토콜 일치를 확인하고 싶다면 <code>objc</code>를 프로토콜에 명시해줘야한다.</p>
+<p><code>@objc</code> 프로토콜은 구조체나 열거형은 불가능하고 클래스에만 적용할 수 있다.</p>
+</blockquote>
+<p><code>HasArea</code> 프로토콜과 일치하는 <code>Circle</code>과 <code>Country</code> 두가지 클래스가 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span>: <span class="hljs-title">HasArea</span> </span>{
+    <span class="hljs-keyword">let</span> pi = <span class="hljs-number">3.1415927</span>
+    <span class="hljs-keyword">var</span> radius: <span class="hljs-type">Double</span>
+    <span class="hljs-keyword">var</span> area: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> pi * radius * radius }
+    <span class="hljs-keyword">init</span>(radius: <span class="hljs-type">Double</span>) { <span class="hljs-keyword">self</span>.radius = radius }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Country</span>: <span class="hljs-title">HasArea</span> </span>{
+    <span class="hljs-keyword">var</span> area: <span class="hljs-type">Double</span>
+    <span class="hljs-keyword">init</span>(area: <span class="hljs-type">Double</span>) { <span class="hljs-keyword">self</span>.area = area }
+}
+</code></pre>
+<p><code>Circle</code> 클래스는 저장된 <code>radius</code> 속성을 사용해 <code>area</code> 속성을 계산된 속성으로 구현했다. <code>Country</code> 클래스에서는 직접 저장된 속성으로 <code>area</code> 속성을 구현했다. 두가지 클래스 모두 <code>HasArea</code> 프로토콜에 정확히 일치한다.</p>
+<p>여기 <code>Animal</code>이라는 클래스가 있고 <code>HasArea</code> 프로토콜에 일치하지 않는다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
+    <span class="hljs-keyword">var</span> legs: <span class="hljs-keyword">Int</span>
+    init(legs: <span class="hljs-keyword">Int</span>) { <span class="hljs-keyword">self</span>.legs = legs }
+}
+</code></pre>
+<p><code>Circle</code>, <code>Country</code>, <code>Animal</code> 클래스는 공통된 부모 클래스를 갖지는 않는다. 다만 이 클래스들과 클래스들의 인스턴스들 모두 <code>AnyObject</code> 배열의 값으로 초기화되는데 사용할 수  있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">let</span> objects: <span class="hljs-type">AnyObject</span>[] = [
+    <span class="hljs-type">Circle</span>(radius: <span class="hljs-number">2.0</span>),
+    <span class="hljs-type">Country</span>(area: <span class="hljs-number">243_610</span>),
+    <span class="hljs-type">Animal</span>(legs: <span class="hljs-number">4</span>)
+]
+</code></pre>
+<p><code>Circle</code> 인스턴스는 반지름 2로, <code>Country</code> 인스턴스는 영국의 면적으로, <code>Animal</code> 인스턴스는 다리 4개로 초시화되어 배열 표기를 통해 <code>objects</code> 배열에 초기화되었다.</p>
+<p><code>objects</code> 배열은 순환가능하며, 배열 내 각각의 객체는 <code>HasArea</code> 프로토콜에 일치하는지 확인할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">for</span> object <span class="hljs-keyword">in</span> objects {
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> objectWithArea = object <span class="hljs-keyword">as</span>? <span class="hljs-type">HasArea</span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"넓이는 <span class="hljs-subst">\(objectWithArea.area)</span>"</span>)
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"넓이를 가지고 있지 않다"</span>)
+    }
+}
+<span class="hljs-comment">// 넓이는 12.5663708</span>
+<span class="hljs-comment">// 넓이는 243610.0</span>
+<span class="hljs-comment">// 넓이를 가지고 있지 않다</span>
+</code></pre>
+<p>배열 내의 객체가 <code>HasArea</code> 프로토콜에 일치할 때마다 <code>as?</code> 연산자를 통해 <code>objectWithArea</code>라는 상수값으로 옵션값을 받을 수 있다. <code>objectWithArea</code> 상수는 <code>HasArea</code> 타입이며 <code>area</code> 속성을 접근할 수도 있고 출력도 가능하다.</p>
+<p>캐스팅 과정에서 객체들이 변하지는 않는다. 여전히 <code>Circle</code>, <code>Country</code>, <code>Animal</code> 객체다. 하지만 <code>objectWithArea</code> 상수에 저장되면 <code>HasArea</code> 타입으로만 사용할 수 있고 <code>area</code> 속성에만 접근할 수 있다.</p>
+<h3><a class="anchor" aria-hidden="true" id="프로토콜-선택적-요구사항"></a><a href="#프로토콜-선택적-요구사항" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜 선택적 요구사항</h3>
+<p>프로토콜에서 <em>선택적 요구사항</em>을 정의할 수 있다. 프로토콜에 일치하기 위해서 이 요구사항들을 구현하지 않아도 된다. 선택적 요구사항들은 정의 앞에 <code>@optional</code> 키워드가 붙는다.</p>
+<p>선택적 요구사항은 프로토콜에 일치하도록 요구사항이 구현되었는지 여부를 확인하는 옵션 연쇄와 같이 사용될 수 있다. 옵션 연쇄에 대해서는 <a href="#">옵션 연쇄</a> 챕터에 정보가 나와있다.</p>
+<p>요구사항(의 메소드나 이름)이 쓰일 때 <code>someOptionalMethod?(someArgument)</code>처럼 이름 뒤에 물음표가 붙는 구현을 확인할 수 있다.
+선택적 속성 요구사항과 값을 리턴하는 선택적 메소드 요구사항은 그걸 접근해서 호출할 때 적절한 타입의 옵션값을 항상 반환하며, 구현이 되어있지 않을 수 있는 선택적 요구사항의 상태를 보여준다.</p>
+<blockquote>
+<p>노트
+프로토콜의 선택적 요구사항들은 <code>@objc</code> 속성이 명시되어있을 때만 사용할 수 있다.
+Objective-C와 같이 사용하지 않더라도 선택적 요구사항을 사용하고 싶다면 <code>@objc</code> 속성을 명시해야한다.
+구조체나 열거형이 아닌 클래스에서만 <code>@objc</code> 프로토콜을 적용할 수 있다.
+따라서 선택적 요구사항을 사용하기 위해 <code>@objc</code>를 프로토콜에 명시했다면 프로토콜은 클래스 타입에만 적용될 수 있다.</p>
+</blockquote>
+<p>다음 예제는 <code>Counter</code>라는 정수 카운터를 구현한 것으로 증가량을 외부에 제공하기 위해 사용한다. 선택적 요구사항 2가지를 가진 <code>CounterDataSource</code> 프로토콜이 정의되어있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-meta">@objc</span> <span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">CounterDataSource</span> </span>{
+    @<span class="hljs-keyword">optional</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementForCount</span><span class="hljs-params">(<span class="hljs-built_in">count</span>: Int)</span></span> -&gt; <span class="hljs-type">Int</span>
+    @<span class="hljs-keyword">optional</span> <span class="hljs-keyword">var</span> fixedIncrement: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> }
+}
+</code></pre>
+<p><code>CounterDataSource</code> 프로토콜에는 <code>incrementForCount</code>라는 선택적 메소드 요구사항과 <code>fixedIncrement</code>라는 선택적 속성 요구사항이 정의되어있다.
+이 요구사항들은 <code>Counter</code> 인스턴스에 증가량을 전하기 위한 두가지 방법이다.</p>
+<blockquote>
+<p>노트
+엄밀히 이야기해서 프로토콜 요구사항을 <em>전혀</em> 구현하지 않고도 <code>CounterDataSource</code>에 일치하는 클래스를 만들 수 있다.
+둘 다 선택적 요구사항이기 때문이다. 기술적으로는 가능하지만 괜찮은 방법은 아니다.</p>
+</blockquote>
+<p>아래 정의한 <code>Counter</code> 클래스는 <code>CounterDataSource?</code> 타입을 <code>dataSource</code>라는 선택적 속성으로 가지고 있다.</p>
+<pre><code class="hljs"><span class="hljs-meta">@objc</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> </span>{
+    <span class="hljs-keyword">var</span> <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> dataSource: <span class="hljs-type">CounterDataSource</span>?
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">increment</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> amount = dataSource?.incrementForCount?(<span class="hljs-built_in">count</span>) {
+            <span class="hljs-built_in">count</span> += amount
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> amount = dataSource?.fixedIncrement? {
+            <span class="hljs-built_in">count</span> += amount
+        }
+    }
+}
+</code></pre>
+<p><code>Counter</code> 클래스는 <code>count</code> 속성에 현재값을 저장한다.
+그리고 <code>increment</code>라는 메소드도 가지고 있는데 불릴 때마다 <code>count</code> 속성을 증가시킨다.</p>
+<p><code>increment</code> 메소드는 데이터 소스에서 <code>incrementForCount</code>가 구현되어있는지 확인하고 증가량을 가져온다. 옵션 연쇄로 <code>count</code>를 인자로 넘기는 <code>incrementForCount</code>를 호출한다.</p>
+<p>여기 <em>두</em> 단계의 옵션 연쇄가 있다. 첫번째로는 <code>dataSource</code>가 <code>nil</code>일 수도 있으니 아닐 때만 <code>incrementForCount</code>를 호출하기 위해 물음표가 붙어있다. 두번째로는 <code>dataSource</code>가 <em>존재하긴</em> 하지만 선택적 요구사항인 <code>incrementForCount</code>가 구현되어있다는 보장이 없다. 그래서 <code>incrementForCount</code>에도 물음표가 붙어 있다.</p>
+<p><code>incrementForCount</code>를 호출하는데 두가지 이유로 실패할 수 있어서 <em>선택적</em> <code>Int</code>값이 리턴된다. 참이면 <code>incrementForCount</code>가 구현되어 있어서 <code>CounterDataSource</code> 정의에 따라 비선택적(non-optional) <code>Int</code> 값을 받는다.</p>
+<p><code>incrementForCount</code>가 호출되고 나면 실제로 받은 <code>Int</code> 값이 <code>amount</code>에 상수로 들어간다. 만약 선택적 <code>Int</code>가 값을 가지고 있으면, 즉 대리자와 메소드가 둘 다 존재하면 메소드는 값을 리턴할테니 <code>amount</code>의 실제값이 <code>count</code> 속성에 더해져 저장되고, 증가는 완료된다.</p>
+<p><code>dataSource</code>가 nil이거나 <code>incrementForCount</code>를 구현하지 않아서 <code>incrementForCount</code>에서 값을 가져올 수 <em>없다면</em> <code>increment</code> 메소드는 <code>fixedIncrement</code> 속성을 대신 가져온다.
+<code>fixedIncrement</code> 속성은 선택적 요구사항이므로 끝에 물음표를 붙여서 실패할 수 있는 것을 명시한다. 앞에서처럼 <code>CounterDataSource</code> 프로토콜의 정의에서 <code>fixedIncrement</code>는 비선택적 <code>Int</code> 속성이지만, 결과적으로 선택적 <code>Int</code> 값이 리턴된다.</p>
+<p>호출될 때마다 <code>3</code>을 리턴하는 간단한 <code>CounterDataSource</code> 구현이 있다. 선택적 <code>fixedIncrement</code> 속성을 구현했다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThreeSource</span>: <span class="hljs-title">CounterDataSource</span> </span>{
+    <span class="hljs-keyword">let</span> fixedIncrement = <span class="hljs-number">3</span>
+}
+</code></pre>
+<p><code>ThreeSource</code>의 인스턴스를 새로운 <code>Counter</code> 인스턴스의 데이터 소스로 사용할 수 있다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-keyword">var</span> counter = <span class="hljs-type">Counter</span>()
+counter.dataSource = <span class="hljs-type">ThreeSource</span>()
+<span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">4</span> {
+    counter.increment()
+    <span class="hljs-built_in">println</span>(counter.<span class="hljs-built_in">count</span>)
+}
+<span class="hljs-comment">// 3</span>
+<span class="hljs-comment">// 6</span>
+<span class="hljs-comment">// 9</span>
+<span class="hljs-comment">// 12</span>
+</code></pre>
+<p>새로운 <code>Counter</code> 인스턴스를 만드는 위의 코드에서는 <code>ThreeSource</code> 인스턴스를 데이터 소스로 사용하고, <code>increment</code> 메소드를 4번 호출한다. 예상대로 카운터의 <code>count</code> 속성은 <code>increment</code>가 호출되는 3번동안 증가한다.</p>
+<p>여기 <code>TowardsZeroSource</code>라는 조금 더 복잡한 데이터 소스가 있다. <code>Counter</code> 인스턴스에서는 현재 <code>count</code> 값에서 0을 향해 올리거나 내린다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TowardsZeroSource</span>: <span class="hljs-title">CounterDataSource</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementForCount</span><span class="hljs-params">(<span class="hljs-built_in">count</span>: Int)</span></span> -&gt; <span class="hljs-type">Int</span> {
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">count</span> == <span class="hljs-number">0</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> <span class="hljs-built_in">count</span> &lt; <span class="hljs-number">0</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>
+        }
+    }
+}
+</code></pre>
+<p><code>TowardsZeroSource</code> 클래스는 <code>CounterDataSource</code> 프로토콜의 선택적 <code>incrementForCount</code> 메소드를 구현했고 <code>count</code> 인자값을 사용해 0을 향하도록 한다. <code>count</code>가 이미 0이면 더이상 카운트할 필요가 없다고 명시하도록 <code>0</code>을 리턴한다.</p>
+<p><code>Counter</code> 인스턴스에 <code>TowardsZeroSource</code> 인스턴스를 상요해서 <code>-4</code>에서 0까지 증가시킨다. 카운터가 0에 도달하면 더이상 카운트하지 않는다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-type">Counter</span>.<span class="hljs-built_in">count</span> = -<span class="hljs-number">4</span>
+counter.dataSource = <span class="hljs-type">TowardsZeroSource</span>()
+<span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">5</span> {
+    counter.increment()
+    <span class="hljs-built_in">println</span>(counter.<span class="hljs-built_in">count</span>)
+}
+<span class="hljs-comment">// -3</span>
+<span class="hljs-comment">// -2</span>
+<span class="hljs-comment">// -1</span>
+<span class="hljs-comment">// 0</span>
+<span class="hljs-comment">// 0</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter22.html">← 확장 (Extensions)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics) →</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

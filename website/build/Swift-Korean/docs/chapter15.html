@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>상속 (Inheritance) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : YoonJeong Kwon (hoppingbonny@naver.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="상속 (Inheritance) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : YoonJeong Kwon (hoppingbonny@naver.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">상속 (Inheritance)</h1></header><article><div><span><blockquote>
+<p>Translator : YoonJeong Kwon (<a href="mailto:hoppingbonny@naver.com">hoppingbonny@naver.com</a>)</p>
+</blockquote>
+<p>하나의 클래스는 또다른 클래스의 메서드, 프로퍼티, 이 외에 다른 특징들을 상속받을 수 있다. 어떤 클래스가 다른 클래스로부터 상속받을 때, 상속받는 클래스를 <em><strong>하위클래스(subclass)</strong></em>라 하고 하위클래스가 상속하는 클래스를 <em><strong>상위클래스(superclass)</strong></em>라 한다.
+Swift에서 상속이란, 다른 타입의 클래스들과 차별화하는 기본적인 방법이다.</p>
+<p>Swift에서 모든 클래스는 상위클래스에 속한 메서드, 프로퍼티, 서브스크립트들을 호출하고 접근할 수 있고, 해당 메서드, 프로퍼티, 서브스크립트들을 오버라이딩하여 자신의 행동을 재정의하거나 수정할 수도 있다. Swift는 오버라이드 정의가 상위클래스의 정의와 일치하는 지를 확인하여 오버라이드가 정확히 이뤄졌음을 보장해주기도 한다.</p>
+<p>또한 모든 클래스에는 프로퍼티 값의 변화를 감지하기 위한 프로퍼티 관찰자(property observers)를 상속한 프로퍼티에 추가할 수도 있다. 프로퍼티 관찰자는 해당 프로퍼티가 stored 혹은 computed 인지에 관계없이 어떤 프로퍼티에도 추가할 수 있다.</p>
+<h2><a class="anchor" aria-hidden="true" id="베이스-클래스-정의"></a><a href="#베이스-클래스-정의" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>베이스 클래스 정의</h2>
+<p><strong><em>베이스 클래스(Base Class)</em></strong>란, 어떤 클래스도 상속받지 않은 클래스를 말한다.</p>
+<blockquote>
+<p>NOTE
+Swift 클래스들은 보편적인 베이스 클래스를 상속받지 않는다. 당신이 정의한 클래스가 상위클래스를 가지지 않는다면, 자동적으로 베이스 클래스가 된다.</p>
+</blockquote>
+<p>아래 예제는 <code>Vehicle</code> 베이스 클래스를 정의한 것이다. 이 베이스 클래스는 두 개의 변수(<code>numberOfWheels</code>와 <code>maxPassengers</code>)를 선언하고 있고, 이 두 변수는 모든 vehicle에 대한 기본 속성이다. <code>description()</code>에서 이 변수들을 사용하여, vehicle 특징에 관한 설명을 <code>String</code>타입으로 리턴한다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vehicle</span> </span>{
+  <span class="hljs-keyword">var</span> numberOfWheels: <span class="hljs-type">Int</span>
+  <span class="hljs-keyword">var</span> maxPassengers: <span class="hljs-type">Int</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">description</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"<span class="hljs-subst">\(numberOfWheels)</span> wheels; up to <span class="hljs-subst">\(maxPassengers)</span> passengers"</span>
+   }
+  <span class="hljs-keyword">init</span>() {
+    numberOfWheels = <span class="hljs-number">0</span>
+    maxPassengers = <span class="hljs-number">1</span>
+  }
+}
+</code></pre>
+<p><code>Vehicle</code> 클래스는 프로퍼티들의 초기값을 설정하기 위해 <em><strong>생성자(intializer)</strong></em>를 정의하고 있다. 생성자는 [Intialization] 에서 상세하게 다루며, 여기서는 상속한 변수가 하위클래스에 의해 어떻게 바뀌는지를 설명하기 위해 간략하게만 소개하도록 한다.</p>
+<p>당신은 어떤 타입의 새로운 인스턴스를 생성하기 위해 생성자를 사용한다. 비록 생성자가 메서드는 아니지만, 그것들은 인스턴스 메서드와 매우 유사한 문법으로 작성된다. 생성자는 새로운 인스턴스를 사용 가능한 상태로 준비하고, 인스턴스의 모든 변수들이 유효한 초기값을 갖도록 보장한다.</p>
+<p>가장 단순한 형태의 생성자는 매개변수가 없는 인스턴스 메서드처럼 보이며, <code>init</code> 키워드를 사용해서 작성한다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-title">init</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-comment">// perform some initialization here</span>
+}
+</code></pre>
+<p><code>Vehicle</code>의 새로운 인스턴스를 생성하려면, <code>타입명(TypeName)</code>과 빈 괄호를 사용하여 생성자를 호출한다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">someVehicle</span> = Vehicle()
+</code></pre>
+<p><code>Vehicle</code> 생성자는 인스턴스의 프로퍼티에 초기값을 설정한다. (<code>numberOfWheels = 0</code>, <code>maxPassengers = 1</code>)</p>
+<p><code>Vehicle</code> 클래스는 임의의 vehicle에 대해 공통적인 특징들을 정의하지만, 그 자체로 충분하지는 않다. 좀 더 유용한 클래스로 만들기 위해 더 구체적인 종류의 vehicle을 표현하도록 Vehicle 클래스를 재정의할 필요가 있다.</p>
+<h2><a class="anchor" aria-hidden="true" id="하위클래스-정의"></a><a href="#하위클래스-정의" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>하위클래스 정의</h2>
+<p><strong><em>하위클래스를 정의(subclassing)</em></strong>한다는 것은 기존 클래스에 기반을 둔 새로운 클래스를 생성하는 것이다. 하위클래스는 기존 클래스의 모든 특징을 상속받고, 그것들을 재정의할 수 있다. 또한 새로운 특징들을 하위클래스에 추가할 수 있다.</p>
+<p>어떤 클래스가 상위클래스를 갖는다는 것을 나타내려면 본 클래스명 뒤에 콜론(:)과 상위클래스명을 차례로 적는다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span>: <span class="hljs-type">SomeSuperclass {</span></span>
+    <span class="hljs-comment">// class definition goes here</span>
+}
+</code></pre>
+<p>다음 예제는 더 구체적인 vehicle의 <code>Bicycle</code>을 정의한 것이다. 이 새로운 클래스는 <code>Vehicle</code>이 가진 역량에 기반한다. 상위클래스명(<code>Vehicle</code>)을 콜론으로 구분하여 하위클래스명(<code>Bicycle</code>) 뒤에 놓음으로써 Bicycle과 Vehicle 관계를 나타낼 수 있다.</p>
+<p>이는 다음와 같이 설명할 수도 있다.
+&quot;<code>Bicycle</code>이라는 새로운 클래스를 정의하고, 이 클래스가 <code>Vehicle</code>의 특징들을 상속받는다&quot;</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span>: <span class="hljs-title">Vehicle</span> </span>{
+  <span class="hljs-keyword">init</span>() {
+    <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>()
+    numberOfWheels = <span class="hljs-number">2</span>
+  }
+}
+</code></pre>
+<p><code>Bicycle</code>은 <code>Vehicle</code>의 하위클래스이고, <code>Vehicle</code>은 <code>Bycicle</code>의 상위클래스이다. 새로운 <code>Bicycle</code> 클래스는 자동적으로 <code>Vehicle</code>의 모든 특징들, <code>maxPassengers</code>와 <code>numberOfWheels</code>와 같은 프로퍼티들을 획득한다. <code>Bicycle</code> 클래스의 요구조건을 맞추기 위해 상위클래스의 특징을 딱 맞게 조정하고 새로운 특징을 추가할 수 있다.</p>
+<p>또한 <code>Bicycle</code> 클래스는 자신에게 딱 맞춰진 특징들을 설정하기 위해 생성자를 정의한다. <code>Bicycle</code> 생성자는 <code>super.init()</code> 메서드를 통해 상위클래스인 <code>Vehicle</code>의 생성자를 호출하고 있다. 이 때 <code>Bicycle</code>이 상속한 모든 변수들을 수정하기 전에 <code>Vehicle</code>에 의해 초기화된다.</p>
+<blockquote>
+<p>NOTE
+Object-C와 달리, Swift에서 생성자는 디폴트로 상속하지 않는다. 더 많은 정보를 보려면, <a href="">Initializer Inheritance and Overriding</a>을 참고하도록 한다.</p>
+</blockquote>
+<p><code>Vehicle</code>에 의해 초기화된 <code>maxPassengers</code>의 디폴트값은 어떤 bicycle에도 적절한 값이므로 <code>Bicycle</code> 생성자에서 변경하지 않았다. 그러나 <code>numberOfWheels</code>의 디폴트 값은 적절치 않아 <code>2</code> 로 새롭게 대체했다.</p>
+<p><code>Bicycle</code>은 <code>Vehicle</code>의 프로퍼티들만 상속받는 것이 아니라, 메서드도 상속받는다. <code>Bicycle</code>의 인스턴스를 생성한 다음, 상속한 <code>description()</code>을 호출하여 프로퍼티들의 값이 어떻게 변경되었는지를 확인할 수 있다.</p>
+<pre><code class="hljs">let bicycle = Bicycle()
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"Bicycle: \(bicycle.description())"</span>)</span></span>
+<span class="hljs-comment">// Bicycle: 2 wheels; up to 1 passengers</span>
+</code></pre>
+<p>하위클래스는 또다른 하위클래스를 만들 수 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tandem</span>: <span class="hljs-title">Bicycle</span> </span>{
+  <span class="hljs-keyword">init</span>() {
+    <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>()
+    maxPassengers = <span class="hljs-number">2</span>
+  }
+}
+</code></pre>
+<p>위 예제는 2인용 tandem 자전거를 위한 <code>Bicycle</code>의 하위클래스이다. <code>Tandem</code>은 <code>Bicycle</code>로부터 두 프로퍼티를 상속받고, <code>Bicycle</code>은 그 두 프로퍼티를 <code>Vehicle</code>로부터 상속받는다. <code>Tandem</code>은 bicyle이기 때문에 바퀴의 숫자는 동일하다. 그러나 tandem 자전거를 만들기 위해 <code>maxPassengers</code> 값을 적절하게 변경하고 있다.</p>
+<blockquote>
+<p>NOTE
+하위클래스는 오로지 초기화하는 동안 상위클래스의 변수(variable properties)만 수정할 수 있다. 상속한 하위클래스의 상수(constant properties)는 변경할 수 없다.</p>
+</blockquote>
+<p><code>Tandem</code> 인스턴스를 생성하고 해당 인스턴스에 대한 설명을 출력하는 것은 해당 프로퍼티들이 어떻게 수정되었는지를 보여준다.</p>
+<pre><code class="hljs">let tandem = Tandem()
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"Tandem: \(tandem.description())"</span>)</span></span>
+<span class="hljs-comment">// Tandem: 2 wheels; up to 2 passengers</span>
+</code></pre>
+<p><code>description()</code>는 <code>Tandem</code>이 상속받은 것이다. 어떤 클래스의 인스턴스 메서드는 그 클래스의 모든 하위클래스들이 상속받는다.</p>
+<h2><a class="anchor" aria-hidden="true" id="오버라이딩"></a><a href="#오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오버라이딩</h2>
+<p>하위클래스는 인스턴스 메서드, 클래스 메서드, 인스턴스 프로퍼티 혹은 서브스크립트에 대해 자신만의 커스텀 구현체를 제공할 수 있다. 그렇지 않았다면 상위클래스의 것들을 상속받을 것이다. 이를 <strong><em>오버라이딩(Overriding)</em></strong>이라 한다.</p>
+<p>상속한 특징을 오버라이드하려면 오버라이딩한다는 의미로 <code>override</code> 키워드를 접두사로 붙인다. 그렇게 하는 것은 의도적으로 오버라이드를 했고 실수로 일치하는 않는 정의를 한 것이 아님을 분명하게 만든다. 우연히도 오버라이딩은 예기치 못한 행동을 일으킬 수도 있고, <code>override</code> 키워드가 없는 어떤 오버라이드는 코드가 컴파일될 때 에러로 인식될 수도 있다.</p>
+<p>또한 <code>override</code> 키워드는 Swift 컴파일러에게 오버라이딩 클래스의 상위클래스(혹은 부모 클래스 중 하나)가 당신이 오버라이드한 것과 일치하는 선언을 갖고 있는지 확인하도록 즉각적인 명령을 내린다. 이러한 확인은 오버라이딩 정의가 올바르게 되었음을 확실하게 만든다.
+‌</p>
+<h3><a class="anchor" aria-hidden="true" id="상위클래스의-메서드-프로퍼티-서브스크립트에-접근하는-방법"></a><a href="#상위클래스의-메서드-프로퍼티-서브스크립트에-접근하는-방법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>상위클래스의 메서드, 프로퍼티, 서브스크립트에 접근하는 방법</h3>
+<p>메서드, 프로퍼티, 서브스크립트를 오버라이드해서 하위클래스를 만들 때 오버라이드의 일부분으로서 기존 상위클래스의 구현을 활용하는 것이 때때로 유용하다. 예를 들면, 기존 구현의 행동을 재정의할 수도 있고 상속한 변수에 변경된 값을 저장할 수 있기 때문이다.</p>
+<p>적절한 위치에서 <code>super</code> 접두사를 가지고 상위클래스의 메서드, 프로퍼티, 서브스크립트에 접근할 수 있다.</p>
+<ul>
+<li><code>someMethod()</code>가 오버라이드 되었을 때, 오버라이딩 메서드 내부에서 <code>super.someMethod()</code>를 통해 상위클래스의 <code>someMethod()</code> 메서드를 호출할 수 있다.</li>
+<li><code>someProperty</code>가 오버라이드 되었을 때, 오버라이딩한 접근자(getter)와 설정자(setter) 내부에서 <code>super.someProperty</code>를 통해 상위클래스의 <code>someProperty</code>를 호출할 수 있다.</li>
+<li><code>someIndex</code>에 해당하는 서브스크립트가 오버라이드 되었을 때, 오버라이딩한 서브스크립트 내부에서 <code>super[someIndex]</code>를 통해 상위클래스의 동일한 서브스크립트를 호출할 수 있다.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="메서드-오버라이딩"></a><a href="#메서드-오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메서드 오버라이딩</h3>
+<p>하위클래스에서 특정한 목적에 맞는 메서드를 제공하거나 해당 메서드를 대체하려면, 상속한 인스턴스나 클래스 메서드를 오버라이드하면 된다.</p>
+<p>다음 예제에서 <code>Vehicle</code>의 하위클래스인 <code>Car</code>를 정의하였고, 이 클래스는 <code>Vehicle</code>로부터 <code>description()</code>를 상속받아 오버라이드한다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>: <span class="hljs-title">Vehicle</span> </span>{
+  <span class="hljs-keyword">var</span> speed: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+  <span class="hljs-keyword">init</span>() {
+    <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>()
+    maxPassengers = <span class="hljs-number">5</span>
+    numberOfWheels = <span class="hljs-number">4</span>
+  }
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">description</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+     <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.description() + <span class="hljs-string">"; "</span> + <span class="hljs-string">"traveling at <span class="hljs-subst">\(speed)</span> mph"</span>
+  }
+}
+</code></pre>
+<p><code>Car</code>는 <code>Double</code> 타입의 새로운 <code>speed</code> 변수를 선언하고 있다. 이 변수는 <code>0.0</code>으로 초기화되었고 이는 &quot;시간당 0마일&quot;을 의미한다. 또한 <code>Car</code>는 커스텀 생성자를 통해 <code>maxPassengers</code>를 <code>5</code>, <code>numberOfWeels</code>를 <code>4</code>로 설정한다.</p>
+<p><code>Car</code>는 상속한 <code>description()</code>을 오버라이드하되, <code>Vehicle</code>의 <code>description()</code>과 동일한 선언부를 가진다. 오버라이딩 메서드 정의 시, <code>override</code> 키워드를 접두사로 사용한다.</p>
+<p>오버라이딩한 <code>description()</code>이 완전한 커스텀 구현을 제공하지는 않는다. <code>super.description()</code>을 호출하여 <code>Vehicle</code>의 리턴값을 받아 사용하기 때문이다. 그 다음 car의 현재 속도 정보를 덧붙여 출력하고 있다.</p>
+<p><code>Car</code>의 새로운 인스턴스를 생성하고 <code>description()</code> 결과를 출력해보면, 실제 출력 내용이 변경되었음을 확인할 수 있다.</p>
+<pre><code class="hljs">let car = Car()
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"Car: \(car.description())"</span>)</span></span>
+<span class="hljs-comment">// Car: 4 wheels; up to 5 passengers; traveling at 0.0 mph</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="프로퍼티-오버라이딩"></a><a href="#프로퍼티-오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로퍼티 오버라이딩</h3>
+<p>프로퍼티에 대한 커스텀 접근자와 설정자를 제공하거나 프로퍼티 값의 변경을 감시하기 위한 프로퍼티 관찰자를 추가하려면, 상속한 인스턴스나 클래스 메서드를 오버라이드하면 된다.</p>
+<h4><a class="anchor" aria-hidden="true" id="프로퍼티-접근자와-설정자-오버라이딩"></a><a href="#프로퍼티-접근자와-설정자-오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로퍼티 접근자와 설정자 오버라이딩</h4>
+<p>상속한 프로퍼티를 오버라이드 하려면 그 프로퍼티가 stored 혹은 computed 프로퍼티인지에 관계없이 커스텀 접근자와 설정자를 제공하면 된다. 상속한 프로퍼티의 stored 혹은 computed 성질은 하위클래스는 알지 못하고, 오로지 상속한 프로퍼티의 이름과 타입만 알 뿐이다. 항상 오버라이딩 하려는 프로퍼티의 이름과 타입을 동일하게 유지해야 한다. 그래야 컴파일러가 오버라이드한 것과 상위클래스의 프로퍼티의 이름과 타입이 일치하는지를 체크할 수 있다.</p>
+<p>하위클래스 프로퍼티를 오버라이딩할 때 접근자와 설정자를 동시에 정의함으로써 읽기만 가능했던 상속 프로퍼티를 읽고 쓰기가 가능한 프로퍼티로 나타낼 수 있다. 그러나 읽고 쓰기가 가능한 상속 프로퍼티를 읽기만 가능한 프로퍼티로 나타낼 수는 없다.</p>
+<blockquote>
+<p>NOTE
+프로퍼티 오버라이드 중 설정자를 제공한다면, 접근자도 반드시 제공해야 한다. 아래 <code>SpeedLimitedCar</code> 예제처럼 상속한 프로퍼티의 값을 오버라이딩 접근자 안에서 변경하고 싶지 않다면, <code>super.someProperty</code>를 통해 상속한 프로퍼티의 값을 그대로 해당 접근자로부터 가져올 수 있다.</p>
+</blockquote>
+<p>다음 예제는 <code>Car</code>의 하위클래스인 새로운 <code>SpeedLimitedCar</code>를 정의한 것이다.
+<code>SpeedLimitedCar</code> 클래스는 속도 제한 장치가 장착된 차를 나타낸다. 속도 제한 장치는 40mph보다 빠르게 달리는 것을 방지한다. 이러한 제한규칙은 상속한 <code>speed</code> 프로퍼티를 오버라이딩함으로써 구현할 수 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SpeedLimitedCar</span>: <span class="hljs-type">Car {</span></span>
+  <span class="hljs-keyword">override</span> <span class="hljs-keyword">var</span> speed: <span class="hljs-built_in">Double</span> {
+    <span class="hljs-keyword">get</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.speed
+    }
+    <span class="hljs-keyword">set</span> {
+        <span class="hljs-keyword">super</span>.speed = min(newValue, <span class="hljs-number">40.0</span>)
+    }
+  }
+}
+</code></pre>
+<p><code>SpeedLimitedCar</code> 인스턴스의 <code>speed</code> 프로퍼티를 설정할 때마다 프로퍼티의 설정자는 새로운 값을 확인하고 그 값을 40mph로 제한한다. 이는 상위클래스의 <code>speed</code> 프로퍼티에 <code>새로 입력한 속도값</code>과 <code>40.0</code> 중 가장 작은 값을 대입함으로써 행해진다. <code>min</code> 함수에 의해 두 개의 값 중 가장 작은 것이 선택된다. <code>min</code> 함수는 글로벌 함수로 Swift 표준 라이브러리를 통해 제공되며, 두 개 이상의 값을 제공받아 가장 작은 값을 리턴한다.</p>
+<p><code>SpeedLimitedCar</code> 인스턴스의 <code>speed</code> 프로퍼티에 40mph 이상을 대입하고 <code>description()</code>을 통해 결과를 출력해보면, 속도가 제한되었음을 확인할 수 있다.</p>
+<pre><code class="hljs">let limitedCar = SpeedLimitedCar()
+limitedCar<span class="hljs-selector-class">.speed</span> = <span class="hljs-number">60.0</span>
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"SpeedLimitedCar: \(limitedCar.description())"</span>)</span></span>
+<span class="hljs-comment">// SpeedLimitedCar: 4 wheels; up to 5 passengers; traveling at 40.0 mph</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="프로퍼티-관찰자-오버라이딩"></a><a href="#프로퍼티-관찰자-오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로퍼티 관찰자 오버라이딩</h4>
+<p>프로퍼티 관찰자를 상속한 프로퍼티에 추가하려면, 프로퍼티 오버라이딩을 사용한다. 이것은 프로퍼티가 어떻게 구현되었는지에 관계없이 상속한 프로퍼티 값의 변화를 알아차릴 수 있도록 해준다. 프로퍼티 관찰자에 대한 더 많은 정보를 보려면, <a href="">Property Observers</a>를 참고하도록 한다.</p>
+<blockquote>
+<p>NOTE
+프로퍼티 관찰자는 상수 혹은 읽기 전용 프로퍼티에 추가될 수 없다. 이러한 프로퍼티 값은 다시 설정될 수 없기 때문에 오버라이드의 일부인 <code>willSet()</code> 혹은 <code>didSet()</code>을 제공하는 것은 적절치 않다.
+또한 오버라이딩 설정자와 오버라이딩 프로퍼티 관찰자를 동시에 제공할 수 없다. 프로퍼티 값이 변경되는 것을 관찰하고 싶고 이미 그 프로퍼티를 위한 커스텀 설정자를 제공하고 있다면, 커스텀 설정자 안에서 값의 변화를 간단하게 관찰할 수 있다.</p>
+</blockquote>
+<p>다음 예제는 <code>Car</code>의 하위클래스인 <code>AutomaticCar</code>를 정의한 것이다. <code>AutomaticCar</code> 클래스는 자동 기어박스를 가진 차를 나타내고, 자동 기어박스는 현재 속도에 따라 자동적으로 적절한 기어를 선택한다. 또한 <code>AutomaticCar</code>의 커스텀 <code>description()</code>는 현재 기어 정보를 포함하여 출력하도록 구현했다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AutomaticCar</span>: <span class="hljs-title">Car</span> </span>{
+  <span class="hljs-keyword">var</span> gear = <span class="hljs-number">1</span>
+  <span class="hljs-keyword">override</span> <span class="hljs-keyword">var</span> speed: <span class="hljs-type">Double</span> {
+    <span class="hljs-keyword">didSet</span> {
+    gear = <span class="hljs-type">Int</span>(speed / <span class="hljs-number">10.0</span>) + <span class="hljs-number">1</span>
+    }
+  }
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">description</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.description() + <span class="hljs-string">" in gear <span class="hljs-subst">\(gear)</span>"</span>
+  }
+}
+</code></pre>
+<p><code>AutomaticCar</code> 인스턴스의 <code>speed</code> 프로퍼티를 설정할 때마다, 프로퍼티의 <code>didSet</code> 관찰자는 새로운 속도 값에 따라 자동적으로 <code>gear</code> 프로퍼티에 적절한 기어값을 할당한다. 이 관찰자는 새로운 <code>speed</code> 값을 <code>10</code>으로 나눈 후 반올림한 정수를 기어값으로 선택한다. speed가 <code>10.0</code>이면 gear에<code>1</code>이 할당되고, speed가 <code>35.0</code>이면 gear에 <code>4</code>가 할당된다.</p>
+<pre><code class="hljs">let automatic = AutomaticCar()
+automatic<span class="hljs-selector-class">.speed</span> = <span class="hljs-number">35.0</span>
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"AutomaticCar: \(automatic.description())"</span>)</span></span>
+<span class="hljs-comment">// AutomaticCar: 4 wheels; up to 5 passengers; traveling at 35.0 mph in gear 4</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="오버라이드-방지"></a><a href="#오버라이드-방지" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오버라이드 방지</h2>
+<p>메서드, 프로퍼티, 서브스크립트를 오버라이딩하지 못하도록 하려면, <em>final</em>로 표시하면 된다. <code>@final</code> 속성을 첫 키워드 앞에 표시한다. (예, <code>@final var</code>, <code>@final func</code>, <code>@final class func</code>, <code>@final subscript</code>)</p>
+<p>하위클래스 내에 final 메서드, 프로퍼티, 서브스크립트를 오버라이드하면 컴파일 시간 에러(compile-time error)를 발생한다. 확장 클래스 안에 추가한 메서드, 프로퍼티, 서브스크립트도 final로 표시될 수 있다.</p>
+<p>전체 클래스를 final로 만들려면 <code>class</code> 키워드 앞에 <code>@final</code>을 표시(<code>@final class</code>)하면 된다. 하위클래스를 final 클래스로 만들려면 컴파일 시간 에러를 발생할 것이다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter14.html">← 서브스크립트 (Subscripts)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#베이스-클래스-정의">베이스 클래스 정의</a></li><li><a href="#하위클래스-정의">하위클래스 정의</a></li><li><a href="#오버라이딩">오버라이딩</a><ul class="toc-headings"><li><a href="#상위클래스의-메서드-프로퍼티-서브스크립트에-접근하는-방법">상위클래스의 메서드, 프로퍼티, 서브스크립트에 접근하는 방법</a></li><li><a href="#메서드-오버라이딩">메서드 오버라이딩</a></li><li><a href="#프로퍼티-오버라이딩">프로퍼티 오버라이딩</a></li></ul></li><li><a href="#오버라이드-방지">오버라이드 방지</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

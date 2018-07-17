@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>클로저 (Closures) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : inureyes (inureyes@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="클로저 (Closures) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : inureyes (inureyes@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">클로저 (Closures)</h1></header><article><div><span><blockquote>
+<p>Translator : inureyes (<a href="mailto:inureyes@gmail.com">inureyes@gmail.com</a>)</p>
+</blockquote>
+<p>클로저는 사용자의 코드 안에서 전달되거나 사용할 수 있는 기능을 포함한 독립적인 블록(block)입니다. Swift에서의 클로저는 C 및 Objective-C 의 blocks와 유사하며, 다른 언어의 람다(lambda)와도 유사합니다.
+클로저는 자신이 정의된 컨텍스트 (context) 로부터 임의의 상수 및 변수의 참조(reference) 를 획득 (capture)하고 저장할 수 있습니다. <em>(주: 클로저의 경우 클로저 바로 밖의 scope 의 상수 및 변수에 접근할 수 있다는 이야기입니다)</em> 이렇게 상수 및 변수를 제약하는 특징때문에 클로저라는 이름이 되었습니다. Swift는 획득 과정의 메모리 관리를 모두 제어해줍니다.</p>
+<blockquote>
+<p>NOTE
+&quot;획득&quot; 개념에 대해서 익숙하지 않아도 걱정하지 마세요. 아래의 <a href="">값 획득하기</a> 항목에서 자세히 다룰 것입니다.</p>
+</blockquote>
+<p>함수 에서 소개된 전역 및 중첩 함수들은 사실 클로저의 특수한 경우들입니다. 클로저는 아래의 세가지 중 하나의 형태입니다.</p>
+<ul>
+<li>전역 함수는 이름이 있지만 아무 값도 획득하지 않는 클로저입니다.</li>
+<li>중첩 함수들은 이름이 있고, 내부의 함수의 값을 획득할 수 있는 클로저입니다.</li>
+<li>클로저 표현식은 자신을 둘러싼 컨텍스트에서 값을 획득할 수 있는 가벼운 문법으로 작성된 클로저입니다.</li>
+</ul>
+<p>Swift의 클로저 표현식은 일반적인 경우에 대한 간략하고 명확한 구문을 깨끗하고 명확한 스타일로 최적화와 함께 제공합니다. 이러한 최적화는 아래의 항목을 포함합니다.</p>
+<ul>
+<li>컨텍스트로부터 인자 및 반환 값을 유추</li>
+<li>단일 표현식 클로저로부터 명확한 반환값</li>
+<li>단축 인자 이름</li>
+<li>클로저 문법 추적</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="클로저-표현식-closure-expressions"></a><a href="#클로저-표현식-closure-expressions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클로저 표현식 (Closure expressions)</h3>
+<p>중첩 함수에서 소개된 중첩 함수들은 더 큰 함수의 일부로서 동작하는 자체 포함된 코드 블럭을 명명하거나 정의하는 편리한 방법입니다. 그러나, 종종 완전한 선언이나 이름이 없는 더 짧은 버전의 함수같은 구조를 만드는 것이 유용할 때가 있습니다. 이는 다른 함수들을 하나 또는 그 이상의 인자로 받는 함수를 만들때 특히 그렇습니다.</p>
+<p>클로저 표현식들은 인라인 클로저를 간단명료하고 집중적인 문법으로 작성하는 방법입니다. 클로저 표현식은 명확성과 의도를 잃지 않는 선에서 가장 간결한 형태로 클로저를 작성하기 위한 몇가지 문법 최적화를 제공합니다. 아래의 클로저 표현식 예에서 sorted 함수를 각 단계마다 동일한 기능을 표현하지만 더 간결해지도록 몇가지 단계를 거쳐 개량하는 최적화를 소개합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="정렬-함수"></a><a href="#정렬-함수" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정렬 함수</h3>
+<p>Swift 의 표준 라이브러리는 당신에 제공한 정렬 클로저(sorting closure)의 결과값에 기반하여 알려진 값들의 배열을 정렬하는 <code>sorted</code> 라는 함수를 제공합니다. 정렬 과정이 끝나면, sorted 함수는 원래와 동일한 타입(type) 및 크기를 갖지만 그 요소들은 올바르게 정렬된 새로운 배열을 반환합니다.</p>
+<p>아래의 클로저 표현식 예는 <code>string</code> 값으로 구성된 배열을 알파벳 역순으로 정렬합니다.</p>
+<p>이 배열이 정렬될 배열입니다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">names</span> = [<span class="hljs-string">"Chris"</span>, <span class="hljs-string">"Alex"</span>, <span class="hljs-string">"Ewa"</span>, <span class="hljs-string">"Barry"</span>, <span class="hljs-string">"Daniella"</span>]
+</code></pre>
+<p><code>sorted</code> 함수는 두 매개변수를 받습니다.</p>
+<ul>
+<li>알려진 타입(type)의 값들로 된 배열</li>
+<li>동일한 타입의 두 인자를 받아 첫번째 값이 두번째 값보다 앞에 나와야 할 지의 여부를 알려주는 <code>Bool</code> 값을 돌려주는 클로저. 정렬 클로저는 만약 첫 값이 두번째 값보다 앞에 나와야 할 경우 <code>true</code>를, 나머지 경우에는 <code>false</code>를 반환합니다.</li>
+</ul>
+<p>이 예제는 <code>String</code> 값들의 배열을 정렬하므로, 정렬 클로저는 타입 <code>(String, String) -&gt; Bool</code> 타입의 함수가 되어야 합니다.</p>
+<p>정렬 클로저를 제공하는 한가지 방법은 정확한 타입과 함께 일반적인 함수를 작성하고, 이 함수를 <code>sorted</code> 함수의 두번째 인자로 사용하는 방법입니다.</p>
+<pre><code class="hljs"><span class="hljs-symbol">func</span> <span class="hljs-keyword">backwards(s1: </span><span class="hljs-keyword">String, </span><span class="hljs-built_in">s2</span>: <span class="hljs-keyword">String) </span>-&gt; <span class="hljs-keyword">Bool </span>{
+    return <span class="hljs-built_in">s1</span> &gt; <span class="hljs-built_in">s2</span>
+}
+<span class="hljs-symbol">var</span> <span class="hljs-keyword">reversed </span>= sorted(names, <span class="hljs-keyword">backwards)
+</span>// <span class="hljs-keyword">reversed </span>i s equal to [<span class="hljs-string">"Ewa"</span>, <span class="hljs-string">"Daniell a"</span>, <span class="hljs-string">"Chris"</span>, <span class="hljs-string">"Barry"</span>, <span class="hljs-string">"Alex"</span>]
+</code></pre>
+<p>첫 번째 문자열 (S1)이 두 번째 문자열 (S2)보다 큰 경우, <code>backwards</code> 함수는 정렬된 배열에서 <code>s1</code>이 <code>s2</code>보다 먼저 나와야 함을 의미하는 <code>true</code>  를 반환합니다. <code>string</code> 안의 <code>character</code>들의 경우, &quot;더 크다&quot;는 의미는 &quot;알파벳에서 나중에 등장하는&quot; 것을 의미합니다. 이는 글자 &quot;B&quot;가 글자 &quot;A&quot;보다 &quot;더 크다&quot;는 의미이며, 문자열 &quot;Tom&quot; 이 문자열 &quot;Tim&quot; 보다 크다는 의미입니다. 따라서 이 함수는 &quot;Barry&quot;가 &quot;Alex&quot;보다 앞에 오게 되는 알파벳 역순 정렬 결과를 주게 됩니다.</p>
+<p>그러나, 이것은 본질적으로 하나의 표현 함수 <code>(a &gt; b)</code> 인 기능을 작성하기엔 다소 장황한 방법입니다. 이 예제의 경우 클로저 표현식 문법을 사용하여 인라인 정렬 클로저를 작성하는 것이 더 바람직할 것입니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="클로저-표현식-문법-closure-expression-syntax"></a><a href="#클로저-표현식-문법-closure-expression-syntax" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클로저 표현식 문법  (Closure Expression Syntax)</h3>
+<p>클로저 표현식 문법은 아래의 일반 형식을 따릅니다:</p>
+<pre><code class="hljs">{ ( parameters ) -&gt; return<span class="hljs-built_in"> type </span><span class="hljs-keyword">in</span> 
+    statements
+}
+</code></pre>
+<p>클로저 표현식 문법은  상수 인자, 변수 인자 및 <code>inout</code> 인자를 사용할 수 있습니다. 기본 값은 주어지지 않습니다. 만약 당신이 가변 인자에 이름을 주고 마지막 매개 변수에 위치할 경우 가변 인자도 사용할 수 있습니다. 튜플 또한 인자 타입 및 반환 타입으로 사용할 수 있습니다.</p>
+<p>아래의 예는 앞에서 소개한 <code>backwards</code> 함수의 클로저 표현 판입니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">reversed </span>= sorted(names, { (<span class="hljs-built_in">s1</span>: <span class="hljs-keyword">String, </span><span class="hljs-built_in">s2</span>: <span class="hljs-keyword">String) </span>-&gt; <span class="hljs-keyword">Bool </span>in
+    return <span class="hljs-built_in">s1</span> &gt; <span class="hljs-built_in">s2</span>
+})
+</code></pre>
+<p>이 인라인 클로저에 대한 인자의 및 리턴 타입의 정의는 <code>backwards</code> 함수의 정의와 동일합니다. 두 경우 모두, <code>(s1: String, s2: String) -&gt; Bool</code> 로 쓸 수 있습니다. 그러나, 인라인 클로저 표현식의 경우, 인자와 리턴 타입은 중괄호 안에 쓰여야 하며, 밖에 쓰일 수는 없습니다.</p>
+<p>클로저의 내용은 <code>in</code> 키워드로 시작합니다. 이 키워드는 클로저의 인자 및 반환 타입 정의가 끝났으며, 클로저의 내용이 시작됨을 지시합니다.</p>
+<p>클로저의 내용이 매우 짧기 때문에, 심지어 한 줄에도 쓸 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">reversed </span>= sorted(names, { (<span class="hljs-built_in">s1</span>: <span class="hljs-keyword">String, </span><span class="hljs-built_in">s2</span>: <span class="hljs-keyword">String) </span>- &gt; <span class="hljs-keyword">Bool </span>in return <span class="hljs-built_in">s1</span> &gt; <span class="hljs-built_in">s2</span> } )
+</code></pre>
+<p>이 구문은 <code>sorted</code> 함수의 전체적인 호출이 똑같이 유지됨을 보여줍니다. 괄호쌍은 여전히 함수의 전체 인자를 감싸고 있습니다. 그러나 그 중 하나의 인자는 이제 인라인 클로저입니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="컨텍스트로부터-타입-유추하기-inferring-type-from-context"></a><a href="#컨텍스트로부터-타입-유추하기-inferring-type-from-context" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>컨텍스트로부터 타입 유추하기 (Inferring Type From Context)</h3>
+<p>정렬 클로저가 함수의 인자로 전달되기 때문에, Swift는 클로저의 인자 타입과 <code>sorted</code> 함수의 두번째 인자의 타입으로부터 반환되는 값의 타입을 유추할 수 있습니다. 이 인자는 <code>(String, String) -&gt; Bool</code> 타입의 함수를 기대합니다. 이는 <code>String, String</code> 및 <code>Bool</code> 타입이 클로저 표현형의 정의의 일부로 쓰일 필요가 없음을 의미합니다. 모든 타입이 유추 가능하기 때문에, 반환 화살표 (-&gt;) 와 인자 이름을 감싼 괄호 또한 제외할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">reversed </span>= sorted(names, { <span class="hljs-built_in">s1</span>, <span class="hljs-built_in">s2</span> in return <span class="hljs-built_in">s1</span> &gt; <span class="hljs-built_in">s2</span> } )
+</code></pre>
+<p>인라인 클로저 표현 형태로 클로저를 함수에 전달할 경우 인자와 반환 값의 타입을 유추하는 것이 언제나 가능합니다. 결과적으로, 인라인 클로저를 최대한의 형태로 명시적으로 기술할 일은 거의 없을 것입니다.</p>
+<p>그럼에도 불구하고, 당신이 필요로 하거나, 또한 코드를 읽는 사람들에게 모호함을 주고 싶지 않을 경우 타입을 명시적으로 기술할 수 있습니다. <code>sorted</code> 함수의 경우, 클로저의 목적은 정렬이 일어난다는 사실로부터 명확하게 보이며, 독자들은 문자열들의 배열을 정렬하는 것을 돕기 떄문에 이 클로저가 <code>String</code> 값과 함께 돌아간다고 가정하는 것이 안전합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="단일-표현식-클로저로부터의-암시적-반환-implicit-returns-from-single-expression-closures"></a><a href="#단일-표현식-클로저로부터의-암시적-반환-implicit-returns-from-single-expression-closures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>단일 표현식 클로저로부터의 암시적 반환 ( Implicit Returns from Single-Expression Closures)</h3>
+<p>단일 표현식 클로저는 앞의 예에서 정의할 때 <code>return</code> 키워드를 생략하여 단일 표현식의 결과를 암시적으로 반환할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">reversed </span>= sorted(names, { <span class="hljs-built_in">s1</span>, <span class="hljs-built_in">s2</span> in <span class="hljs-built_in">s1</span> &gt; <span class="hljs-built_in">s2</span> } )
+</code></pre>
+<p>sorted 함수의 두번째 인자의 함수 형은 클로저가 <code>Bool</code> 값을 반드시 반환해야 함을 명확하게 해 줍니다. 클로저의 내용이 <code>Bool</code> 값을 반환하는 단일 표현식 <code>(s1 &gt; s2)</code> 이기 때문에, 이 경우 애매모호함이 발생하지 않으며, <code>return</code> 키워드는 생략이 가능합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="단축-인자-이름들-shorthand-argument-names"></a><a href="#단축-인자-이름들-shorthand-argument-names" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>단축 인자 이름들 ( Shorthand Argument Names)</h3>
+<p>Swift는 자동으로 단축 인자 이름을 인라인 클로저에 제공하며, 클로저의 인자들을 <code>$0</code>, <code>$1</code>, <code>$2</code> 등등의 방식으로 참조할 수 있습니다.</p>
+<p>만약 이러한 단축 인자 이름들을 클로저 표현식에서 사용할 경우, 클로저 인자 리스트를 클로저의 정의에서 생략할 수 있으며, 단축 인자들의 번호 및 타입은 기대되는 함수 타입으로부터 추정될 것입니다. 클로저 표현식이 클로저 내용에 완전히 표현될 수 있으므로 <code>in</code> 키워드 또한 생략할 수 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-attr">reversed</span> = sorted(names, { <span class="hljs-variable">$0</span> &gt; <span class="hljs-variable">$1</span> } )
+</code></pre>
+<p>여기서 <code>$0</code> 와 <code>$1</code> 은 클로저의 첫번째와 두번째 <code>String</code> 매개변수를 가리킵니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="연산자-함수들-operator-functions"></a><a href="#연산자-함수들-operator-functions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>연산자 함수들 ( Operator Functions )</h3>
+<p>사실 위의 클로저 표현식은 <em>더 짧아질 수도</em> 있습니다. Swift 의 <code>String</code> 타입은 <code>String</code>에 특화된 크기 비교 연산자 (&gt;) 를 두 <code>String</code> 인자를 갖는 함수로 정의하고 있으며, <code>Bool</code> 타입을 반환합니다. 이 연산자는 <code>sorted</code> 함수의 두번째 인자를 위해 필요한 함수형과 정확히 일치합니다. 그러므로, 이 크기 비교 연산자를 바로 전달하면 Swift 는 사용자가 <code>String</code> 전용의 구현체를 사용하려고 한다고 유추합니다.</p>
+<pre><code class="hljs"><span class="hljs-attr">reversed</span> = sorted(names, &gt; )
+</code></pre>
+<p>연산자 함수에 대해 더 많은 내용은 <a href="">연산자 함수</a> 항목을 참조하시기 바랍니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="후행-클로저-trailing-closures"></a><a href="#후행-클로저-trailing-closures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>후행 클로저 ( Trailing Closures )</h2>
+<p>만약 클로저 표현식을 함수에 함수의 마지막 인자로 전달할 때 클로저 표현식이 긴 경우, 대신에 후행 클로저 (Trailing closure) 를 작성하는 것이 유용할 수 있습니다. 후행 클로저는 함수 호출 괄호의 밖 (또는 뒤) 에 쓰여져서 함수를 지원하는 클로저 표현식입니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">func</span> <span class="hljs-selector-tag">someFunctionThatTakesAClosure</span>(<span class="hljs-attribute">closure</span>: () -&gt; ()) {
+    <span class="hljs-comment">// function body goes here</span>
+}
+<span class="hljs-comment">// here's how you call this function without using a trailing closure:</span>
+
+<span class="hljs-selector-tag">someFunctionThatTakesAClosure</span>({
+    <span class="hljs-comment">// closure's body goes here</span>
+})
+
+<span class="hljs-comment">// here's how you call this function with a trailing closure instead:</span>
+
+<span class="hljs-selector-tag">someFunctionThatTakesAClosure</span>() {
+    <span class="hljs-comment">// trailing closure's body goes here</span>
+}
+</code></pre>
+<blockquote>
+<p>NOTE
+클로저 표현식이 함수의 하나뿐인 인자이며 이 표현식을 후행 클로저로 작성할 경우, 함수를 호출할때 함수 이름의 뒤에 괄호쌍 () 을 쓸 필요는 없습니다.</p>
+</blockquote>
+<p>위의 <a href="">클로저 표현식 문법</a>의 문자열 정렬 클로저는 <code>sorted</code> 함수의 괄호 밖에 후행 클로저로 작성될 수도 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-attr">reversed</span> = sorted(names) { <span class="hljs-variable">$0</span> &gt; <span class="hljs-variable">$1</span> }
+</code></pre>
+<p>후행 클로저는 클로저가 충분히 길어서 줄 안이나 한 줄 정도로 기술할 수 없는 경우에 아주 유용합니다. 예를 들어, Swift의 <code>Array</code> 타입은 클로저 표현식을 하나의 인자로 받는 <code>map</code> 메소드를 제공합니다. 클로저는 행렬 안의 각 아이템마다 한 번씩 호출되고, 그 아이템의 (다른 타입일 수도 있는) 새롭게 매핑된 값을 반환합니다. 매핑의 동작과 반환값의 타입은 클로저에 의하여 지정됩니다.</p>
+<p><code>map</code> 메소드는 제공된 클로저를 각 행렬 항목마다 적용한 후, 새롭게 매핑된 값들이 원래 행렬의 해당 값들의 순서와 같도록 배치된 새 행렬을 반환합니다.</p>
+<p><code>Int</code> 값들로 구성된 행렬을 <code>String</code> 값들로 구성된 행렬로 변환하는 map 메소드를 후행 클로저와 함께 사용하는 예를 보겠습니다. 행렬 <code>[16,58,510]</code> 이 새로운 행렬인 <code>[&quot;OneSix&quot;, &quot;FiveEight&quot;, &quot;FiveOneZero&quot;]</code> 를 생성하기 위해 사용되었습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">digitNames</span> = [
+    <span class="hljs-number">0</span>: <span class="hljs-string">"Zero"</span>, <span class="hljs-number">1</span>: <span class="hljs-string">"One"</span>, <span class="hljs-number">2</span>: <span class="hljs-string">"Two"</span>,   <span class="hljs-number">3</span>: <span class="hljs-string">"Three"</span>, <span class="hljs-number">4</span>: <span class="hljs-string">"Four"</span>,
+    <span class="hljs-number">5</span>: <span class="hljs-string">"Five"</span>, <span class="hljs-number">6</span>: <span class="hljs-string">"Six"</span>, <span class="hljs-number">7</span>: <span class="hljs-string">"Seven"</span>, <span class="hljs-number">8</span>: <span class="hljs-string">"Eight"</span>, <span class="hljs-number">9</span>: <span class="hljs-string">"Nine"</span>
+]
+<span class="hljs-keyword">let</span> <span class="hljs-attr">numbers</span> = [<span class="hljs-number">16</span>, <span class="hljs-number">58</span>, <span class="hljs-number">510</span>]
+</code></pre>
+<p>위의 코드는 정수와 그 수들의 영어 표현사이의 매핑 사전을 생성합니다. 또한 문자열로 변환될 정수 행렬도 정의합니다.</p>
+<p>이제 <code>numbers</code> 행렬을 <code>map</code> 메소드에 후행 클로저를 클로저 표현식으로 전달하는 방법으로 <code>String</code> 값의 행렬을 생성하기 위해 사용할 수 있습니다. <code>map</code> 메소드가 단 하나의 인자만을 받으므로 <code>numbers.map</code> 을 호출할 때 <code>map</code> 뒤에 어떤 괄호도 필요하지 않음을 기억하세요. 후행 클로저가 이 인자로 제공됩니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> strings = numbers.<span class="hljs-keyword">map</span> {
+    (var <span class="hljs-keyword">number</span>) -&gt; String in
+    var output = <span class="hljs-string">""</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">number</span> &gt; <span class="hljs-number">0</span> {
+        output = digitNames[<span class="hljs-keyword">number</span> % <span class="hljs-number">10</span>]! + output
+        <span class="hljs-keyword">number</span> /= <span class="hljs-number">10</span>
+    }
+    <span class="hljs-keyword">return</span> output
+}
+// strings <span class="hljs-keyword">is</span> inferred <span class="hljs-keyword">to</span> <span class="hljs-keyword">be</span> of <span class="hljs-built_in">type</span> String[]
+// its value <span class="hljs-keyword">is</span> [<span class="hljs-string">"OneSix"</span>, <span class="hljs-string">"FiveEight"</span>, <span class="hljs-string">"FiveOneZero"</span>]
+</code></pre>
+<p><code>map</code> 함수는 클로저 표현식을 각 행렬의 항목마다 호출합니다. 클로저의 입력 인자, <code>number</code>, 의 타입을 지정할 필요는 없는데, 이는 타입을 매핑될 배열의 값으로부터 추측할 수 있기 때문입니다.</p>
+<p>이 예제에서, 클로저의 <code>number</code> 인자는 <a href="">상수 및 변수 파라미터</a> 에서 설명한 변수 인자 (variable parameter) 로 정의되었으므로, 인자의 값이 새로운 지역 변수를 정의하고 <code>number</code> 값을 그 변수에 할당하는 방법 대신 클로저 본문에서 변경될 수 있습니다. 또한 클로저 표현식은 매핑된 결과 배열의 타입을 지시하기 위해 <code>String</code> 의 반환 타입을 지정합니다.</p>
+<p>클로저 표현 식은 호출될 때 마다 <code>output</code> 이라는 문자열을 생성합니다. <code>number</code> 의 마지막 숫자를 나머지 연산자 <code>(number % 10)</code> 를 사용하여  알아낸 후, 이 숫자에 해당되는 문자열을 <code>digitNames</code> 사전에서 찾습니다.</p>
+<blockquote>
+<p>NOTE
+<code>digitNames</code> 사전의 첨자 (subscript) (주: 적당한 표현이 없어서 의미적으로 가까운 '첨자'로 번역)에 접근할 때 느낌표 (!) 가 붙는데, 이 이유는 사전의 첨자 반환값은 사전 안에 해당되는 키값이 없어서 열람이 실패했을 경우 반환하는 선택적인 값이 있기 때문입니다. 위의 예에서, <code>number % 10</code> 은 <code>digitNames</code> 사전을 위해 언제나 유효한 첨자 키값을 제공하는 것이 보장되어 있으므로, 느낌표는 첨자의 선택적인 반환 값에 보관된 값을 강제로 풀어 <code>String</code> 값을 알기 위해 사용합니다.</p>
+</blockquote>
+<p><code>digitNames</code> 사전으로부터 가져온 문자열은 <code>output</code>의 앞부분에 추가되며, 숫자의 역순으로 해당되는 문자열이 효율적으로 만들어집니다. ( <code>number % 10</code> 표현식은 16의 경우 6, 58의 경우 8, 510일 경우 0을 돌려줍니다.)</p>
+<p><code>number</code> 변수는 이후 10으로 나눠집니다. 이 변수가 정수이기 때문에, 나누기 과정에서 소숫점 아랫 값이 버려집니다. 따라서 16은 1이, 58은 5가, 510은 51이 됩니다.</p>
+<p>이 과정은 <code>number /=10</code> 이 0이 될 때까지 반복되며, 이때 <code>output</code> 문자열이 클로저로부터 반환되고, <code>map</code> 함수에 의하여 출력 행렬에 더해집니다.</p>
+<p>이 예제에서 사용한 후행 클로저 구문은 전체 클로저를 <code>map</code> 함수의 외부 괄호로 전체 클로저를 감쌀 필요 없이, 클로저의 기능을 클로저가 지원하는 함수의 바로 뒤에서 깔끔하게 캡슐화합니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="값-획득하기-capturing-values"></a><a href="#값-획득하기-capturing-values" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>값 획득하기 (Capturing Values)</h2>
+<p>클로저는 자신이 정의된 주변 컨텍스트로부터 상수 및 변수의 값을 획득할 수 있습니다. 클로저는 이러한 상수와 변수들을 원래 상수와 변수들이 정의된 범위 (scope) 가 더이상 존재하지 않는 경우에조차도 값을 참조하거나 수정할 수 있습니다.</p>
+<p>Swift에서 클로저의 가장 간단한 형태는 다른 함수의 본문 안에 작성된 중첩 함수입니다. 중첩 함수는 바깥 함수의 모든 인자를 획득할 수 있으며, 또한 바깥 함수 내에서 정의된 모든 상수 및 변수를 획득할 수 있습니다.</p>
+<p>아래는 <code>Incrementor</code>라는 중첩 함수를 포함한 <code>makeIncrementor</code> 예입니다. 중첩된 <code>incrementor</code> 함수는 <code>runningTotal</code> 및 <code>amount</code> 의 두 값을 자신을 둘러싼 컨텍스트로부터 획득합니다. 이 두 값을 획득한 후, <code>incrementor</code>는 호출될 때 마다 <code>runningTotal</code> 을 <code>mount</code> 만큼 증가시키는 클로저로써 <code>makeIncrementor</code> 로부터 반환됩니다.</p>
+<pre><code class="hljs">func makeIncrementor<span class="hljs-function"><span class="hljs-params">(forIncrement amount: Int)</span> -&gt;</span> <span class="hljs-function"><span class="hljs-params">()</span> -&gt;</span> Int {
+    <span class="hljs-keyword">var</span> runningTotal = <span class="hljs-number">0</span>
+    func incrementor<span class="hljs-function"><span class="hljs-params">()</span> -&gt;</span> Int {
+        runningTotal += amount
+        <span class="hljs-keyword">return</span> runningTotal
+    }
+    <span class="hljs-keyword">return</span> incrementor
+}
+</code></pre>
+<p><code>makeIncrementor</code> 의 반환 타입은 <code>() -&gt; Int</code> 입니다. 이는 간단한 값 대신 함수를 반환함을 의미합니다. 반환되는 함수는 인자가 하나도 없으며, 호출될 때 마다 <code>Int</code> 값을 반환합니다. 어떻게 함수가 다른 함수를 반환할 수 있는가에 대해서는 <a href="">반환 타입으로서의 함수 타입</a> 을 참조하시기 바랍니다.</p>
+<p><code>makeIncrementor</code> 함수는 <code>runningTotal</code> 정수 변수를 정의하며, 이 변수는 현재 실행중인 <code>incrementor</code> 의 총합을 보관하고 반환될 변수입니다. 이 변수는 0으로 초기화됩니다.</p>
+<p><code>makeIncrementor</code> 함수는 <code>Int</code> 인자를 외부 이름인 <code>forIncrement</code> 와 지역 이름인  <code>amount</code> 로 받습니다. 이 인자로 전달된 인수는 <code>runningTotal</code> 이 <code>incrementor</code> 함수가 호출될 때 마다 얼마만큼씩 증가해야 할 지 지정합니다.</p>
+<p><code>makeIncrementor</code> 는 <code>incrementor</code>라는 실제 증가를 수행하는 중첩 함수를 정의합니다. 이 함수는 간단하게 amount 를 runningTotal 에 더하고, 결과값을 반환합니다.</p>
+<p>고립된 상황을 생각해보면, 중첩함수 <code>incrementor</code>는 독특하게 보입니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementor</span><span class="hljs-params">()</span> -&gt; <span class="hljs-title">Int</span> {</span>
+    runningTotal += amount
+    <span class="hljs-keyword">return</span> runningTotal
+}
+</code></pre>
+<p><code>incrementor</code> 함수는 아무 인자도 갖고 있지 않으며, <code>runningTotal</code> 및 <code>amount</code> 를 함수 내에서 참조합니다. 이 함수는 자신을 둘러싼 함수로부터 <code>runningTotal</code> 및 <code>amount</code>를 획득하고 함수 안에서 그 값들을 사용합니다.</p>
+<p>이 함수는 <code>amount</code> 값을 수정하지 않기 때문에, <code>incrementor</code>는 <code>amount</code> 안에 보관된 값을 획득하고 그 복사판을 보관합니다. 이 값은 새로운 <code>incrementor</code> 함수에서도 계속 이어져 보관됩니다.</p>
+<p>그러나, 이 함수가 <code>runningTotal</code> 변수를 호출시마다 변경하기 때문에, <code>incrementor</code>는 현재 <code>runningTotal</code>의 복사본 대신 값의 참조를 획득합니다. 참조 획득은 <code>runningTota</code>l 이 <code>makeIncrementor</code> 가 끝난 이후에도 사라지지 않음을 보증하며, <code>incrementor</code> 함수가 이후 호출될 때도 연속적으로 사용될 수 있음을 보증합니다.</p>
+<blockquote>
+<p>NOTE
+Swift는 어떤 변수가 참조 로 획득되고 어떤 변수가 복사값으로 획득될지 판단합니다. 사용자는 <code>amount</code> 및 <code>runningTotal</code> 이 <code>incrementor</code> 중첩 함수에서 쓰일지의 여부를 명기할 필요가 없습니다. Swift는 또한 <code>runningTotal</code> 이 더이상 <code>incrementor</code> 함수로부터 필요로하지 않을 때 폐기하는 모든 메모리 관리 과정을 담당합니다.</p>
+</blockquote>
+<p><code>makeIncrementor</code> 의 사용 예입니다.</p>
+<pre><code class="hljs">let incrementByTen = makeIncrementor(<span class="hljs-name">forIncrement</span>: <span class="hljs-number">10</span>)
+</code></pre>
+<p>이 예제는 호출될 때 마다  <code>runningTotal</code>에 10씩을 더하는 증가 함수를 참조하는 <code>incrementByTen</code> 을 정의합니다. 이 함수를 여러번 부르면 동작을 볼 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-title">incrementByTen</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 10</span>
+<span class="hljs-function"><span class="hljs-title">incrementByTen</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 20</span>
+<span class="hljs-function"><span class="hljs-title">incrementByTen</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 30</span>
+</code></pre>
+<p>만약 새로운 <code>incrementor</code> 를 생성할 경우, 그 <code>incrementor</code>는 새롭고 독립적인 <code>runningTotal</code> 변수로의 참조를 갖게 됩니다. 아래의 예제에서, <code>incrementBySeven</code>은 새로운 <code>runningTotal</code> 변수의 참조를 획득하며, 이 변수는 <code>incrementByTen</code>에서 획득한 변수와 연결되지 않습니다.</p>
+<pre><code class="hljs">let incrementBySeven = makeIncrementor(forIncrement: <span class="hljs-number">7</span>)
+<span class="hljs-function"><span class="hljs-title">incrementBySeven</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 7</span>
+<span class="hljs-function"><span class="hljs-title">incrementByTen</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 40</span>
+</code></pre>
+<blockquote>
+<p>NOTE
+만약 클로저를 클래스 인스턴스의 프로퍼티로 지정하고, 클로저가 인스턴스 또는 인스턴스의 멤버를 참조하여 인스턴스를 획득할 경우, 클로저와 인스턴스의 강력한 참조 순환을 만들게 됩니다. Swift는 이러한 강력한 참조 순환을 깨기 위하여 캡처 리스트 (capture list) 를 사용합니다. 더 많은 정보는 <a href="">클로저의 강력한 참조 순환</a> 을 참조하시기 바랍니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="클로저는-참조-타입-closures-are-reference-types"></a><a href="#클로저는-참조-타입-closures-are-reference-types" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클로저는 참조 타입 (Closures Are Reference Types)</h2>
+<p>위의 예에서, <code>incrementBySeven</code> 및 <code>incrementByTen</code>은 상수입니다. 그러나 클로저로써 이러한 상수들은 여전히 그들이 획득한 <code>runningTotal</code> 변수를 증가시킬 수 있습니다. 이는 함수와 클로저가 참조 타입이기 때문입니다.</p>
+<p>함수나 클로저를 상수에 할당하는 것은, 실제로는 그 상수에 함수나 클로저를 가리키는 참조를 할당하는 것입니다. 위의 예에서, <code>incrementByTen</code>이 참조하는 것은 클로저를 가리키는 상수이며, 클로저 그 자체의 내용은 아닙니다.</p>
+<p>이는 또한 클로저를 두 개의 다른 상수나 변수에 할당하면, 두 상수나 변수들이 동일한 클로저를 참조하게 되는 것을 의미합니다.</p>
+<pre><code class="hljs">let alsoIncrementByTen = incrementByTen
+<span class="hljs-function"><span class="hljs-title">alsoIncrementByTen</span><span class="hljs-params">()</span></span>
+<span class="hljs-comment">// returns a value of 50</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter8.html">← 함수 (Functions)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#후행-클로저-trailing-closures">후행 클로저 ( Trailing Closures )</a></li><li><a href="#값-획득하기-capturing-values">값 획득하기 (Capturing Values)</a></li><li><a href="#클로저는-참조-타입-closures-are-reference-types">클로저는 참조 타입 (Closures Are Reference Types)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Swift 둘러보기 (Swift Tour) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : FlashMaestro (masterofflash@nate.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Swift 둘러보기 (Swift Tour) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : FlashMaestro (masterofflash@nate.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>WELCOME TO SWIFT</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Swift 둘러보기 (Swift Tour)</h1></header><article><div><span><blockquote>
+<p>Translator : FlashMaestro (<a href="mailto:masterofflash@nate.com">masterofflash@nate.com</a>)</p>
+</blockquote>
+<p>전통적으로 새로운 언어를 배울 때 첫번째 프로그램은 화면에 &quot;Hello, world&quot;란 구문을 출력해 보는 것입니다. Swift에서는 코드 한 줄로 이를 구현할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"Hello, world"</span>)</span></span>
+</code></pre>
+<p>C나 Objective-C에서 코드를 작성해본적이 있다면 이런 문법이 매우 익숙할 것입니다. Swift에서는 이 한줄의 코드가 완전한 프로그램입니다. 입/출력이나 문자열을 다루기 위한 함수들 같은 기능들을 사용하기 위해 분리된 라이브러리를 볼러올(Import) 필요가 없습니다. 전역 범위(Global scope)에 해당하는 코드는 프로그램의 진입점(entry point)로 사용되기 때문에, main 함수는 필요하지 않습니다. 또한 모든 문장끝에 세미콜론을 쓸 필요도 없습니다.</p>
+<p>이번 장에서는 다양한 프로그래밍 과제를 어떻게 완수해 나가는지 보여주면서 Swift로 어떻게 코드를 작성해야하는지에 대한 충분한 정보를 제공할 것입니다. 몇몇가지를 이해하지 못한다고 해서 걱정하지 마세요. 이번 장에서 소개되는 모든 것들은 책의 뒷 부분에서 자세히 설명할 것입니다.</p>
+<blockquote>
+<p>NOTE
+이번 장을 확실하게 이해하려면 Xcode 6의 Playground를 열어보세요. Playground는 코드를 수정하는 즉기 결과를 볼 수 있게 해줄 것입니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="간단한-값"></a><a href="#간단한-값" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>간단한 값</h2>
+<p><code>let</code>을 사용하면 상수를 만들고 <code>var</code>를 사용하면 변수를 만들 수 있습니다. 상수는 컴파일할 때 값을 알 필요가 없습니다. 그러나 한 번만 값을 할당할 수 있습니다. 이는 상수에 한 번만 값을 할당한 다음, 해당 상수 이름을 여러곳에 사용할 수 있다는 것을 의미합니다.</p>
+<pre><code class="hljs">var <span class="hljs-attr">myVariable</span> =<span class="hljs-number">42</span>
+<span class="hljs-attr">myVariable</span> = <span class="hljs-number">50</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">myConstant</span> = <span class="hljs-number">42</span>
+</code></pre>
+<p>상수나 변수 값 모두에 여러분이 할당하고 싶은 값의 타입(type)을 지정할 수 있습니다. 그러나 항상 타입을 명시해야만 하는 것은 아닙니다. 여러분이 상수나 변수를 만들 때 할당한 값을 통해 컴파일러는 해당 값의 타입을 추측합니다. 위의 예를 보면, <code>myVariable</code>이 정수 타입 값으로 초기화되었기 때문에 컴파일러는 정수 타입이라고 추측합니다.</p>
+<p>만약 초기값이 충분한 정보를 제공하지 못한 경우(혹은 초기값이 없는 경우) 특정한 타입을 변수명 뒤에 콜론으로 분리하여 써줘야 합니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">inplicitInteger</span> = <span class="hljs-number">70</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">implicitDouble</span> = <span class="hljs-number">70.0</span>
+<span class="hljs-keyword">let</span> explicitDouble: <span class="hljs-attr">Double</span>  = <span class="hljs-number">70</span>
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+명시적으로 <code>Float</code> 타입인 상수를 만들고 <code>4</code>라는 값을 할당해보자.</p>
+</blockquote>
+<p>할당된 값은 절대 다른 타입의 값으로 암시적인 변환을 할 수 없습니다. 만약 다른 타입의 값으로 변화해야 한다면 원하는 형태의 인스턴스로 만들어 타입을 명시해야 합니다.</p>
+<pre><code class="hljs"><span class="hljs-built_in">let</span> <span class="hljs-built_in">label</span> = <span class="hljs-string">"The width is "</span>
+<span class="hljs-built_in">let</span> <span class="hljs-built_in">width</span> = <span class="hljs-number">94</span>
+<span class="hljs-built_in">let</span> widthLabel = <span class="hljs-built_in">label</span> + String(<span class="hljs-built_in">width</span>)
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+마지막 줄에 명시한 <code>String</code> 타입 변환 부분을 제거해보자. 어떤 에러가 발생하는가?</p>
+</blockquote>
+<p>문자열 안에 값들을 쉽게 포함하는 방법도 있습니다. 괄호 안에 값을 쓰고 괄호 앞에 백슬래시()를 쓰면 됩니다. 예를 들면</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">apples</span> = <span class="hljs-number">3</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">oranges</span> = <span class="hljs-number">5</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">appleSummary</span> = <span class="hljs-string">"I have \(apples) apples."</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">fruitSummary</span> = <span class="hljs-string">"I have \(apples + oranges) pieces of fruit."</span>
+</code></pre>
+<p>과 같습니다.</p>
+<blockquote>
+<p>EXPERIMENT
+<code>\()</code> 를 이용해 문자열 안에 실수형 계산을 포함하도록 해보고, 인사말 안에 누군가의 이름을 넣어보자.</p>
+</blockquote>
+<p>배열(array)과 딕셔너리(dictionary)는 대괄호(<code>[]</code>)를 이용해 만들 수 있습니다. 그리고 대괄호 안에 인덱스(index)나 키(key)를 이용해 각각의 요소에 접근할 수 있습니다.</p>
+<pre><code class="hljs">var shoppingList = [<span class="hljs-string">"catfish"</span>, <span class="hljs-string">"water"</span>, <span class="hljs-string">"tulips"</span>, <span class="hljs-string">"blue paint"</span>]
+shoppingList[<span class="hljs-number">1</span>] = <span class="hljs-string">"bottle of water"</span>
+
+var occupations = [
+    <span class="hljs-string">"Malcolm"</span>:<span class="hljs-string">"Captain"</span>,
+    <span class="hljs-string">"Kaylee"</span>:<span class="hljs-string">"Mechanic"</span>,
+]
+occupations[<span class="hljs-string">"Jayne"</span>] = <span class="hljs-string">"Public Relations"</span>
+</code></pre>
+<p>빈 배열이나 딕셔너리를 만들려면, 이니셜라이저(initializer)를 사용하면 됩니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> emptyArray = <span class="hljs-keyword">String</span>[]()
+<span class="hljs-keyword">let</span> emptyDictionary = Dictionary&lt;<span class="hljs-keyword">String</span>, Float&gt;()
+</code></pre>
+<p>타입 정보를 추론할 수 없다면 빈 배열은 <code>[]</code>로 빈 딕셔너리는 <code>[:]</code>로 표기할 수 있습니다. 예를 들어 변수에 새로운 값을 할당하거나 함수에 인자(argument)로 전달할 때</p>
+<pre><code class="hljs"><span class="hljs-symbol">shoppingList</span> = [] // Went shopping <span class="hljs-keyword">and </span><span class="hljs-keyword">bought </span>everything.
+</code></pre>
+<p>와 같이 표현하면 됩니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="흐름-제어"></a><a href="#흐름-제어" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>흐름 제어</h2>
+<p><code>if</code>와 <code>switch</code>를 사용해서 조건문을 만들 수 있고 <code>for-in</code>, <code>for</code>, <code>while</code>, <code>do-while</code>을 이용해서 반복문을 만들 수 있습니다. 조건문과 반복문을 괄호로 감싸는 것은 선택사항입니다. 단, 중괄호로 해당 문 안(body)의 코드를 감싸는 것은 필수입니다.</p>
+<pre><code class="hljs"> let individualScores = [<span class="hljs-number">75</span>, <span class="hljs-number">43</span>, <span class="hljs-number">103</span>, <span class="hljs-number">87</span>, <span class="hljs-number">12</span>]
+ var teamScore = <span class="hljs-number">0</span>
+ for score in individualScores {
+    if score &gt; <span class="hljs-number">50</span> {
+        teamScore += <span class="hljs-number">3</span>
+    } else {
+        teamScore += <span class="hljs-number">1</span>
+    }
+}
+teamScore
+</code></pre>
+<p><code>if</code>문 안의 조건은 꼭 불리언(Boolean) 표현이어야 합니다. <code>if score {...}</code>라고 표현하면 0과의 비교를 암시하지 않기 때문에 에러가 발생합니다.</p>
+<p>빈 값을 가지고 <code>if</code>와 <code>let</code>을  함께 사용하는 것도 가능합니다. 이런 값들은 옵션으로 표현합니다. 옵션 값은 어떤 값을 가지거나 빈 값을 표현하는 <code>nil</code>로 지정하기도 합니다. 값의 타입 뒤에 물음표를 쓰면 옵셔널 값이라는 것을 나타냅니다.</p>
+<pre><code class="hljs"> <span class="hljs-keyword">var</span> optionalString: <span class="hljs-built_in">String</span>? = <span class="hljs-string">"Hello"</span>
+ optionalString == nil
+ 
+ <span class="hljs-keyword">var</span> optionalName: <span class="hljs-built_in">String</span>? = <span class="hljs-string">"John Appleseed"</span>
+ <span class="hljs-keyword">var</span> greeting = <span class="hljs-string">"Hello!"</span>
+ <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> name = optionalName {
+    greeting = <span class="hljs-string">"Hello, \(name)"</span>
+ }
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+<code>optionalName</code>의 값을 <code>nil</code>로 바꿔보자. 어떤 greeting의 값을 받을 수 있는가? <code>optionalName</code>에 할당된 값이 <code>nil</code>일 때 다른 값을 greeting에 할당하도록 <code>else</code> 절을 추가해보자.</p>
+</blockquote>
+<p>만약 옵션 값이 <code>nil</code>이라면 조건문은 거짓(false)이고 중괄호 안에 있는 코드를 실행하지 않고 건너뜁니다. 반대의 경우에는 중괄호 블록 안에서 사용할 수 있도록 <code>let</code> 뒷 부분의 상수에 값이 할당되고 옵셔널 값으로 사용할 수 있습니다.</p>
+<p><code>switch</code>문에는 정수 타입 값이나 동등 비교연산 뿐만 아니라 어떤 종류의 데이터든 사용할 수 있고 다양한 비교 연산자들을 사용할 수 있습니다.</p>
+<pre><code class="hljs">  <span class="hljs-keyword">let</span> vegetable = <span class="hljs-string">"red pepper"</span>
+  <span class="hljs-keyword">switch</span> vegetable {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"celery"</span>:
+      <span class="hljs-keyword">let</span> vegetableComment = <span class="hljs-string">"Add some raisins and make ants on a log."</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"cucumber"</span>, <span class="hljs-string">"watercress"</span>:
+      <span class="hljs-keyword">let</span> vegetableComment = <span class="hljs-string">"That would make a good tea sandwich."</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> x <span class="hljs-keyword">where</span> x.hasSuffix(<span class="hljs-string">"pepper"</span>):
+      <span class="hljs-keyword">let</span> vegetableComment = <span class="hljs-string">"Is it a spicy <span class="hljs-subst">\(x)</span>?"</span>
+  <span class="hljs-keyword">default</span>:
+      <span class="hljs-keyword">let</span> vegetableComment = <span class="hljs-string">"Everything tastes good in soup."</span>
+  }
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+switch문에서 <code>default</code> 부분을 제거해 보자. 어떤 에러가 발생하는가?</p>
+</blockquote>
+<p>switch문은 case문의 조건과 일치할 때 case문 아래에 속한 코드를 실행하 switch문을 빠져나옵니다. 이후에 나오는 case문은 자동적으로 실행하지 않기 때문에 코드 끝에 break 키워드를 명시하지 않아도 됩니다.</p>
+<p><code>for-in</code> 문을 사용하면 각각 키/값 쌍으로 사용할 수 있는 이름들의 쌍을 이용해 딕셔너리에 있는 요소들을 반복 처리할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> interestingNumbers = [
+  <span class="hljs-string">"Prime"</span>: [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">13</span>],
+  <span class="hljs-string">"Fibonacci"</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">8</span>],
+  <span class="hljs-string">"Square"</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>],
+]
+<span class="hljs-keyword">var</span> largest = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> (kind, numbers) <span class="hljs-keyword">in</span> interestingNumbers {
+  <span class="hljs-keyword">for</span> <span class="hljs-built_in">number</span> <span class="hljs-keyword">in</span> numbers {
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">number</span> &gt; largest {
+       largest = <span class="hljs-built_in">number</span>
+    }
+  }
+}
+largest
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+어떤 숫자가 가장 큰 수로 저장되는지 확인하기 위해 다른 변수를 추가하고, 가장 큰 수로 저장된 숫자가 무엇인지 확인해보라.</p>
+</blockquote>
+<p>이번에는 조건문이 변경될 때까지 코드 블록을 반복 실행하기 위해서 <code>while</code> 문을 사용해 봅시다. 반복문이 적어도 한번은 실행될 수 있도록 보장하려면 조건문을 반복문의 끝에 작성할 수도 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-built_in">var</span> <span class="hljs-built_in">n</span> = <span class="hljs-number">2</span>
+while <span class="hljs-built_in">n</span> &lt; <span class="hljs-number">100</span> {
+    <span class="hljs-built_in">n</span> = <span class="hljs-built_in">n</span> * <span class="hljs-number">2</span>
+}
+<span class="hljs-built_in">n</span>
+
+<span class="hljs-built_in">var</span> m = <span class="hljs-number">2</span>
+do {
+    m = m * <span class="hljs-number">2</span>
+} while m &lt; <span class="hljs-number">100</span>
+m
+</code></pre>
+<p>반복문안에서 <code>..&lt;</code>을 사용해 인덱스의 범위를 만들거나 명시적으로 초기화, 조건문, 증감식을 사용할 수도 있습니다. 아래 두 가지 반복문은 동일한 작업을 수행합니다.</p>
+<pre><code class="hljs">var firstForLoop = <span class="hljs-number">0</span>
+for i in <span class="hljs-number">0.</span>.&lt;<span class="hljs-number">3</span> {
+    firstForLoop += i
+}
+firstForLoop
+
+var secondForLoop = <span class="hljs-number">0</span>
+for var i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; ++i {
+    secondForLoop += <span class="hljs-number">1</span>
+}
+secondForLoop
+</code></pre>
+<p><code>..</code>을 사용해서 범위를 지정하면 제일 맨 마지막 값은 제외됩니다. 반면에 <code>...</code>을 사용하면 양쪽 끝의 값을 모두 범위에 포함하게 됩니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="함수functions-와-클로저closures"></a><a href="#함수functions-와-클로저closures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>함수(Functions)와 클로저(Closures)</h2>
+<p><code>func</code>를 사용해 함수를 선언할 수 있습니다. 함수를 호출할 때 함수의 이름과 괄호안에 인자들을 넣을 수 있습니다. 매개변수의 이름과 분리해서 <code>&gt;</code>사용해 타입 이름을 표기하면 함수 반환 값의 타입을 지정할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">greet</span><span class="hljs-params">(name: String, day: String)</span></span> -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello <span class="hljs-subst">\(name)</span>, today is <span class="hljs-subst">\(day)</span>."</span>
+}
+greet(<span class="hljs-string">"Bob"</span>, <span class="hljs-string">"Tuesday"</span>)
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+매개변수 day를 제거하고 인사말에 '오늘의 특별한 점심'을 포함하도록 매개변수를 추가해보자.</p>
+</blockquote>
+<p>튜플(tuple)을 사용하면 여러개의 값을 반환할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getGasPrices</span><span class="hljs-params">()</span> -&gt; <span class="hljs-params">(Double, Double, Double)</span> {</span>
+    <span class="hljs-keyword">return</span> (<span class="hljs-number">3.59</span>, <span class="hljs-number">3.69</span>, <span class="hljs-number">3.79</span>)
+}
+getGasPrices()
+</code></pre>
+<p>배열을 이용해서 여러 개의 값을 함수의 인자로 받을 수도 있습니다.</p>
+<pre><code class="hljs">func sumOf(numbers: Int...) -&gt; Int {
+  <span class="hljs-selector-tag">var</span> sum = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> numbers {
+      sum += number
+  }
+  return sum
+}
+<span class="hljs-function"><span class="hljs-title">sumOf</span><span class="hljs-params">()</span></span>
+<span class="hljs-function"><span class="hljs-title">sumOf</span><span class="hljs-params">(<span class="hljs-number">42</span>, <span class="hljs-number">597</span>, <span class="hljs-number">12</span>)</span></span>
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+인자들의 평균값을 계산하는 함수를 만들어보자.</p>
+</blockquote>
+<p>함수는 중첩해서 사용할 수도 있습니다. 중첩(Nested) 함수는 감싸고 있는 함수에서 선언된 변수에 접근할 수 있습니다. 코드가 길어지고 복잡해지는 함수라면 이를 정리하려고 중첩 함수를 사용할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnFifteen</span><span class="hljs-params">()</span> -&gt; <span class="hljs-title">Int</span></span> {
+  <span class="hljs-keyword">var</span> y = <span class="hljs-number">10</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">()</span></span> {
+      y += <span class="hljs-number">5</span>
+    }
+    add()
+    <span class="hljs-keyword">return</span> y
+}
+returnFifteen()
+</code></pre>
+<p>함수는 최상위(first-class) 타입입니다. 즉, 어떤 함수가 다른 함수를 반환 값 형태로  반환할 수 있다는 것을 의미합니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">makeIncrementer</span><span class="hljs-params">()</span> -&gt; <span class="hljs-params">(Int -&gt; Int)</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addOne</span><span class="hljs-params">(number: Int)</span> -&gt; <span class="hljs-title">Int</span> {</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-built_in">number</span>
+  }
+  <span class="hljs-keyword">return</span> addOne
+}
+var increment = makeIncrementer()
+increment(<span class="hljs-number">7</span>)
+</code></pre>
+<p>또 함수는 다른 함수를 인자로 받을 수 있습니다.</p>
+<pre><code class="hljs">  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hasAnyMatches</span><span class="hljs-params">(list: Int[], condition: Int -&gt; Bool)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+      <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> list {
+          <span class="hljs-keyword">if</span> condition(item) {
+              <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+          }
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+  }
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">lessThanTen</span><span class="hljs-params">(number: Int)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+      <span class="hljs-keyword">return</span> number &lt; <span class="hljs-number">10</span>
+  }
+  <span class="hljs-keyword">var</span> numbers = [<span class="hljs-number">20</span>, <span class="hljs-number">19</span>, <span class="hljs-number">7</span>, <span class="hljs-number">12</span>]
+  hasAnyMatches(numbers, lessThanTen)
+</code></pre>
+<p>실제로 함수는 클로저(Closure)의 특별한 예입니다. 중괄호(<code>{}</code>)를 지정하지 않고도 클로저를 사용할 수 있습니다. <code>in</code> 키워드를 사용해 인자와 반환값 타입을 분리해 사용할 수도 있습니다.</p>
+<pre><code class="hljs">  numbers.map({ (<span class="hljs-built_in">number</span>: <span class="hljs-built_in">Int</span>) -&gt; <span class="hljs-built_in">Int</span> <span class="hljs-keyword">in</span>
+      let result = <span class="hljs-number">3</span> * <span class="hljs-built_in">number</span>
+      <span class="hljs-keyword">return</span> result
+  })
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+모든 홀수값에 대해 0을 반환하도록 클로저를 수정해보자.</p>
+</blockquote>
+<p>클로저를 간결하게 사용하는 몇가지 옵션이 있습니다. 델리게이트(delegate)를 위한 콜백(callback)처럼 이미 클로저의 타입을 아는 경우라면 매개변수의 타입, 반환 값 타입을 모두 생략하거나 선택적으로 생략할 수 있습니다. 한 줄짜리 구문을 가진 클로저라면 구문만 가지고도 반환 타입을 추측할 수 있습니다.</p>
+<pre><code class="hljs">numbers.map({ <span class="hljs-built_in">number</span> <span class="hljs-keyword">in</span> <span class="hljs-number">3</span> * <span class="hljs-built_in">number</span> })
+</code></pre>
+<p>매개변수의 이름 대신에 번호로 참조하는 것은 클로저를 짧게 만드는데 특히 유용합니다. 이때 클로저는 함수의 바로 뒤에 중괄호를 이용해 인자로 전달됩니다.</p>
+<pre><code class="hljs">sort([<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">2</span>]) { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> }
+</code></pre>
+<p>##객체(Objects)와 클래스(Classes)</p>
+<p>클래스를 만들기 위해서는 클래스 이름과 함께 <code>class</code> 키워드를 사용하면 됩니다.클래스 컨텍스트(context) 내부를 제외하고 클래스 안에 속성을 선언하기 위해서는 상수나 변수를 선언하는 것과 똑같은 방식으로 쓰면 됩니다. 마찬가지로 메서드와 함수도 선언할 수 있습니다.</p>
+<pre><code class="hljs">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">var</span> numberOfSides = <span class="hljs-number">0</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-string">"A shape with <span class="hljs-subst">\(numberOfSides)</span> sides."</span>
+    }
+  }
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+상수 속성을 <code>let</code>을 이용하여 만들고, 다른 인자를 받는 메서드를 만들어봅시다.</p>
+</blockquote>
+<p>어떤 클래스의 인스턴스를 만들려면 클래스 이름 다음에 괄호를 넣으면 됩니다. .(점) 문법을 사용하면 인스턴스의 속성이나 메서드에 접근할 수 있습니다.</p>
+<pre><code class="hljs">  <span class="hljs-selector-tag">var</span> shape = Shape()
+  shape<span class="hljs-selector-class">.numberOfSides</span> = <span class="hljs-number">7</span>
+  <span class="hljs-selector-tag">var</span> shapeDescription = shape.simpleDescription()
+</code></pre>
+<p>현재 상태의 <code>Shape</code> 클래스는 중요한 것이 빠져있습니다. 바로 클래스가 생성될 때 클래스를 초기화하기 위한 초기화자 입니다. <code>init</code> 키워드를 사용해 만들어 봅시다.</p>
+<pre><code class="hljs">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NamedShape</span> </span>{
+      <span class="hljs-keyword">var</span> numberOfSides: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+      <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
+      <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
+          <span class="hljs-keyword">self</span>.name = name
+      }
+      <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+          <span class="hljs-keyword">return</span> <span class="hljs-string">"A shape with <span class="hljs-subst">\(numberOfSides)</span> sides."</span>
+      }
+  }
+</code></pre>
+<p>인자의 <code>name</code>과 속성의 <code>name</code>을 구분하기 위해서 <code>self</code> 키워드가 어떻게 사용되는지 주의해서 봅시다.  클래스의 인스턴스를 만들 때 초기화자에 인자를 전달하는 방식은 함수에 전달하는 방식과 동일합니다. 모든 속성은 <code>numberOfSides</code> 처럼 값을 선언 할 때 혹은 <code>name</code>처럼 클래스를 초기화 할 때 처럼 적어도 둘중에 한가지 방법을 통해 값을 할당해줘야 합니다.</p>
+<p>오브젝트를 해제하기전 정리 작업이 필요하다면 <code>deinit</code>을 사용해서 디이니셜라이저(deinitializer)를 만들 수 있습니다.</p>
+<p>하위 클래스는 클래스명 뒤에 상위 클래스의 이름을 세미콜론으로 구분해 포함합니다. 꼭 기본 루트 클래스가 필요한 것은 아니기 때문에 상위 클래스를 포함해도 되고 생략해도 됩니다.</p>
+<p>하위 클래스에서 상위 클래스에서 구현된 메서드를 오버라이드(override) 하려면 <code>override</code> 키워드를 이용해 표시해줘야 합니다. <code>override</code> 키워드를 사용하지 않고 어떤 메서드를 갑자기 오버라이드하면 컴파일러에서 에러로 인식합니다. 또 <code>override</code> 키워드를 사용했는데 실제로 상위 클래스에는 해당 메서드가 없다면 이것 또한 컴파일러가 잡아냅니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span>: <span class="hljs-title">NamedShape</span> </span>{
+    <span class="hljs-keyword">var</span> sideLength: <span class="hljs-type">Double</span>
+    
+    <span class="hljs-keyword">init</span>(sideLength: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.sideLength = sideLength
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name: name)
+        numberOfSides = <span class="hljs-number">4</span>
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span> -&gt;  <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">return</span> sideLength * sideLength
+    }
+    
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"A square with sides of length <span class="hljs-subst">\(sideLength)</span>."</span>
+    }
+}
+<span class="hljs-keyword">let</span> test = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">5.2</span>, name: <span class="hljs-string">"my test square"</span>)
+test.area()
+test.simpleDescription()
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+<code>NamedShape</code> 클래스의 또 다른 하위 클래스인 <code>Circle</code>을 만들어보자. 이 클래스는 이니셜 라이저를 통해 <code>radius</code>와 <code>name</code>을 인자로 받는다. <code>Circle</code> 클래스 안에 <code>area</code>, <code>describe</code> 함수를 구현해보자.</p>
+</blockquote>
+<p>저장되어 있는 간단한 속성 외에도 속성은 getter와 setter를 가질 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EquilateralTriangle</span>: <span class="hljs-title">NamedShape</span> </span>{
+    <span class="hljs-keyword">var</span> sideLength: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    
+    <span class="hljs-keyword">init</span>(sideLength: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.sideLength = sideLength
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name: name)
+        numberOfSides = <span class="hljs-number">3</span>
+    }
+    
+    <span class="hljs-keyword">var</span> perimeter: <span class="hljs-type">Double</span> {
+    <span class="hljs-keyword">get</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">3.0</span> * sideLength
+    }
+    <span class="hljs-keyword">set</span> {
+        sideLength = newValue / <span class="hljs-number">3.0</span>
+    }
+    }
+    
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"An equilateral triagle with sides of length <span class="hljs-subst">\(sideLength)</span>."</span>
+    }
+}
+<span class="hljs-keyword">var</span> triangle = <span class="hljs-type">EquilateralTriangle</span>(sideLength: <span class="hljs-number">3.1</span>, name: <span class="hljs-string">"a triangle"</span>)
+triangle.perimeter
+triangle.perimeter = <span class="hljs-number">9.9</span>
+triangle.sideLength
+</code></pre>
+<p><code>perimeter</code>의 setter안에서는 <code>newValue</code>라는 이름이 새로운 값을 나타내고 있습니다. 반면에 명시적으로 <code>set</code> 뒤에 괄호를 이용해 명시적으로 이름을 지정해 줄수도 있습니다.</p>
+<p><code>EquilateralTriangle</code> 클래스의 이니셜라이저는 세가지의 다른 단계를 가지고 있음을 살펴봅시다.</p>
+<ol>
+<li>하위 클래스에서 선언한 속성의 값을 지정합니다.</li>
+<li>상위 클래스의 이니셜라이저를 호출합니다.</li>
+<li>상위 클래스에 의해 정의된 속성값을 변경합니다. 어떤 메서드나 setter,getter를 사용하지 않고도 가능 하다는 것이 중요한점 입니다.</li>
+</ol>
+<p>속성의 값을 계산할 필요는 없지만 새로운 값을 할당하기  전이나 후에 수행해야할 코드가 있다면 <code>willSet</code>, <code>didSet</code>을 사용할 수 있습니다. 예를 들면 아래쪽에 나오는 클래스에서는 삼각형의 빗면의 길이가 사각형의 옆면의 길이와 항상 동일하다는 것을 보장합니다.</p>
+<pre><code class="hljs css languages- swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TriangleAndSquare</span> </span>{
+    <span class="hljs-keyword">var</span> triangle: <span class="hljs-type">EquilateralTriangle</span> {
+        <span class="hljs-keyword">willSet</span> {
+            square.sideLength = newValue.sideLength
+        }
+    }
+    <span class="hljs-keyword">var</span> square: <span class="hljs-type">Square</span> {
+        <span class="hljs-keyword">willSet</span> {
+            triangle.sideLength = newValue.sideLength
+        }
+    }
+    <span class="hljs-keyword">init</span>(size: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
+        square = <span class="hljs-type">Square</span>(sideLength: size, name: name)
+        triangle = <span class="hljs-type">EquilateralTriangle</span>(sideLength: size, name: name)
+    }
+}
+<span class="hljs-keyword">var</span> triangleAndSquare = <span class="hljs-type">TriangleAndSquare</span>(size: <span class="hljs-number">10</span>, name: <span class="hljs-string">"another test shape"</span>)
+triangleAndSquare.square.sideLength
+triangleAndSquare.triangle.sideLength
+triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">50</span>, name: <span class="hljs-string">"larger square"</span>)
+triangleAndSquare.triangle.sideLength
+</code></pre>
+<p>클래스에 있는 메서드들은 함수와는 다른 중요한 특징이 한가지 있습니다.함수에서 사용되는 매개변수의 이름들은 함수 내부에서만 사용합니다. 그러나 메서드에 사용되는 매개변수의 이름은 메서드를 호출할 때도 사용됩니다(첫번째 매개변수의 이름은 제외하고). 기본적으로 메서드는 호출할 때 혹은 메서드에서 사용되는 이름과 동일한 매개변수 이름을 갖습니다. 하지만 메서드 내부에서 사용될 두번째 이름을 특별히 정해줄 수도 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> </span>{
+    <span class="hljs-keyword">var</span> <span class="hljs-built_in">count</span>: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementBy</span><span class="hljs-params">(amount: Int, numberOfTimes times: Int)</span></span> {
+        <span class="hljs-built_in">count</span> += amount * times
+    }
+}
+<span class="hljs-keyword">var</span> counter = <span class="hljs-type">Counter</span>()
+counter.incrementBy(<span class="hljs-number">2</span>, numberOfTimes: <span class="hljs-number">7</span>)
+</code></pre>
+<p>옵션 값을 사용할 때는 메서드나 속성, 서브스크립트 앞에 ?를 쓸 수 있습니다.  만약 ? 앞에 값이 <code>nil</code> 이라면 ? 이후에 나오는 모든 것은 무시되고 표현의 값들은 <code>nil</code>을 갖습니다. 반면에 값이 있는 경우라면 ? 이후의 모든 그 값을 기준으로 동작합니다. 양쪽 경우 모두 옵션 값으로 사용됩니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="열거형enumerations-과-구조체structures"></a><a href="#열거형enumerations-과-구조체structures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>열거형(Enumerations)과 구조체(Structures)</h2>
+<p><code>enum</code> 키워드를 사용하면 열거형을 만들 수 있습니다. 클래스나 모든 알려진 타입들의 경우 열거형에 메서드를 포함할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Rank</span>: <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Ace</span> = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Two</span>, <span class="hljs-type">Three</span>, <span class="hljs-type">Four</span>, <span class="hljs-type">Five</span>, <span class="hljs-type">Six</span>, <span class="hljs-type">Seven</span>, <span class="hljs-type">Eight</span>, <span class="hljs-type">Nine</span>, <span class="hljs-type">Ten</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Jack</span>, <span class="hljs-type">Queen</span>, <span class="hljs-type">King</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">switch</span> <span class="hljs-keyword">self</span> {
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Ace</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"ace"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Jack</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"jack"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Queen</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"queen"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">King</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"king"</span>
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-type">String</span>(<span class="hljs-keyword">self</span>.toRaw())
+        }
+    }
+}
+<span class="hljs-keyword">let</span> ace = <span class="hljs-type">Rank</span>.<span class="hljs-type">Ace</span>
+<span class="hljs-keyword">let</span> aceRawValue = ace.toRaw()
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+두개의 <code>Rank</code> 값의 원본 값을 비교하는 함수를 만들어보자.</p>
+</blockquote>
+<p>위의 예를 보면 열거형의 원본 값의 타입은 <code>int</code> 입니다. 그래서 특별히 첫번째 원본값만 가지고 있는 것입니다. 나머지 원본 값들은 순서에 따라 자동으로 할당됩니다. 또 문자열이나 실수형태의 값들도 원본값으로 가진 열거형을 만들 수 있습니다.</p>
+<p><code>toRaw</code>와 <code>fromRaw</code> 함수를 사용해서 원본값과 열거형 값을 상호 변환할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> <span class="hljs-attr">convertedRank</span> = Rank.fromRaw(<span class="hljs-number">3</span>) {
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">threeDescription</span> = convertedRank.simpleDescription()
+}
+</code></pre>
+<p>열거형의 구성값들은 실제 값을 쓰는 다른 방법일 뿐 아니라. 모두 실제 값입니다. 사실 실제값이 의미있는 경우가 아니라면 굳이 첫번째 값을 제공할 필요가 없습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Suit</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Spades</span>, <span class="hljs-type">Hearts</span>, <span class="hljs-type">Diamonds</span>, <span class="hljs-type">Clubs</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">switch</span> <span class="hljs-keyword">self</span> {
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Spades</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"spades"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Hearts</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"hearts"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Diamonds</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"diamonds"</span>
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Clubs</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"clubs"</span>
+        }
+    }
+}
+<span class="hljs-keyword">let</span> hearts = <span class="hljs-type">Suit</span>.<span class="hljs-type">Hearts</span>
+<span class="hljs-keyword">let</span> heartsDescription = hearts.simpleDescription()
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+<code>Suit</code>에 <code>color</code> 메서드를 추가해 보자. <code>color</code> 메서드는 스페이드와 클로버는 'black'을 반환하고 하트와 다이아몬드는 'red'를 반환하도록 하면 됩니다.</p>
+</blockquote>
+<p>열거형의 구성중 하나인 <code>Heart</code>가 상단값을 어떻게 참조하는지 두가지 방법을 살펴봅시다. 상수 <code>hearts</code>에 값을 할당 할 때, 상수는 명시적으로 타입을 가지고 있지 않기 때문에 <code>Suit.Hearts</code> 처럼 전체 이름을 살펴봅니다. 스위치문 안에서는 열거형은 <code>.Hearts</code>로 축약형을 써서 참조하는데, 이것은 <code>self</code>가 이미 suit라는 것을 알고 있기 때문입니다. 값의 형을 이미 알고 있다면 언제든지 축약형을 사용해도 됩니다.</p>
+<p>구조체를 만들기 위해서는 <code>struct</code> 키워드를 사용합니다. 구조체는 메서드나 이니셜라이저 같은 클래스와 비슷한 기능들을 지원합니다. 클래스와 구조체의 가장 중요한 차이점중 하나는 구조체의 경우 코드 내에서 전달될 때 값복사 형태로 전달되지만 클래스의 경우에는 참조복사 형태로 전달된 다는 것입니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Card</span> </span>{
+    <span class="hljs-keyword">var</span> rank: <span class="hljs-type">Rank</span>
+    <span class="hljs-keyword">var</span> suit: <span class="hljs-type">Suit</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"The <span class="hljs-subst">\(rank.simpleDescription()</span>) of <span class="hljs-subst">\(suit.simpleDescription()</span>)"</span>
+    }
+}
+<span class="hljs-keyword">let</span> threeOfSpades = <span class="hljs-type">Card</span>(rank: .<span class="hljs-type">Three</span>, suit: .<span class="hljs-type">Spades</span>)
+<span class="hljs-keyword">let</span> threeOfSpadesDescription = threeOfSpades.simpleDescription()
+</code></pre>
+<blockquote>
+<p><strong>EXPERIMENT</strong></p>
+<p>각 카드를 rank와 suit를 조합해서 만들어 전체 카드를 만들어 주는 메서드를 <code>Card</code>에 추가해보자.</p>
+</blockquote>
+<p>열거형 구성자의 인스턴스는 인스턴스와 함께 관련값들을 사용할 수 있습니다. 같은 열거형의 구성자의 인스턴스들은 각 인스턴스와 함께 다른 관련값을 가질 수 있습니다. 인스턴스를 만들 때 관련값을 공급할 수 있습니다. 관련값과 원본값은 다릅니다. 열거형 구성자의 원본값은 모든 인스턴스에서 같은 값(열거형을 정의할 때 지정한 값)을 갖습니다.</p>
+<p>예를 들면, 일출, 일몰 시간을 서버에 요청한다고 가정해보자. 서버는 두 시간 모두를 응답하거나 에러 정보를 응답할 수도 있다.</p>
+<pre><code class="hljs">enum ServerResponse {
+    <span class="hljs-keyword">case</span> Result(<span class="hljs-built_in">String</span>, <span class="hljs-built_in">String</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">Error</span>(<span class="hljs-built_in">String</span>)
+}
+ 
+<span class="hljs-keyword">let</span> success = ServerResponse.Result(<span class="hljs-string">"6:00 am"</span>, <span class="hljs-string">"8:09 pm"</span>)
+<span class="hljs-keyword">let</span> failure = ServerResponse.<span class="hljs-keyword">Error</span>(<span class="hljs-string">"Out of cheese."</span>)
+ 
+switch success {
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .Result(sunrise, sunset):
+    <span class="hljs-keyword">let</span> serverResponse = <span class="hljs-string">"Sunrise is at \(sunrise) and sunset is at \(sunset)."</span>
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .<span class="hljs-keyword">Error</span>(<span class="hljs-keyword">error</span>):
+    <span class="hljs-keyword">let</span> serverResponse = <span class="hljs-string">"Failure...  \(error)"</span>
+}
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+<code>ServerResponse</code>에 세번째 경우를 추가하고 스위치문에도 추가해보자.</p>
+</blockquote>
+<p>스위치문의 경우의 수와 비교를 수행하기 위해 <code>ServerResponse</code>로 부터 일출, 일몰 시간 값을 어떻게 추출해 내는지 눈여겨 보자.</p>
+<h2><a class="anchor" aria-hidden="true" id="프로토콜protocols-와-확장extensions"></a><a href="#프로토콜protocols-와-확장extensions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로토콜(Protocols)와 확장(Extensions)</h2>
+<p>프로토콜을 선언하기 위해 <code>protocol</code> 키워드를 사용하자</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">ExampleProtocol</span> </span>{
+    <span class="hljs-keyword">var</span> simpleDescription: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">adjust</span><span class="hljs-params">()</span></span>
+}
+</code></pre>
+<p>클래스, 열거형, 구조체 모두에 프로토콜을 사용할 수 있다.</p>
+<pre><code class="hljs">class SimpleClass: ExampleProtocol {
+    <span class="hljs-selector-tag">var</span> simpleDescription: String = <span class="hljs-string">"A very simple class."</span>
+    <span class="hljs-selector-tag">var</span> anotherProperty: Int = <span class="hljs-number">69105</span>
+    func adjust() {
+        simpleDescription += <span class="hljs-string">"  Now 100% adjusted."</span>
+    }
+}
+<span class="hljs-selector-tag">var</span> <span class="hljs-selector-tag">a</span> = SimpleClass()
+<span class="hljs-selector-tag">a</span>.adjust()
+let aDescription = <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.simpleDescription</span>
+ 
+struct SimpleStructure: ExampleProtocol {
+    <span class="hljs-selector-tag">var</span> simpleDescription: String = <span class="hljs-string">"A simple structure"</span>
+    mutating func adjust() {
+        simpleDescription += <span class="hljs-string">" (adjusted)"</span>
+    }
+}
+<span class="hljs-selector-tag">var</span> <span class="hljs-selector-tag">b</span> = SimpleStructure()
+<span class="hljs-selector-tag">b</span>.adjust()
+let bDescription = <span class="hljs-selector-tag">b</span><span class="hljs-selector-class">.simpleDescription</span>
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+프로토콜을 사용하는 열거형을 만들어보자.</p>
+</blockquote>
+<p>구조체를 수정하기 위해 사용되는 메서드를 표시하기 위해 <code>SimpleStructure</code> 선언부에 사용되는 <code>mutating</code> 키워드를 살펴봅시다. <code>SimpleClass</code>에는 <code>mutating</code>으로 표시된 메서드가 필요하지 않습니다. 왜냐하면 클래스 안에 있는 모든 메서드들은 항상 클래스를 수정할 수 있기 때문입니다.</p>
+<p>extension 키워드를 사용해서 기존의 타입들에 새로운 메서드나 속성들을 비교하기 위한 기능들을 추가할 수 있습니다. 타입이 선언된 곳 어디서든 혹은 라이브러리나 프레임워크에서 불러온 타입들에 extension 키워드를 사용해 프로토콜을 적용할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Int</span>: <span class="hljs-title">ExampleProtocol</span> </span>{
+    <span class="hljs-keyword">var</span> simpleDescription: <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"The number <span class="hljs-subst">\(<span class="hljs-keyword">self</span>)</span>"</span>
+    }
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">adjust</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">self</span> += <span class="hljs-number">42</span>
+    }
+}
+<span class="hljs-number">7</span>.simpleDescription
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+extension을 사용해 Double 타입에 absoluteValue 속성을 추가해보자.</p>
+</blockquote>
+<p>프로토콜 이름은 다른 알려진 변수들 처럼 지정할 수 있습니다. 예를 들면 객체들의 모음을 만들 때, 모든 객체는 다른 타입을 가지지만 하나의 프로토콜을 따릅니다. 프로토콜 타입인 값들을 가지고 작업할 때 프로토콜 외부에서 메서드를 정의하는 것은 불가능 합니다.</p>
+<pre><code class="hljs">let protocolValue: ExampleProtocol = <span class="hljs-selector-tag">a</span>
+protocolValue<span class="hljs-selector-class">.simpleDescription</span>
+<span class="hljs-comment">// protocolValue.anotherProperty  // Uncomment to see the error</span>
+</code></pre>
+<p><code>protocalValue</code> 변수가 실행시 <code>SimpleClass</code> 타입이더라도 컴파일러는 주어진 <code>ExampleProtocal</code> 타입으로 취급합니다. 이것은 프로토콜 관습 외에도 클래스에서 구현된 메서드나 속성에 실수로 접근할 수는 없다는 것을 의미합니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="제네릭generics"></a><a href="#제네릭generics" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>제네릭(Generics)</h2>
+<p>제네릭 함수나 타입을 만들려면 꺾쇠안에 이름을 쓰면 됩니다.</p>
+<pre><code class="hljs">func repeat&lt;ItemType&gt;(item: ItemType, times: Int) -&gt; ItemType[] {
+    <span class="hljs-selector-tag">var</span> result = ItemType[]()
+    <span class="hljs-keyword">for</span> <span class="hljs-selector-tag">i</span> <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>.<span class="hljs-selector-class">.times</span> {
+        result += item
+    }
+    return result
+}
+<span class="hljs-function"><span class="hljs-title">repeat</span><span class="hljs-params">(<span class="hljs-string">"knock"</span>, <span class="hljs-number">4</span>)</span></span>
+</code></pre>
+<p>클래스, 열거형, 구조체와 마찬가지로 함수나 메서드를 제네릭 형태로 만들 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-comment">// Reimplement the Swift standard library's optional type</span>
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">OptionalValue</span>&lt;<span class="hljs-title">T</span>&gt; {</span>
+    <span class="hljs-keyword">case</span> None
+    <span class="hljs-keyword">case</span> Some(T)
+}
+<span class="hljs-keyword">var</span> possibleInteger: <span class="hljs-type">OptionalValue</span>&lt;<span class="hljs-keyword">Int</span>&gt; = .None
+possibleInteger = .Some(<span class="hljs-number">100</span>)
+</code></pre>
+<p>특정 요구 조건들의 타입 뒤에 <code>where</code>키워드를 사용해 봅시다. 예를 들어 프로토콜 구현의 위한 타입을 요구하거나 똑같은 타입을 요구하는 경우 혹은 특정 상위 클래스를 요구하는 경우 말입니다.</p>
+<pre><code class="hljs">func anyCommonElements &lt;T, U where T: Sequence, U: Sequence, T<span class="hljs-selector-class">.GeneratorType</span><span class="hljs-selector-class">.Element</span>: Equatable, T<span class="hljs-selector-class">.GeneratorType</span><span class="hljs-selector-class">.Element</span> == U<span class="hljs-selector-class">.GeneratorType</span><span class="hljs-selector-class">.Element</span>&gt; (lhs: T, rhs: U) -&gt; Bool {
+    <span class="hljs-keyword">for</span> lhsItem <span class="hljs-keyword">in</span> lhs {
+        <span class="hljs-keyword">for</span> rhsItem <span class="hljs-keyword">in</span> rhs {
+            <span class="hljs-keyword">if</span> lhsItem == rhsItem {
+                return true
+            }
+        }
+    }
+    return false
+}
+<span class="hljs-function"><span class="hljs-title">anyCommonElements</span><span class="hljs-params">([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">3</span>])</span></span>
+</code></pre>
+<blockquote>
+<p>EXPERIMENT
+anyCommonElements 함수를 공통적으로 두개의 연속값을 갖는 배열을 반환하도록 수정해 봅시다.</p>
+</blockquote>
+<p>간단한 경우에는 where을 생략하고 프로토콜과 클래스 이름을 콜론뒤에 바로 쓸 수 있습니다. <code>&lt;T:Equatable&gt;</code>과 <code>&lt;T where T: Equatable&gt;</code>은 동일합니다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter1.html">← Swift에 대해서 (About Swift)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#간단한-값">간단한 값</a></li><li><a href="#흐름-제어">흐름 제어</a></li><li><a href="#함수functions-와-클로저closures">함수(Functions)와 클로저(Closures)</a></li><li><a href="#열거형enumerations-과-구조체structures">열거형(Enumerations)과 구조체(Structures)</a></li><li><a href="#프로토콜protocols-와-확장extensions">프로토콜(Protocols)와 확장(Extensions)</a></li><li><a href="#제네릭generics">제네릭(Generics)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

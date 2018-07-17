@@ -1,0 +1,468 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>초기화 (Intialization) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : Quartet ( ungsik.yun@gmail.com )"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="초기화 (Intialization) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : Quartet ( ungsik.yun@gmail.com )"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">초기화 (Intialization)</h1></header><article><div><span><blockquote>
+<p>Translator : Quartet ( <a href="mailto:ungsik.yun@gmail.com">ungsik.yun@gmail.com</a> )</p>
+</blockquote>
+<p><em>초기화</em>는 클래스, 구조체, 또는 열거형의 인스턴스를 사용하기 위한 준비 과정입니다. 이 과정은 해당 인스턴스의 각각의 저장된 속성의 초기값을 설정하는 것과 그 외의 다른 설정 또는 새 인스턴스를 사용하기 전에 필요한 초기화를 합니다.
+이 초기화 과정을 이니셜라이저(initializer)를 정의함으로서 구현할 수 있습니다. 이니셜라이저는 특정 타입의 새 인스턴스를 만들때 호출될 수 있는 특수 메소드입니다. 다른 오브젝티브 C의 이니셜라이저와는 달리 스위프트의 이니셜라이저는 값을 반환하지 않습니다. 이니셜라이저의 주 역할은 새 인스턴스가 처음 사용되기 전에 잘못된 곳이 없이 초기화가 되었는지 보장하는 것입니다.
+또한 클래스 타입의 인스턴스는 디이니셜라이저(deinitializer)를 정의 할 수 있습니다. 디이니셜라이저는 할당 해제되기 바로 직전에 맞춤 정리를 수행합니다. 디이니셜라이저에 대해 더 많은 정보를 원하시면 <strong>Deinitialization</strong>을 보세요.</p>
+<h2><a class="anchor" aria-hidden="true" id="저장-속성에-초기값-설정하기"></a><a href="#저장-속성에-초기값-설정하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>저장 속성에 초기값 설정하기</h2>
+<p>클래스와 구조체의 인스턴스가 생성될때에 맞춰서 인스턴스내의 저장된 속성은 적절한 초기값으로 설정이 되어야 합니다. 저장된 속성은 정해지지 않은 상태로 남아있을 수 없습니다.
+이니셜라이저를 통해 저장 속성에 초기값을 설정하거나, 속성의 정의의 일부분으로서 기본 속성값을 지정 할 수 있습니다. 이 행동들은 뒤따르는 섹션에 설명되어 있습니다.</p>
+<blockquote>
+<p>NOTE
+저장 속성에 기본값을 지정하거나, 이니셜라이저에서 초기값을 설정할 때, 어떠한 속성 감시자(observer)도 호출하지 않고 속성의 값이 직접 설정 됩니다.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="이니셜라이져"></a><a href="#이니셜라이져" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이니셜라이져</h3>
+<p>이니셜라이져는 특정 타입의 새 인스턴스를 만들 때 호출됩니다. 제일 단순한 형태의 이니셜라이저는, <code>init</code>키워드를 사용하며, 파라메터가 없는 인스턴스 메소드의 형태입니다.
+밑의 예제는 <code>Fahrenheit</code> 구조체를 정의하여 화씨 단위로 표현된 온도를 저장합니다. <code>Fahrenheit</code> 구조체는 <code>double</code> 타입의 <code>temperature</code> 저장 속성 단 하나만을 가지고 있습니다.</p>
+<pre><code class="hljs">struct Fahrenheit {
+    <span class="hljs-selector-tag">var</span> temperature: Double
+    init() {
+        temperature = <span class="hljs-number">32.0</span>
+    }
+}
+<span class="hljs-selector-tag">var</span> f = Fahrenheit()
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"The default temperature is \(f.temperature)° Fahrenheit"</span>)</span></span>
+<span class="hljs-comment">// prints "The default temperature is 32.0° Fahrenheit"</span>
+</code></pre>
+<p>이 구조체는 파라메터가 없는 단일 이니셜라이저 <code>init</code>을 정의합니다. 이 이니셜라이져는 저장된 온도값을  화씨 단위로 표현했을때의 물의 어는점인 32.0으로 초기화합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="기본-속성-값"></a><a href="#기본-속성-값" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>기본 속성 값</h3>
+<p>위에 보인 것처럼 이니셜라이저 안에서 저장 속성의 초기값을 설정할 수 있습니다. 또 다른 방법은, 속성 선언의 일부로 기본 속성 값을 지정하는 것입니다. 속성을 정의할때 초기 값을 속성에 할당 하는 것으로 기본 속성 값을 지정 할 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+만약 속성이 언제나 똑같은 초기값을 가진다면, 이니셜라이저 안에서 값을 설정하기보다는 기본 값을 주는 것이 낫습니다. 결과적으로는 같지만, 기본값이 속성의 선언에 더 근접해서 속성의 초기화를 합니다. 이로써 더 짧고 명확한 이니셜라이저를 작성할 수 있게 하고, 기본 값에서 속성의 타입을 개발자가 유추할 수 있게 합니다. 또한 기본값은 이 장의 뒤에서 설명되겠지만, 기본 이니셜라이저의 장점을 취하는 것과 이니셜라이저 상속을 쉽게 합니다.</p>
+</blockquote>
+<p><code>temperatur</code> 속성을 선언할때 기본값을 제공하는 것을 통해, 위해서 보인 단순한 형태로 <code>Fahrenheit</code> 구조체를 다시 작성 할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Fahrenheit</span> </span>{
+    var temperature = <span class="hljs-number">32.0</span>
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="사용자-정의-초기화"></a><a href="#사용자-정의-초기화" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>사용자 정의 초기화</h2>
+<p>이 섹션에서 설명할 것은, 입력 파라메터와 옵셔널 속성 타입을 이용하거나, 상수 속성을 초기화 과정중에 변경하는 것으로 초기화 과정을 사용자가 정의하는 것 입니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="초기화-파라메터"></a><a href="#초기화-파라메터" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>초기화 파라메터</h3>
+<p>사용자 정의 초기화의 타입들과 값의 이름들을 정의하기 위해 이니셜라이저의 정의중 일부분으로 <em>초기화 파라메터</em>를 제공할 수 있습니다. 초기화 파라메터는 함수나 메소드의 파라메터와 같은 기능과 문법을 가지고 있습니다.
+다음의 예제는 섭씨 단위로 온도를 표현하여 저장하는 <code>Celsius</code> 구조체를 정의합니다. <code>Celsius</code> 구조체는 <code>init(fromFahrenheit:)</code>과 <code>init(fromKelvin:)</code> 두개의 이니셜라이저를 구현하여 다른 온도 단위에서 값을 받아와 새 인스턴스를 초기화합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Celsius</span> </span>{
+    <span class="hljs-keyword">var</span> temperatureInCelsius: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">init</span>(fromFahrenheit fahrenheit: <span class="hljs-type">Double</span>) {
+        temperatureInCelsius = (fahrenheit - <span class="hljs-number">32.0</span>) / <span class="hljs-number">1.8</span>
+    }
+    <span class="hljs-keyword">init</span>(fromKelvin kelvin: <span class="hljs-type">Double</span>) {
+        temperatureInCelsius = kelvin - <span class="hljs-number">273.15</span>
+    }
+}
+<span class="hljs-keyword">let</span> boilingPointOfWater = <span class="hljs-type">Celsius</span>(fromFahrenheit: <span class="hljs-number">212.0</span>)
+<span class="hljs-comment">// boilingPointOfWater.temperatureInCelsius is 100.0</span>
+<span class="hljs-keyword">let</span> freezingPointOfWater = <span class="hljs-type">Celsius</span>(fromKelvin: <span class="hljs-number">273.15</span>)
+<span class="hljs-comment">// freezingPointOfWater.temperatureInCelsius is 0.0</span>
+</code></pre>
+<p>첫번째 이니셜라이저는 하나의 초기화 파라메터 <code>fromFahrenehit</code>를 외부 이름으로 가지고 <code>fahrenheit</code>를 지역 이름으로 가집니다. 두번째 이니셜라이저는 하나의 초기화 파라메터 <code>fromKelvin</code>을 외부 이름으로 가지고 <code>kelvin</code>을 지   역 이름으로 가집니다. 두 이니셜라이저 모두 하나의 인자(argument)를 섭씨 단위로 변환해 <code>temperatureInCelsius</code> 라는 속성에 값을 저장합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="지역-파라메터-이름과-외부-파라메터-이름"></a><a href="#지역-파라메터-이름과-외부-파라메터-이름" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지역 파라메터 이름과 외부 파라메터 이름</h3>
+<p>함수나 메소드의 파라메터처럼, 초기화 파라메터 또한 이니셜라이저의 안에서 쓰일 지역 이름과 이니셜라이저를 호출할때 쓸 외부 이름을 가질 수 있습니다.
+하지만 이니셜라이저는 함수나 메소드처럼 괄호 앞에 있는 함수 이름으로 식별 가능한 이름을 가지고 있지 않습니다. 그러므로 이니셜라이저의 파라메터가 가지는 이름과 타입들을 어떤 이니셜라이저가 호출되는지 확인하는 특별히 중요한 역할을 합니다. 이 때문에 시위프트는 이니셜라이저의 사용자가 외부 이름을 지정하지 않은 모든 파라메터에 대해 자동 외부 이름을 부여합니다. 이 자동 외부 이름은 모든 초기화 파라메터에 해쉬 심볼(<code>#</code>)을 붙인 것처럼, 지역 이름과 똑같이 지정 됩니다.</p>
+<blockquote>
+<p>NOTE
+만약 이니셜라이저의 파라메터의 외부 이름을 지정하고 싶지 않다면, 언더스코어 (<code>_</code>)를 해당 파라메터의 명시적 외부 이름으로 하여 위에 설명된 기본 행동을 덮어 씌우십시오.</p>
+</blockquote>
+<p>다음 예제는 <code>red</code>, <code>green</code>, <code>blue</code>를 상수 속성으로 가지는 <code>Color</code> 구조체를 정의합니다. 이 속성들은 <code>0.0</code> 부터 <code>1.0</code> 사이의 값을 저장하여 색안의 빨강, 초록, 파랑의 양을 나타냅니다.</p>
+<p><code>Color</code> 구조체는 <code>Double</code> 타입의 적절하게 이름지어진 파라메터 3개를 가지는 이니셜라이저를 제공합니다.</p>
+<pre><code class="hljs">struct Color {
+    let <span class="hljs-built_in">red</span> = <span class="hljs-number">0.0</span>, <span class="hljs-built_in">green</span> = <span class="hljs-number">0.0</span>, <span class="hljs-built_in">blue</span> = <span class="hljs-number">0.0</span>
+    init(<span class="hljs-built_in">red</span>: Double, <span class="hljs-built_in">green</span>: Double, <span class="hljs-built_in">blue</span>: Double) {
+        self.<span class="hljs-built_in">red</span>   = <span class="hljs-built_in">red</span>
+        self.<span class="hljs-built_in">green</span> = <span class="hljs-built_in">green</span>
+        self.<span class="hljs-built_in">blue</span>  = <span class="hljs-built_in">blue</span>
+    }
+}
+</code></pre>
+<p>새 <code>Color</code> 인스턴스를 만들때, 색의 세가지 구성요수를 외부 이름으로 사용하여 이니셜라이저를 호출 할 수 있습니다.</p>
+<pre><code class="hljs">let magenta = Color(<span class="hljs-string">red:</span> <span class="hljs-number">1.0</span>, <span class="hljs-string">green:</span> <span class="hljs-number">0.0</span>, <span class="hljs-string">blue:</span> <span class="hljs-number">1.0</span>)
+</code></pre>
+<p>이니셜라이저를 호출할때 외부 이름을 사용하지 않고 호출 할 수 없음에 주의하십시오. 외부 이름은 이니셜라이저 안에 반드시 언제나 사용되어야 하며, 생략하게 되면 컴파일 타임 에러를 냅니다.</p>
+<pre><code class="hljs">let veryGreen = Color(<span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>)
+<span class="hljs-comment">// this reports a compile-time error - external names are required</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="옵셔널-속성-타입"></a><a href="#옵셔널-속성-타입" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>옵셔널 속성 타입</h3>
+<p>만약 저장 속성이 논리적으로 &quot;값 없음&quot;을 갖는게 허용이 된다면 - 어쩌면 초기화 과정중에 설정이 될 수 없다거나, 어느 순간 &quot;값 없음&quot;을 갖는게 허용이 되거나 - 그 속성을 옵셔널 타입으로 선언하십시오. 옵셔널 타입 속성은 자동적으로 <code>nil</code> 값으로 초기화가 됩니다.  그렇게 함으로써 해당 속성은 의도된 &quot;아직 값 없음&quot;을 초기화 과정중에 가지게 됩니다.
+이어지는 예제는 <code>response:</code>를 속성으로 갖는 <code>SurveyQuestion</code> 클래스를 정의합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SurveyQuestion</span> </span>{
+    <span class="hljs-keyword">var</span> text: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">var</span> response: <span class="hljs-type">String</span>?
+    <span class="hljs-keyword">init</span>(text: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.text = text
+    }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">ask</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-built_in">println</span>(text)
+    }
+}
+<span class="hljs-keyword">let</span> cheeseQuestion = <span class="hljs-type">SurveyQuestion</span>(text: <span class="hljs-string">"Do you like cheese?"</span>)
+cheeseQuestion.ask()
+<span class="hljs-comment">// prints "Do you like cheese?"</span>
+cheeseQuestion.response = <span class="hljs-string">"Yes, I do like cheese."</span>
+</code></pre>
+<p>설문 조사의 대답은 설문을 하기 전까지 알 수 없습니다. 그래서 <code>response</code> 속성은 <code>String?</code> 타입 또는 &quot;optinal <code>String</code>&quot; 타입입니다. 이는 <code>SurveyQuestion</code>의 새 인트섵스가 초기화 되었을때 자동적으로 기본 값을 <code>nil</code>로 할당하여 &quot;no string yet&quot;을 뜻하게 됩니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="초기화-과정중에-상수-속성을-변경하기"></a><a href="#초기화-과정중에-상수-속성을-변경하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>초기화 과정중에 상수 속성을 변경하기</h3>
+<p>상수 속성이 명확한 값을 가지며 초기화가 끝나기 직전까지 상수 속성의 값을 초기화 과정중 언제라도 바꿀 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+클래스 인스턴스는 상수 속성의 값을 오직 초기화 과정중에 해당 클래스에 의해서만 바꿀 수 있습니다. 상수 속성은 자식(sub) 클래스에 의해 변경될 수 없습니다.</p>
+</blockquote>
+<p>위 예제의 <code>SurveyQuestion</code> 클래스의 <code>text</code> 속성을 상수 속성으로 바꾸어 재작성 할 수 있습니다. 질문은 한번 <code>SurveyQuestion</code> 클래스가 생성되고 나면 변경 될 수 없다는 것을 알리기 위해서죠. <code>text</code> 속성이 지금은 상수라 할지라도, 클래스의 이니셜라이저 안에서는 여전히 변경될 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SurveyQuestion</span> </span>{
+    <span class="hljs-keyword">let</span> text: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">var</span> response: <span class="hljs-type">String</span>?
+    <span class="hljs-keyword">init</span>(text: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.text = text
+    }
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">ask</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-built_in">println</span>(text)
+    }
+}
+<span class="hljs-keyword">let</span> beetsQuestion = <span class="hljs-type">SurveyQuestion</span>(text: <span class="hljs-string">"How about beets?"</span>)
+beetsQuestion.ask()
+<span class="hljs-comment">// prints "How about beets?"</span>
+beetsQuestion.response = <span class="hljs-string">"I also like beets. (But not with cheese.)"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="기본-이니셜라이저"></a><a href="#기본-이니셜라이저" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>기본 이니셜라이저</h2>
+<p>스위프트는 기본값을 모든 속성에 지정했지만 이니셜라이저를 가지지 않은 구조체나 베이스 클래스에 대해 <em>기본 이니셜라이저</em>를 제공합니다. 기본 이니셜라이저는 단순히 새 인스턴스를 만들고, 속성들을 각각의 기본값으로 설정합니다.
+이 예제는 구매 목록안의 아이템의 이름, 수량, 구매 상태를 캡슐화하는 <code>ShoppingListItem</code> 클래스를 정의합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShoppingListItem</span> </span>{
+    <span class="hljs-keyword">var</span> name: <span class="hljs-built_in">String</span>?
+    <span class="hljs-keyword">var</span> quantity = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">var</span> purchased = <span class="hljs-keyword">false</span>
+}
+<span class="hljs-keyword">var</span> item = ShoppingListItem()
+</code></pre>
+<p><code>ShoppingListItem</code> 클래스의 모든 속성이 기본 값을 가지고 있고, 부모(super) 클래스가 없는 베이스  클래스이기 때문에, <code>ShoppingListItem</code>은 자동적으로 기본 이니셜라이저를 구현하여 새 인스턴스가 생길때 속성들을 기본값으로 설정해줍니다. (<code>name</code> 속성은 온셔널 <code>String</code> 속성이어서 별달리 값이 코드에 쓰여있지 않아도 자동적으로 기본 값으로 <code>nil</code>을 받습니다.) 위의 예제에서 <code>ShoppingListItem</code> 클래스는 기본 이니셜라이저와 <code>ShoppingListItem()</code>이라 쓰여진 것처럼 이니셜라이저 문법을 이용하여 새 클래스 인스턴스를 만드는데 사용합니다. 만들어진 새 인스턴스는 <code>item</code> 변수에 할당 됩니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="구조체-타입의-멤버-단위-이니셜라이저"></a><a href="#구조체-타입의-멤버-단위-이니셜라이저" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구조체 타입의 멤버 단위 이니셜라이저</h3>
+<p>위에 언급된 기본 이니셜라이저 외에도, 구조체 타입은 자동적으로 <em>멤버 단위 이니셜라이저</em>를 부여받습니다. 구조체의 모든 저장 속성에 기본값이 제공되었지만 사용자 정의 이니셜라이저가 정의되지 않았을때 말이죠.
+멤버 단위 이니셜라이저는 새 구조체 인스턴스의 멤버 속성을 초기화 하는 단축 표현(shorthand)입니다. 새 인스턴스의 속성들의 초기값은 멤버 단위 이니셜라이저의 이름을 통해 전달 될 수 있습니다.
+밑의 예제는 <code>Size</code> 구조체를 <code>width</code>와 <code>height</code> 속성 두개를 정의합니다. 두 속성은 전부 <code>0.0</code>이 할담 됨으로써 <code>Double</code> 타입임이 암시됩니다.
+두 속성 전부 기본값을 가지기에 <code>Size</code> 구조체는 자동적으로 <code>Size</code> 인스턴스를 초기화 할 수 있는 <code>init(width:heigh:)</code> 멤버 단위 이니셜라이저를 부여받게 됩니다.</p>
+<pre><code class="hljs">struct Size {
+    <span class="hljs-built_in">var</span> <span class="hljs-built_in">width</span> = <span class="hljs-number">0.0</span>, <span class="hljs-built_in">height</span> = <span class="hljs-number">0.0</span>
+}
+<span class="hljs-built_in">let</span> twoByTwo = Size(<span class="hljs-built_in">width</span>: <span class="hljs-number">2.0</span>, <span class="hljs-built_in">height</span>: <span class="hljs-number">2.0</span>)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="값-타입의-이니셜라이저-대리-수행delegation"></a><a href="#값-타입의-이니셜라이저-대리-수행delegation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>값 타입의 이니셜라이저 대리 수행Delegation</h2>
+<p>이니셜라이져는 인스턴스 초기화 수행의 일부로 다른 이니셜라이저를 호출 할 수 있습니다. 이 과정은 <em>이니셜라이저 델리게이션</em>이라 하며, 여러 이니셜라이저 사이의 중복 코드를 피할 수 있게 합니다.
+값 타입과 클래스 타입에 따라 이니셜라이져 델리게이션이 어떤 형태로 허용 되는가, 어떻게 작동하는지 그 규칙은 어떤가가 다릅니다. 구조체나 열거형과 같은 값 타입은 상속을 지원하지 않습니다. 그렇기에 이니셜라이저 델리게이션의 과정은 비교적 간단합니다. 그저 다른 이니셜라이저가 제공한 것만을 대리 수행(delegation)하면 되기 때문입니다. 하지만 클래스는 <strong>상속</strong>에서 설명한 것처럼, 다른 클래스에서 상속 받을 수 있습니다. 이는 곧 클래스는 상속 받은 저장 속성들이 초기화 과정중에 올바르게 할당 되었는지 보장해야 하는 추가적인 책임이 있다는 것을 뜻합니다. 이러한 책임은 밑의 <strong>클래스 상속과 초기화</strong>에 설명되어 있습니다.
+값 타입에서 사용자 정의 이니셜라이저를 작성할때, 다른 같은 타입의 다른 이니셜라이저를 참조하려면 <code>self.init</code>을 사용해야 합니다. 이니셜라이저 안에선 오직 <code>self.init</code>만 호출 할 수 있습니다.
+만약 값 타입의 사용자 정의 이니셜라이저를 정의한다면, 더 이상 해당 값 타입의 기본 이니셜라이저에 접근 할 수 없게 됩니다. (그게 구조체라면 멤버 단위 구조체 이니셜라이저도 포함합니다.)
+이 제약으로 인해, 필수적인 설정을 하는 이니셜라이저 대신 의도치 않게 자동 기본 이니셜라이저를 실행함으로써일어 날 수 있는 문제를 방지합니다.</p>
+<blockquote>
+<p>NOTE
+만약 사용자 정의 값 타입이 기본 이니셜라이저와 멤버 단위 이니셜라이저, 그리고 사용자 정의 이니셜라이저를 동시에 쓰길 원한다면 이니셜라이져를 값 타입의 원래 구현의 부분으로 작성하기 보다 확장(extension)으로 작성하십시오. 자세한 정보는 <strong>확장</strong>을 보세요.</p>
+</blockquote>
+<p>다음 예제는 사용자 정의 <code>Rect</code> 구조체를 정의하여 기하학적 사각형을 표현합니다. 이 예제는 <code>Size</code>와 <code>Point</code>, 두개의 지지(supporting) 구조체를 요구합니다. 두 구조체 모두 속성들의 기본값으로 <code>0,0</code>을 제공합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Size</span> </span>{
+    var width = <span class="hljs-number">0.0</span>, height = <span class="hljs-number">0.0</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    var x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span>
+}
+</code></pre>
+<p><code>Rect</code> 구조체는 세가지 방법중 하나로 초기화 될 수 있습니다. 기본값인 0으로 초기화된 <code>origin</code>과 <code>size</code> 속성 값을 이용하여, 특정 기점(origin point)과 사이즈를 제공하여, 특정 중앙점과 사이즈를 제공하여. 이 초기화 옵션들은 <code>Rect</code> 정의 안에서 사용자 정의 이니셜라이저로서 표현됩니다.</p>
+<pre><code class="hljs">struct Rect {
+    <span class="hljs-selector-tag">var</span> origin = Point()
+    <span class="hljs-selector-tag">var</span> size = Size()
+    init() {}
+    init(origin: Point, size: Size) {
+        self<span class="hljs-selector-class">.origin</span> = origin
+        self<span class="hljs-selector-class">.size</span> = size
+    }
+    init(center: Point, size: Size) {
+        let originX = center<span class="hljs-selector-class">.x</span> - (size<span class="hljs-selector-class">.width</span> / <span class="hljs-number">2</span>)
+        let originY = center<span class="hljs-selector-class">.y</span> - (size<span class="hljs-selector-class">.height</span> / <span class="hljs-number">2</span>)
+        self.init(origin: Point(x: originX, y: originY), size: size)
+    }
+}
+</code></pre>
+<p>첫번째 <code>Rect</code> 이니셜라이저인 <code>init()</code>은 기능적으로 사용자 정의 이니셜라이저를 가지지 않을때의 기본 이니셜라이저와 똑같습니다. 이 이니셜라이저는 빈 몸체를 가지며, 빈 중괄호 한쌍 <code>{}</code>으로 표현됩니다. 또한 아무런 초기화도 수행하지 않습니다. 이 이니셜라이져를 호출하면 <code>Rect</code> 인스턴스를 반환하며, 그 인스턴스의 <code>origin</code>과 <code>size</code>는 모두 속성에서 정의된 기본값인 <code>Point(x: 0.0, y:0,0)</code>과 <code>Size(width: 0.0, height: 0.0)</code>입니다.</p>
+<pre><code class="hljs"><span class="hljs-built_in">let</span> basicRect = Rect()
+// basicRect's <span class="hljs-built_in">origin</span> <span class="hljs-built_in">is</span> (<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>) <span class="hljs-keyword">and</span> its size <span class="hljs-built_in">is</span> (<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>)
+</code></pre>
+<p>두번째 <code>Rect</code> 이니셜라이져인 <code>init(origin:size:)</code>은 기능적으로 사용자 정의 이니셜라이저를 가지지 않을때의 멤버 단위 이니셜라이져와 동일합니다. 이 이니셜라이져는 단순히 <code>origin</code>과 <code>size</code> 인수를 알맞은 저장 변수에 할당합니다.</p>
+<pre><code class="hljs">let originRect = Rect(<span class="hljs-name">origin</span>: Point(<span class="hljs-name">x</span>: <span class="hljs-number">2.0</span>, y: <span class="hljs-number">2.0</span>),
+    size: Size(<span class="hljs-name">width</span>: <span class="hljs-number">5.0</span>, height: <span class="hljs-number">5.0</span>))
+// originRect's origin is (<span class="hljs-number">2.0</span>, <span class="hljs-number">2.0</span>) and its size is (<span class="hljs-number">5.0</span>, <span class="hljs-number">5.0</span>)
+</code></pre>
+<p>세번째 <code>Rect</code> 이니셜라이저인 <code>init(center:size:)</code>은 조금 더 복잡합니다.  <code>center</code> 포인트와 <code>size</code>에서 계산한 적절한 기점에서 시작하게 됩니다. 그리고 나면 <code>init(origin:size:)</code> 이니셜라이져를 호출( 혹은 대리)합니다. 그 이니셜라이져는 알맞은 새 기점과 사이즈 값을 저장합니다.</p>
+<pre><code class="hljs">let centerRect = Rect(<span class="hljs-name">center</span>: Point(<span class="hljs-name">x</span>: <span class="hljs-number">4.0</span>, y: <span class="hljs-number">4.0</span>),
+    size: Size(<span class="hljs-name">width</span>: <span class="hljs-number">3.0</span>, height: <span class="hljs-number">3.0</span>))
+// centerRect's origin is (<span class="hljs-number">2.5</span>, <span class="hljs-number">2.5</span>) and its size is (<span class="hljs-number">3.0</span>, <span class="hljs-number">3.0</span>)
+</code></pre>
+<p><code>init(center:size:)</code> 이니셜라이저는 새 <code>origin</code>과 <code>size</code>값을 적절한 속성에 할당받게 할 수 있습니다. 하지만 <code>init(center:size:)</code> 이니셜라이저를 이용하는게 더 편하고 의도가 명확하며, 이미 있는 이니셜라이저가 제공하는 기능을 활용할 수 있는 장점이 있습니다.</p>
+<blockquote>
+<p>NOTE
+<code>init()</code>과 <code>init(origin:size:)</code>을 작성하지 않고 위의 예제를 작성해보려면 <strong>확장</strong>을 보세요.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="클래스-상속과-초기화"></a><a href="#클래스-상속과-초기화" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클래스 상속과 초기화</h2>
+<p>클래스의 모든 저장 속성은 - 부모 클래스에서 상속받은 어떠한 속성또한 포함하여 - 반드시 초기화 과정중에 초기 값을 할당받아야 합니다.
+스위프트는 두 종류의 이니셜라이져를 제공하여 클래스 타입의 모든 저장 속성이 초기값을 갖게끔 보장합니다. 각각 지정 이니셜라이저와 편의 이니셜라이저라 합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="지정-이니셜라이저와-편의-이니셜라이저"></a><a href="#지정-이니셜라이저와-편의-이니셜라이저" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지정 이니셜라이저와 편의 이니셜라이저</h3>
+<p><em>지정 이니셜라이저</em>는 클래스의 주 이니셜라이저입니다. 지정 이니셜라이저는 해당 클래스에서 접하는 모든 속성을 완전히 초기화하고, 적절한 부모 클래스 이니셜라이저를 호출하여 초기화 과정을 부모 클래스로 연쇄시킵니다.
+클래스들은 매우 적은 수의 지정 이니셜라이저를 가지는 경향이 있으며, 보통의 경우 클래스는 오직 하나만 가집니다. 지정 이니셜라이저는 초기화가 이루어지는 곳의 &quot;깔때기&quot; 지점이며, 부모 클래스로 이어지는 초기화 과정 연쇄의 &quot;깔때기&quot; 지점입니다.
+모든 클래스는 반드시 최소한 하나의 지정 이니셜라이저를 가져야합니다. 때때로, <strong>자동 이니셜라이저 상속</strong>에 설명된 것과 같이, 이 조건은 부모 클래스에서 하나 이상의 지정 이니셜라이저를 상속 받음에 따라 충족되는 경우가 있습니다.
+<em>편의 이니셜라이저</em>는 클래스를 지탱하는 두번째 이니셜라이저입니다. 편의 이니셜라이저를 정의하여, 같은 클래스 내의 지정 이니셜라이저를 호출하는 편의 이니셜라이저를 만들 수 있습니다. 이 편의 이니셜라이져를 통해 호출하는 지정 이니셜라이저의 몇몇 파라메터를 기본 값으로 설정할 수 있습니다. 또한 편의 이니셜라이저를 정의하여 특정 쓰임새나 입력 값 타입에 대한 클래스 인스턴스를 만들 수 있습니다.
+클래스가 필요로 하지 않는다면 편의 이니셜라이저를 제공할 필요는 없습니다. 편의 이니셜라이저는 보통 초기화 패턴을 단축하거나, 클래스의 의도를 명확하게 할때 만듭니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="이니셜라이저-연쇄"></a><a href="#이니셜라이저-연쇄" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이니셜라이저 연쇄</h3>
+<p>지정 이니셜라이저와 편의 이니셜라이저의 관계를 단순화 하기 위해, 스위프트는 다음의 3개 규칙을 이니셜라이저간의 델리게이션에 적용합니다.</p>
+<ul>
+<li><strong>Rule 1</strong>
+지정 이니셜라이저는 반드시 바로 위 부모 클래스의 지정 이니셜라이저를 호출한다.</li>
+<li><strong>Rule 2</strong>
+편의 이니셜라이저는 반드시 같은 클래스 내의 호출 가능한 다른 이니셜라이저를 호출한다.</li>
+<li><strong>Rule 3</strong>
+편의 이니셜라이저는 반드시 궁극적으로 지정 이니셜라이저를 호출하는 것으로 끝내야 한다.</li>
+</ul>
+<p>간단히 기억하기 위한 방법은 이렇습니다.</p>
+<ul>
+<li>지정 이니셜라이저는 반드시 <em>위</em>를 대리한다.</li>
+<li>편의 이니셜라이저는 반드시 클래스 내부를 <em>가로질러</em>서 대리한다.</li>
+</ul>
+<p>이 규칙은 다음의 그림으로 표현될 수 있습니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/initializerdelegation01_2x.png" alt="initializerdelegation01_2x.png"></p>
+<p>여기 부모 클래스는 하나의 지정 이니셜라이저를 가지고 있으며, 두개의 편의 이니셜라이저를 가지고 있습니다. 한 편의 이니셜라이저는 다른 편의 이니셜라이저를 호출하며, 그 이니셜라니저는 하나 있는 지정 이니셜라이저를 호출합니다. 이는 위의 규칙 2와 3을 충족시킵니다. 부모 클래스는 더이상의 부모 클래스를 가지지 않기에 규칙 1은 적용되지 않습니다.
+그림의 서브 클래스는 두개의 지정 이니셜라이져와 하나의 편의 이니셜라이저가 있습니다. 편의 이니셜라이저는 반드시 두 지정 이니셜라이저중 하나의 이니셜라이저를 호출해야 합니다. 편의 이니셜라이저는 클래스 안의 다른 이니셜라이저만 호출 가능하기 떄문입니다. 이는 위의 규칙 2와 3을 만족시킵니다. 규칙 1을 만족시키기 위해, 두개의 지정 이니셜라이저는 반드시 부모 클래스에 하나 있는 지정 이니셜라이저를 호출해야 합니다.</p>
+<blockquote>
+<p>NOTE
+이 규칙들은 각각의 클래스를 생성하는 방법에 영향을 주지 않습니다. 위 다이어그램의 어느 이니셜라이저라도 자기가 속해야 될, 완전히 초기화된 클래스 인스턴스를 만드는데 쓰일 수 있습니다. 이 규칙은 오직 클래스 구현의 작성에만 영향을 끼칩니다.</p>
+</blockquote>
+<p>밑의 그림은 더 복잡한 4개의 클래스 간의 계층도를 나타냅니다. 이 그림은 지정 이니셜라이저가 어떻게 이 계층도의 클래스 초기화 과정에서 &quot;깔때기&quot;처럼 작동하고, 연쇄에서 클래스간의 관계를 단순화하는지 보여줍니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/initializerdelegation02_2x.png" alt="initializerdelegation02_2x.png"></p>
+<h3><a class="anchor" aria-hidden="true" id="이-단계-초기화"></a><a href="#이-단계-초기화" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이 단계 초기화</h3>
+<p>스위프트의 초기화는 두 단계의 과정을 거칩니다. 첫번째 단계에서는 해당 클래스가 가지는 각각의 저장 속성에 초기값을 할당합니다. 모든 저장 속성의 초기 상태가 정해지고 나면, 두번째 단계가 시작됩니다. 두번째 단계에서는 클래스 인스턴스가 사용될 준비가 되기 전까지, (역주: 상속 트리 상에서의)각각의 클래스가 저장 속성을 사용자 정의할 기회를 가집니다.
+이 단계 초기화 과정을 사용하는 것은 초기화를 안전하게 하면서도, 클래스 상속 계층 상에서 각각의 클래스가 완전한 유연성을 가지게 합니다. 이 단계 초기화는 속성 값이 초기화 되기 전에 접근되는 것을 방지하며, 다른 이니셜라이저에 의해 의도치 않게 다른 값이 설정되는 것을 방지합니다.</p>
+<blockquote>
+<p>NOTE
+스위프트의 이 단계 초기화 과정은 오브젝티브 C의 초기화와 비슷합니다. 주요한 차이점은 첫번째 단계에 있습니다. 오브젝티브 C는 0이나 널(null) 값(<code>0</code> 또는 <code>nil</code>)을 모든 속성에 할당합니다. 스위프트의 초기화 흐름은 좀 더 유연하려 사용자 정의 초기값을 설정할 수 있게 해줍니다. 그리고
+<code>0</code>이나 <code>nil</code>이 기본값으로 유효하지 않은 타입에 대처할 수 있게 합니다.</p>
+</blockquote>
+<p>스위프트의 컴파일러는 이 단계 초기화가 에러없이 완료 될 수 있게 4가지 안전 점검(safety check)을 수행합니다.</p>
+<ul>
+<li><strong>안전 점검 1</strong>
+지정 이니셜러이저는 해당 클래스에서 도입된 모든 속성이 초기화 되었는지를 부모 클래스의 이니셜라이저를 대리하기 전에 확실히 하여야 합니다.</li>
+</ul>
+<p>위에 언급된 것처럼, 객체를 위한 메모리는 저장 속성의 초기 상태가 알려져야 완전히 초기화 되었다고 간주합니다. 이 규칙을 만족시키기 위해서 지정 이니셜라이저가 초기화 연쇄를 위로 전달하기 전에 자신의 속성이 초기화 되었음을 확실히 해야합니다.</p>
+<ul>
+<li><p><strong>안전 점검 2</strong>
+지정 이니셜라이저는 상속받은 속성에 값을 할당하기 전에 부모 클래스의 이니셜라이저를 대리 수행해야 합니다. 만약 그렇게 하지 않는다면, 지정 이니셜라이저가 할당한 새 값은 부모 클래스의 초기화 과정중에 덮어 씌워질 것입니다.</p></li>
+<li><p><strong>안전 점검 3</strong>
+편의 이니셜라이저는 (역주: 클래스 상속 계층상) 같은 클래스 내부에서 정의된 속성을 포함한, 어떤 속성에라도 값을 할당하기 전에 다른 이니셜라이저를 대리 수행해야 합니다. 그렇게 하지 않을 경우 편의 이니셜라이저가 할당한 새 값은 해당 클래스의 지정 이니셜라이저에 의해 덮어씌워질 것입니다.</p></li>
+</ul>
+<ul>
+<li><strong>Safety check 4</strong>
+이니셜라이저는 어떠한 인스턴스 메소드도 호출 할 수 없습니다. 어떠한 인스턴스의 속성도 읽을 수 없습니다. 또한 <code>self</code>를 초기화의 첫 단계가 끝나기 전에 참조할 수 없습니다.</li>
+</ul>
+<p>클래스 인스턴스는 첫 단계가 끝나기 전까지는 완전히 유효하지 않습니다. 첫 단계가 끝나고 클래스 인스턴스가 유효하다고 알려져야만 속성에 접근 가능하고, 메소르를 호출 할 수 있습니다.</p>
+<p>여기서 어떻게 위의 4가지 안전 점검에 의한 두 단계 초기화가 진행되는지 설명합니다.</p>
+<p><strong>Phase 1</strong></p>
+<ul>
+<li>클래스의 지정 이니셜라이저 또는 편의 이니셜라이저가 호출됩니다.</li>
+<li>클래스 인스턴스를 위한 메모리가 할당됩니다. 메모리는 아직 초기화 되지 않았습니다.</li>
+<li>클래스의 지정 이니셜라이저가 해당 클래스에 의해 도입된 모든 저장 속성이 값을 가졌음을 확인합니다. 해당 저장 속성을 위한 메모리는 이제 초기화 되었습니다.</li>
+<li>지정 이니셜라이저는 부모 클래스 이니셜라이저로 같은 작업은 해당 클래스가 행하게 (순서를) 넘깁니다.</li>
+<li>이 작업의 연쇄는 클래스 상속 계층의 맨 꼭대기에 다다를때까지 계속 됩니다</li>
+<li>연쇄의 꼭대기에 다다르면, 연쇄의 마지막 클래스는 모든 저장 속성이 값을 가진 것을 확실히 합니다. 그러면 인스턴스의 메모리는 완전히 초기화 되었다고 간주되고, 첫 단계가 끝납니다.</li>
+</ul>
+<p><strong>Phase 2</strong></p>
+<ul>
+<li>연쇄의 꼭대기에서 거꾸로 내려오면서 작업을 하여, 연쇄안의 각각의 지정 이니셜라이저는 추가로 인스턴스를 사용자 정의할 수 있는 선택권이 있습니다. 이니셜라이저는 이제 <code>self</code>에 접근 가능하고, 자신의 속성을 변경하거나, 인스턴스 메소드를 호출하거나 할 수 있습니다.</li>
+<li>마지막으로, 연쇄 안의 어떤 편의 이니셜라이저든 인스턴스를 사용자 정의 할 수 있는 선택권이 있으며, <code>self</code>를 이용하여 작업할 수 있습니다.</li>
+</ul>
+<p>초기화 호출의 첫 단계가 어떻게 보이는지 가상의 자식 클래스와 부모 클래스를 이용하여 보여줍니다.
+<img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/twophaseinitialization01_2x.png" alt="twophaseinitialization01_2x.png"></p>
+<p>이 예제에서 초기화는 자식 클래스의 편의 이니셜라이저를 호출 하는 것으로 시작합니다. 이 편의 이니셜라이저는 아직 어떤 속성도 변경할 수 없습니다. 편의 이니셜라이저는 같은 클래스 안의 지정 이니셜라이저를 대리 실행합니다.
+지정 이니셜라이저는 안전 점검 1에 따라, 모든 자식 클래스의 속성이 값을 가졌는지 확실히 합니다. 그 후에 지정 이니셜라이저는 부모 클래스의 지정 이니셜라이저를 불러 초기화 연쇄를 위로 올립니다.
+부모 클래스의 지정 이니셜라이저는 부모 클래스의 속성이 모두 값을 가졌는지 확실히 합니다. 초기화를 해야할 부모 클래스가 없기 때문에, 더 이상의 대리 수행(delegation)은 필요치 않습니다.
+부모 클래스의 속성들이 초기 값을 가지는 순간부터, 인스턴스의 메모리는 완전히 초기화가 되었다고 간주되며, 첫 단계는 끝이 납니다.</p>
+<p>여기 두번째 단계가 같은 초기화 호출에서 어떻게 보이는지 설명이 있습니다.
+<img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/twophaseinitialization02_2x.png" alt="twophaseinitialization02_2x.png"></p>
+<p>부모 클래스의 지정 이니셜라이저는 인스턴스를 추가적으로 사용자 정의할 수 있는 기회가 있습니다. 물론 하지 않아도 됩니다.
+부모 클래스의 지정 이니셜라이저가 종료되면, 자식 클래스의 이니셜라이저가 추가 사용자 정의를 수행할 수 있습니다. 이번에도 물론, 하지 않아도 됩니다.
+마지막으로, 자식 클래스의 지정 이니셜라이저가 종료되면, 처음에 지정 이니셜라이저를 호출한 편의 이니셜라이저가 추가적인 사용자 정의를 수행합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="이니셜라이저-상속과-오버라이딩"></a><a href="#이니셜라이저-상속과-오버라이딩" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이니셜라이저 상속과 오버라이딩</h3>
+<p>오브젝티브 C의 자식 클래스와는 다르게, 스위프트의 자식 클래스는 부모 클래스의 이니셜라이저를 기본적으로 상속받지 않습니다. 스위프트의 이러한 접근 방식은 부모 클래스의 단순한 이니셜라이저가 자동적으로 더 복잡한 자식 클래스에 상속되어, 자식 클래스의 새 인스턴스를 생성할때 완전하지 않게 또는 올바르지 않게 초기화되는 것을 방지합니다.
+만약 자식 클래스가 부모 클래스와 똑같은 이니셜라이저를 하나 이상 가지게 하고 싶다면, - 아마도 약간의 사용자 정의를 초기화 과정중에 수행할  -  같은 이니셜라이져를 사용자 정의 자식 클래스에서 오버라이드 하려 구현해 제공할 수 있습니다.
+만약 오버라이드 하려는 이니셜라이저가 <em>지정</em> 이니셜라이져라면, 그 구현을 자식 클래스에서 오버라이드합니다. 그리고 부모 클래스 버전의 이니셜라이저를 오버라이딩 버전에서 호출합니다.
+만약 오버라이드 하려는 이니셜라이저가 <em>편의</em> 이니셜라이저라면, 오버라이드한 이니셜라이저는 반드시 해당 자식 클래스 안의 지정 이니셜라이저를 호출해야 합니다. 위의 이니셜라이저 연쇄에서 설명한 것처럼 말이죠.</p>
+<blockquote>
+<p>NOTE
+메소드, 속성, 서브스크립트와는 달리 이니셜라이는 오버라이드 할때 <code>override</code> 키워드가 필요하지 않습니다.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="자동적-이니셜라이저-상속"></a><a href="#자동적-이니셜라이저-상속" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>자동적 이니셜라이저 상속</h3>
+<p>위에서 언급한 것처럼, 기본적으로 자식 클래스는 부모 클래스의 이니셜라이저를 상속받지 않습니다. 하지만 부모클래스의 이니셜라이저가 특정 조건을 만족한다면 자동적으로 상속이 됩니다. 실제로 이것이 뜻하는 바는 다음과 같습니다. 많은 일반적인 경우에 이니셜라이져를 오버라이드 할 필요가 없습니다. 또한 상속 받는 것이 안전할때, 부모 클래스의 이니셜라이져를 최소의 노력으로 상속 받을 수 있습니다.
+자식 클래스에 의해 도입된 새로운 어떤 속성이라도 기본 값을 제공받는 다고 가정했을때, 다음의 두 규칙이 적용됩니다.</p>
+<ul>
+<li><p><strong>Rule 1</strong>
+자식 클래스가 어떠한 지정 이니셜라이저도 정의하지 않았을 경우, 부모 클래스의 지정 이니셜라이저를 자동적으로 상속 받습니다.</p></li>
+<li><p><strong>Rule 2</strong>
+자식 클래스가 부모 클래스의 <em>모든</em> 지정 이니셜라이저를, 위의 규칙 1에 의해 지정 이니셜라이저를 상속받아서 구현하든가, 자식 클래스 정의의 일부로서 사용자 정의 구현으로 제공한다면, 부모 클래스의 모든 편의 이니셜라이저를 자동적으로 상속받게 됩니다.</p></li>
+</ul>
+<p>이 규칙은 자식 클래스가 추가적인 편의 클래스를 더할때도 적용이 됩니다.</p>
+<blockquote>
+<p>NOTE
+자식 클래스는 규칙 2를 만족시키는 것의 일부로서 부모 클래스의 지정 이니셜라이저를 자식 클래스의 편의 이니셜라이저로 구현할 수 있습니다.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="지정-이니셜라이저와-편의-이니셜라이저의-문법"></a><a href="#지정-이니셜라이저와-편의-이니셜라이저의-문법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지정 이니셜라이저와 편의 이니셜라이저의 문법</h3>
+<p>클래스의 지정 이니셜라이저는 값 타입을 위한 단순 이니셜라이저와 같은 방식으로 작성됩니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-title">init</span><span class="hljs-params">(parameters)</span></span> {
+    statements
+}
+</code></pre>
+<p>편의 이니셜라이저는 <code>init</code> 키워드 앞에 <code>convenience</code> 키워드를 공백으로 구분하여 위치하게 하는 것을 제외하면 같은 방식으로 작성됩니다.</p>
+<pre><code class="hljs"><span class="hljs-attribute">convenience</span> init(parameters) {
+    <span class="hljs-attribute">statements</span>
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="실제로-해보는-지정-이지셜라이저와-편의-이니셜라이저"></a><a href="#실제로-해보는-지정-이지셜라이저와-편의-이니셜라이저" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>실제로 해보는 지정 이지셜라이저와 편의 이니셜라이저</h3>
+<p>다음 예제는 이정 이니셜라이저와 편의 이니셜라이저, 그리고 자동적 이니셜라이저 상속을 실제로 해몹니다. 이 예제는  <code>Food</code>, <code>RecipeIngredient</code> 그리고 <code>ShoppingListItem</code> 클래스들의 상속 계층을 정의합니다. 그리고 클래스들 간의 이니셜라이저가 어떻게 상호작용하는지 보여줄 것입니다.
+상속 계층의 베이스 클래스는 <code>Food</code>입니다. 이 클래스는 음식의 이름을 캡슐화 합니다. <code>Food</code> 클래스는 <code>String</code> 타입의 <code>name</code> 속성을 도입합니다. 그리고 <code>Food</code> 인스턴스를 생성하는데 두 개의 이니셜라이저를 제공합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Food</span> </span>{
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.name = name
+    }
+    <span class="hljs-keyword">convenience</span> <span class="hljs-keyword">init</span>() {
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">init</span>(name: <span class="hljs-string">"[Unnamed]"</span>)
+    }
+}
+</code></pre>
+<p>밑의 그림은 <code>Food</code> 클래스의 이니셜라이저 연쇄가 어떻게 되는지 보여줍니다.
+<img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/initializersexample01_2x.png" alt="initializersexample01_2x.png"></p>
+<p>클래스는 기본 멤버 단위 이니셜라이저를 가지고 있지 않습니다. 그리고 <code>Food</code> 클래스는 단일 인자 <code>name</code>을 받는 지정 이니셜라이저를 제공합니다. 이 이니셜라이저는 특정 이름으로 <code>Food</code> 인스턴스를 생성하는데 사용될 수 있습니다.</p>
+<pre><code class="hljs">let namedMeat = Food(<span class="hljs-name">name</span>: <span class="hljs-string">"Bacon"</span>)
+// namedMeat's name is <span class="hljs-string">"Bacon"</span>
+</code></pre>
+<p><code>Food</code> 클래스가 제공하는 <code>init(name: String)</code> 이니셜라이저는 <code>Food</code> 인스턴스의 모든 저장 속성이 완전히 초기화 되는 것을 보장하기에 <em>지정</em> 이니셜라이저 입니다. <code>Food</code> 클래스는 부모 클래스를 가지지 않습니다. 또한 <code>init(name: String)</code> 이니셜라이저도 초기화를 완료하기 위해 <code>super.init()</code>을 호출할 필요가 없습니다.
+<code>Food</code> 클래스는 인자가 없는 <code>init()</code> 편의 이니셜라이저 또한 제공합니다. <code>init()</code> 이니셜라이저는 <code>Food</code> 클래스의 <code>init(name: String)</code> 을 대리하여, <code>[Unnamed]</code>값을 가진 <code>name</code>을 이름의 기본 플레이스홀더(placeholder)로서 제공합니다.</p>
+<pre><code class="hljs">let mysteryMeat = Food()
+// mysteryMeat<span class="hljs-symbol">'s</span> name <span class="hljs-keyword">is</span> <span class="hljs-string">"[Unnamed]"</span>
+</code></pre>
+<p>클래스 상속 계층에서 두번째 클래스는 <code>Food</code> 클래스의 자식 클래스인 <code>RecipeIngredient</code> 입니다. <code>RecipeIngredient</code> 클래스는 요리 조리법의 재료를 모델링합니다. 이 클래스는 (<code>Food</code>에서 상속받은 <code>name</code> 속성에 더해) <code>Int</code> 타입의 <code>quantity</code> 속성을 도입합니다. 그리고 <code>RecipeIngredient</code>를 생성하기 위한 이니셜라이저 두개를 제공합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RecipeIngredient</span>: <span class="hljs-title">Food</span> </span>{
+    <span class="hljs-keyword">var</span> quantity: <span class="hljs-type">Int</span>
+    <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>, quantity: <span class="hljs-type">Int</span>) {
+        <span class="hljs-keyword">self</span>.quantity = quantity
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name: name)
+    }
+    <span class="hljs-keyword">convenience</span> <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">init</span>(name: name, quantity: <span class="hljs-number">1</span>)
+    }
+}
+</code></pre>
+<p>밑의 그림은 <code>RecipeIngredient</code>의 이니셜라이저 연쇄가 어떠한지 보여줍니다.
+<img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/initializersexample02_2x.png" alt="initializersexample02_2x.png"></p>
+<p><code>RecipeIngredient</code> 클래스는 한개의 지정 이니셜라이저 <code>init(name: String, quantity: Int)</code>을 가지고 있습니다. 이 이니셜라이저는 새 <code>RecipeIngredient</code> 인스턴스의 모든 속성을 채우는데 쓰입니다. 이 이니셜라이저는  <code>RecipeIngredient</code> 클래스가 도입한 유일한 새 속성인  <code>quantity</code> 속성에 넘겨받은 <code>quantity</code> 인자를 할당하는 것으로 시작합니다. 그리고 위의 이니셜라이저는 <code>Food</code> 클래스의 <code>init(name: String)</code> 이니셜라이저를 대리 수행합니다. 이 과정은 위의 <strong>이 단계 초기화</strong>에 다온 안전 점검 1을 만족합니다.</p>
+<p><code>RecipeIngredient</code>는 편의 이니셜라이저 <code>init(name: String)</code> 또한 정의합니다. 이 이니셜라이저는 넘겨받은 이름을 가진 <code>RecipeIngredient</code>인스턴스를 생성합니다. 이 편의 이니셜라이저는 생성될때 명시적인 재료 수량이 정해지지 않았다면 갯수가 1개라고 간주합니다. 이 편의 이니셜라이저를 정의함으로써 <code>RecipeIngredient</code> 인스턴스를 빠르고 더 편하게 생성 할 수 있습니다. 그리고 재료 수량이 한개인 <code>RecipeIngredient</code> 인스턴스를 몇개 만들때의 코드 중복을 피하게 합니다. 이 편의 이니셜라이저는 단순히 클래스의 지정 이니셜라이저를 대리합니다.</p>
+<p>눈여겨 봐야 할 것은, <code>RecipeIngredient</code>이 제공하는 <code>init(name: String)</code> 편의 이니셜라이저가, <code>Food</code>의 지정 이니셜라이저인 <code>init(name: String)</code>과 같은 파라메터를 받는다는 것 입니다. <code>RecipeIngredient</code>가 이 이니셜라이저를 편의 이니셜라이저로서 제공한다고 해도, <code>RecipeIngredient</code>는 부모 클래스의 모든 지정 이니셜라이저를 제공한 셈이 됩니다. 따라서 <code>RecipeIngredient</code>는 자동적으로 부모 클래스의 편의 이니셜라이저를 모두 상속받게 됩니다.</p>
+<p>이 예제에서 <code>RecipeIngredient</code>의 부모 클래스인 <code>Food</code>는 하나의 편의 이니셜라이저 <code>init()</code>을 제공합니다. 따라서 이 이니셜라이저는 <code>RecipeIngredient</code>에게 상속되게 됩니다. <code>init()</code>의 상속된 버전은 정확하게 <code>Food</code> 버전과 똑같은 기능을 합니다. 대리 수행하는 이니셜라이저<code>init(name: String)</code>을 <code>Food</code> 버전이 아니라 <code>RecipeIngredient</code> 버전을 사용하여 대리 한다는 것을 제외하면 말이죠.</p>
+<p>이 세 이니셜라이저를 새 <code>RecipeIngredient</code> 인스턴스를 생성하는데 전부 사용할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">oneMysteryItem</span> = RecipeIngredient()
+<span class="hljs-keyword">let</span> <span class="hljs-attr">oneBacon</span> = RecipeIngredient(name: <span class="hljs-string">"Bacon"</span>)
+<span class="hljs-keyword">let</span> <span class="hljs-attr">sixEggs</span> = RecipeIngredient(name: <span class="hljs-string">"Eggs"</span>, quantity: <span class="hljs-number">6</span>)
+</code></pre>
+<p>클래스 상속 계층에서 세번째이자 마지막 클래스는 <code>RecipeIngredient</code>의 자식 클래스인 <code>ShoppingListItem</code>입니다. <code>ShoppingListItem</code>는 구매 목록에 있는 조리법의 재료를 모델링합니다.</p>
+<p>구매 목록에 있는 모든 품목(itme)들은 &quot;unpurchased&quot; 상태로 시작하게 됩니다. 이 사실을 표현하기 위해 <code>ShoppingListItem</code>은 기본값을 <code>false</code>로 가지는 <code>puchased</code> 불리언 속성을 도입합니다. <code>ShoppingListItem</code>은 또한 <code>ShoppingListItem</code> 인스턴스를 글로 설명하기 위해 산출한 <code>description</code> 속성을 추가합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShoppingListItem</span>: <span class="hljs-type">RecipeIngredient {</span></span>
+    <span class="hljs-keyword">var</span> purchased = <span class="hljs-literal">false</span>
+    <span class="hljs-keyword">var</span> description: String {
+    <span class="hljs-keyword">var</span> output = <span class="hljs-string">"\(quantity) x \(name.lowercaseString)"</span>
+        output += purchased ? <span class="hljs-string">" ✔"</span> : <span class="hljs-string">" ✘"</span>
+        <span class="hljs-keyword">return</span> output
+    }
+}
+</code></pre>
+<blockquote>
+<p>NOTE
+<code>ShoppingListItem</code>은 <code>purchased</code>의 초기값을 제공하는 이니셜라이저를 정의하지 않습니다. 여기 모델링된 구매 목록에 추가되는 아이템은 언제나 구매되지 않은(unpurchased) 상태로 시작하기 때문입니다.</p>
+</blockquote>
+<p>이 클래스가 도입한 모든 속성의 초기값을 제공하고, 어떤 이니셜라이저도 스스로 정의하지 않기 때문에 <code>ShoppingListItem</code>은 자동적으로 <em>모든</em> 지정 이니셜라이저와 편의 이니셜라이저를 부모 클래스에서 상속받습니다.</p>
+<p>밑의 그림은 전체 클래스 세개의 이니셜라이저 연쇄를 보여줍니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/initializersexample03_2x.png" alt="initializersexample03_2x.png"></p>
+<p><code>ShoppingListItem</code> 인스턴스를 만드는데 세개의 상속받은 이니셜라이저 전부를 이용할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> breakfastList = [
+    ShoppingListItem(),
+    ShoppingListItem(name: <span class="hljs-string">"Bacon"</span>),
+    ShoppingListItem(name: <span class="hljs-string">"Eggs"</span>, quantity: <span class="hljs-number">6</span>),
+]
+breakfastList[<span class="hljs-number">0</span>]<span class="hljs-selector-class">.name</span> = <span class="hljs-string">"Orange juice"</span>
+breakfastList[<span class="hljs-number">0</span>]<span class="hljs-selector-class">.purchased</span> = true
+<span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> breakfastList {
+    println(item.description)
+}
+<span class="hljs-comment">// 1 x orange juice ✔</span>
+<span class="hljs-comment">// 1 x bacon ✘</span>
+<span class="hljs-comment">// 6 x eggs ✘</span>
+</code></pre>
+<p><code>breakfastList</code>라는 새 배열은 배열 문자(array literal)로 만들어져 세개의 새 <code>ShoppingListItem</code> 인스턴스를 담습니다. 배열의 타입은 <code>ShoppingListItem[]</code>가 될 것으로 추론하게 됩니다. 배열이 생성된 후, 배열의 첫번째 <code>ShoppingListItem</code>의 이름은 <code>&quot;[Unnamed]&quot;</code>에서 <code>&quot;Orange juice&quot;</code>로 바뀌게 됩니다. 그리고 구매가 되었다고 표시하게 됩니다. 배열 안의 각 품목의 설명을 출력하게 하여 기대한 대로 기본 상태가 설정되었음을 보일 수 있습니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="클로저나-함수로-기본-속성-값을-설정하기"></a><a href="#클로저나-함수로-기본-속성-값을-설정하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클로저나 함수로 기본 속성 값을 설정하기</h2>
+<p>만약 저장 속성의 기본 값이 약간의 사용자 정의나 설정을 요구한다면, 클로저나 전역 함수를 이용하여 사용자 정의된 기본 값을 속성에 제공할 수 있습니다. 해당 속성이 속해있는 새 인스턴스가 초기화 될 때마다, 해당 클로저나 함수가 호출됩니다. 그리고 그 반환 값이 속성의 기본 값으로 사용됩니다.</p>
+<p>그러한 클로저나 함수들은 대개 속성의 타입과 같은 임시 값을 만들어서, 그 값을 원하는 초기 상태로 맞춰주고, 그 임시 값을 속성의 기본 값으로 사용되게 반환합니다.</p>
+<p>이 예제는 클로저가 어떻게 속성의 기본값을 제공할 수 있게 되는지 전체적인 뼈대를 보여줍니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span> {</span>
+    let someProperty: SomeType = {
+        <span class="hljs-regexp">//</span> create a <span class="hljs-keyword">default</span> value <span class="hljs-keyword">for</span> someProperty inside <span class="hljs-keyword">this</span> closure
+        <span class="hljs-regexp">//</span> someValue must be <span class="hljs-keyword">of</span> the same type <span class="hljs-keyword">as</span> SomeType
+        <span class="hljs-keyword">return</span> someValue
+        }()
+}
+</code></pre>
+<p>클로저의 닫는 중괄호 바로 뒤에 빈 괄호 한쌍이 있는 것에 주의해 주십시오. 이는 스위프트에게 클로저를 즉시 실행 시키라고 지시합니다. 만약 이 괄호를 생략한다면 클로저의 반환 값이 아니라, 클로저 그 자체를 속성에 할당하려 시도하는 것이 됩니다.</p>
+<blockquote>
+<p>NOTE
+만약 클로저를 이용하려 속성을 초기화 하려고 한다면 다음을 기억해 두십시오. 클로저의 실행이 된 시점에서는 인스턴스의 나머지 부분은 아직 초기화가 되지 않은 상태입니다. 이는 클로저 안에서 다른 속성 값에 접근 할 수 없다는 것을 뜻합니다. 속성들이 기본값을 가지고 있다고 해도 말이죠. 또한 암시적 <code>self</code> 속성을 사용하거나, 인스턴스의 다른 메소드를 호출 할 수 없습니다.</p>
+</blockquote>
+<p>이 예제는 <code>Checkerboard</code> 구조체를 정의하여 <em>Draughts</em>라고도 알려진 <em>체커</em> 게임의 보드를 모델링합니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/checkersboard_2x.png" alt="checkersboard_2x.png"></p>
+<p><em>체커</em> 게임은 흑백 칸이 번갈아 있는 10 * 10 판 위에서 플레이합니다. 이 게임판을 표현하기 위해 <code>Checkerboard</code> 구조체는 길이가 100이고, <code>Bool</code> 값을 가지는 <code>boardColors</code>라는 단일 속성을 가집니다. 배열에서 <code>ture</code> 값은 검은 칸을 표현하고, <code>false</code> 값은 흰색 칸을 표현합니다. 배열의 첫번째 아이템은 게임판에서 제일 좌상단의 칸을 표현하고, 마지막 아이템은 제일 게임판에서 우하단의 칸을 표현합니다.</p>
+<p><code>boardColors</code> 배열은 색상 값을 설정하기 위해 클로저를 사용하여 초기화가 됩니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Checkerboard</span> </span>{
+    <span class="hljs-keyword">let</span> boardColors: <span class="hljs-type">Bool</span>[] = {
+        <span class="hljs-keyword">var</span> temporaryBoard = <span class="hljs-type">Bool</span>[]()
+        <span class="hljs-keyword">var</span> isBlack = <span class="hljs-literal">false</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">10</span> {
+            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">10</span> {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        <span class="hljs-keyword">return</span> temporaryBoard
+        }()
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">squareIsBlackAtRow</span><span class="hljs-params">(row: Int, column: Int)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">return</span> boardColors[(row * <span class="hljs-number">10</span>) + column]
+    }
+}
+</code></pre>
+<p>새 <code>Checkerboard</code> 인스턴스가 생성될때, 해당 클로저가 실행되어 <code>boardColors</code>의 기본 값이 계산되고 반환됩니다. 위 예제에서 보이는 클로저는 게임판 위의 각각의 칸에 알맞은 색을 계산하여 임시 배열인 <code>temporaryBoard</code>에 설정합니다. 그리고 설정이 끝나면 이 임시 배열은 클로저의 반환값으로서 반환이 됩니다. 이 반환된 배열 값은 <code>boardColors</code> 에 저장이 되고, 기능성 함수 <code>squareIsBlackAtRow</code>에 의해 조회 될 수 있습니다.</p>
+<pre><code class="hljs">let board = Checkerboard()
+println(<span class="hljs-name">board</span>.squareIsBlackAtRow(<span class="hljs-number">0</span>, column: <span class="hljs-number">1</span>))
+// prints <span class="hljs-string">"true"</span>
+println(<span class="hljs-name">board</span>.squareIsBlackAtRow(<span class="hljs-number">9</span>, column: <span class="hljs-number">9</span>))
+// prints <span class="hljs-string">"false"</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter15.html">← 상속 (Inheritance)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#저장-속성에-초기값-설정하기">저장 속성에 초기값 설정하기</a><ul class="toc-headings"><li><a href="#이니셜라이져">이니셜라이져</a></li><li><a href="#기본-속성-값">기본 속성 값</a></li></ul></li><li><a href="#사용자-정의-초기화">사용자 정의 초기화</a><ul class="toc-headings"><li><a href="#초기화-파라메터">초기화 파라메터</a></li><li><a href="#지역-파라메터-이름과-외부-파라메터-이름">지역 파라메터 이름과 외부 파라메터 이름</a></li><li><a href="#옵셔널-속성-타입">옵셔널 속성 타입</a></li><li><a href="#초기화-과정중에-상수-속성을-변경하기">초기화 과정중에 상수 속성을 변경하기</a></li></ul></li><li><a href="#기본-이니셜라이저">기본 이니셜라이저</a><ul class="toc-headings"><li><a href="#구조체-타입의-멤버-단위-이니셜라이저">구조체 타입의 멤버 단위 이니셜라이저</a></li></ul></li><li><a href="#값-타입의-이니셜라이저-대리-수행delegation">값 타입의 이니셜라이저 대리 수행Delegation</a></li><li><a href="#클래스-상속과-초기화">클래스 상속과 초기화</a><ul class="toc-headings"><li><a href="#지정-이니셜라이저와-편의-이니셜라이저">지정 이니셜라이저와 편의 이니셜라이저</a></li><li><a href="#이니셜라이저-연쇄">이니셜라이저 연쇄</a></li><li><a href="#이-단계-초기화">이 단계 초기화</a></li><li><a href="#이니셜라이저-상속과-오버라이딩">이니셜라이저 상속과 오버라이딩</a></li><li><a href="#자동적-이니셜라이저-상속">자동적 이니셜라이저 상속</a></li><li><a href="#지정-이니셜라이저와-편의-이니셜라이저의-문법">지정 이니셜라이저와 편의 이니셜라이저의 문법</a></li><li><a href="#실제로-해보는-지정-이지셜라이저와-편의-이니셜라이저">실제로 해보는 지정 이지셜라이저와 편의 이니셜라이저</a></li></ul></li><li><a href="#클로저나-함수로-기본-속성-값을-설정하기">클로저나 함수로 기본 속성 값을 설정하기</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

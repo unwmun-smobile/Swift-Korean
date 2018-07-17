@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>열거형 (Enumerations) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : inureyes (inureyes@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="열거형 (Enumerations) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : inureyes (inureyes@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">열거형 (Enumerations)</h1></header><article><div><span><blockquote>
+<p>Translator : inureyes (<a href="mailto:inureyes@gmail.com">inureyes@gmail.com</a>)</p>
+</blockquote>
+<p>열거형 <em>(Enumeration)</em> 은 관련있는 값들의 그룹에 대한 일반적인 타입을 정의하며, 이를 이용하여 코드 안에서 타입에 안전한 방법으로 작업할 수 있습니다. C에 익숙한 사용자라면, C 열거형은 관련있는 이름을 정수값의 집합(set)에 할당하는 것을 알고 있을 것입니다. Swift의 열거형은 훨씬 더 유연하며, 열거형의 각 숫자마다 반드시 값을 제공할 필요가 없습니다. 만약 (&quot;원시(raw)&quot; 값으로 알려진) 값이 각 열거형 번호마다 제공될 경우, 그 값들은 문자열, 글자, 어떠한 정수나 부동 소수점 타입이 될 수 있습니다.</p>
+<p>또한, 열거형 멤버들은 각각 다른 멤버 값에 대하여 다른 언어의 공용체(union)및 비슷한 기능들이 하듯 연관된 값들을 어떤 타입이든 지정할 수 있습니다. 관련있는 멤버들의 일반적인 집합을 하나의 열거형의 부분으로 정의할 수도 있으며, 각각은 그에 연관된 적당한 타입의 값들의 다양한 집합을 가질 수 있습니다.</p>
+<p>Swift의 열거형은 열거형의 현재 값에 대한 추가적인 정보를 제공하기 위한 계산된 프로퍼티나, 열거형이 표현하는 값들과 연관된 기능들을 제공하는 인스턴스 메소드 같이 전통적으로 클래스 등에서만 지원되는 많은 기능들을 차용하였습니다. 또한 열거형은 초기 멤버 값을 제공하는 이니셜라이저(initiailizer)를 제공할 수 있고, 원래 구현을 넘어서 기능을 확장할 수도 있으며, 표준 기능을 제공하기 위한 프로토콜을 따를 수 있습니다.</p>
+<p>이러한 기능에 대한 자세한 내용은 <a href="">속성</a>, <a href="">메소드</a>, <a href="">초기화</a>, <a href="">확장</a>, 및 <a href="">프로토콜</a>을 참조하십시오.</p>
+<h3><a class="anchor" aria-hidden="true" id="열거형-문법-enumeration-syntax"></a><a href="#열거형-문법-enumeration-syntax" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>열거형 문법 (Enumeration Syntax)</h3>
+<p>열거형은 <code>enum</code> 키워드로 작성하며, 중괄호 안에 모든 정의를 집어넣습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">SomeEnumeration</span> {</span>
+    /<span class="hljs-regexp">/ enumeration definition goes here
+}
+</span></code></pre>
+<p>여기에 나침반의 4가지 주요 방향을 위한 예제가 하나 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">CompassPoint</span> {</span>
+    <span class="hljs-keyword">case</span> North
+    <span class="hljs-keyword">case</span> South
+    <span class="hljs-keyword">case</span> East
+    <span class="hljs-keyword">case</span> West
+}
+</code></pre>
+<p>(<code>North</code>, <code>South</code>, <code>East</code> 및 <code>West</code> 같이) 열거형에 정의된 값들은 이 열거형의 멤버 값들입니다. <code>case</code> 키워드는 멤버 값들의 새 줄이 정의될 것임을 나타냅니다.</p>
+<blockquote>
+<p>NOTE
+C 및 Objective-C 와는 다르게, Swift의 열거형 멤버들은 생성시 기본 정수값들에 할당되지 않습니다. 위의 <strong>CompassPoints</strong> 예제에서 보듯, <strong>North</strong>, <strong>South</strong>, <strong>East</strong> 및 <strong>West</strong>는 명시적으로 <strong>0</strong>, <strong>1</strong>, <strong>2</strong> 및 <strong>3</strong>에 대응되지 않습니다. 대신에, 기본 열거형 멤버들은 <strong>CompassPoint</strong>의 명시적으로 정의된 타입과 함께 정의된 완벽하게 갖춰진 값입니다.</p>
+</blockquote>
+<p>여러 멤버 값들이 콤마(,) 로 구분되어 한 줄에 나올 수도 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Planet</span> {</span>
+    <span class="hljs-keyword">case</span> Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+}
+</code></pre>
+<p>각 열거형 정의들은 새로운 타입을 정의합니다. Swift의 다른 타입과 마찬가지로, 이름들 ( <strong>CompassPoint</strong> 및 <strong>Planet</strong>과 같은) 은 대문자로 시작해야 합니다. 자명하게 읽힐 수 있도록 열거형 타입에게 복수형 대신 단수형 이름을 주세요.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> directionToHead = CompassPoint<span class="hljs-selector-class">.West</span>
+</code></pre>
+<p><strong>directionToHead</strong> 타입은 <strong>CompassPoint</strong>의 가능한 값들 중 하나가 초기화 될 때 유추됩니다. <strong>directionToHead</strong>가 <strong>CompassPoint</strong>로 선언되면, 짧은 닷 구문을 사용하여 그 값을 다른 <strong>CompassPoint</strong> 값으로 할당할 수 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-attr">directionToHead</span> = .East
+</code></pre>
+<p><strong>directionToHead</strong>의 타입은 이미 알려져 있으므로, 값을 설정할 때 타입을 명기하지 않을 수 있습니다. 이러한 부분은 명시적으로 타입된 열거형 값들로 작업할 때 매우 읽기 편한 코드를 만들어줍니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="열거형의-값들과-스위치-구문간의-대응-matching-enumeration-values-with-a-switch-statement"></a><a href="#열거형의-값들과-스위치-구문간의-대응-matching-enumeration-values-with-a-switch-statement" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>열거형의 값들과 스위치 구문간의 대응 (Matching Enumeration Values with a Switch Statement)</h2>
+<p>각각의 열거형 값들을 <code>switch</code> 구문과 대응할 수 있습니다.</p>
+<pre><code class="hljs">directionToHead = <span class="hljs-selector-class">.South</span>
+switch directionToHead {
+case <span class="hljs-selector-class">.North</span>:
+    println(<span class="hljs-string">"Lots of planets have a north"</span>)
+case <span class="hljs-selector-class">.South</span>:
+    println(<span class="hljs-string">"Watch out for penguins"</span>)
+case <span class="hljs-selector-class">.East</span>:
+    println(<span class="hljs-string">"Where the sun rises"</span>)
+case <span class="hljs-selector-class">.West</span>:
+    println(<span class="hljs-string">"Where the skies are blue"</span>)
+}
+<span class="hljs-comment">// prints "Watch out for penguins"</span>
+</code></pre>
+<p>이 코드는 다음과 같이 읽을 수 있습니다:
+&quot;<strong>directionToHead</strong>의 값을 봅시다. 만약 <strong>.North</strong>와 값이 같다면,  <strong>&quot;Lots of planets have a north&quot;</strong> 를 출력합니다. 만약 <strong>.South</strong>와 값이 같다면, <strong>&quot;Watch out for penguins&quot;</strong> 를 출력합니다.&quot;</p>
+<p>...식이 됩니다.</p>
+<p><a href="">제어 구문</a> 에서 설명했듯이, <code>switch</code> 구문은 열거형 멤버를 고려할때 완벽하게 작성되어야 합니다. 만약 <strong>.West</strong>를 표현하기 위한 <code>case</code>가 빠진 경우, 이 코드는 <strong>CompassPoint</strong> 멤버의 완벽한 리스트를 고려하지 않았기 때문에 컴파일되지 않을 것입니다. 완벽성 (exhaustiveness) 의 요구는 열거형 멤버가 실수로 생략되는 것을 방지합니다.</p>
+<p>모든 열거형 멤버에 대한 케이스를 제공하기에 적당하지 않은 경우, 명시적으로 언급되지 않은 멤버들을 위한 기본 케이스를 제공할 수 있습니다.</p>
+<pre><code class="hljs">    <span class="hljs-keyword">let</span> somePlanet = <span class="hljs-type">Planet</span>.<span class="hljs-type">Earth</span>
+    <span class="hljs-keyword">switch</span> somePlanet {
+    <span class="hljs-keyword">case</span> .<span class="hljs-type">Earth</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Mostly harmless"</span>)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Not a safe place for humans"</span>)
+    }
+    <span class="hljs-comment">// prints "Mostly harmless”</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="관련된-값들-associated-values"></a><a href="#관련된-값들-associated-values" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>관련된 값들 (Associated Values)</h2>
+<p>앞 섹션의 예제는 열거형의 멤버들이 각각의 어떻게 정의되었는지 보여줍니다. 상수 및 변수를 <strong>Planet.Earth</strong> 에 할당할 수 있으며, 나중에 값들을 확인할 수도 있습니다. 그렇지만, 종종 멤버 값들과 함께 연관된 다른 타입의 값들을 저장하는 것이 유용한 경우들이 있습니다. 이는 추가적인 사용자 지정 정보를 멤버 값들마다 저장할수 있게 하며, 코드 안에서 멤버를 사용할 때 마다 정보가 변경되는 것을 허용합니다.</p>
+<p>어떤 특정한 타입의 관련 값을 저장하는 Swift 열거형을 정의 할 수 있으며, 필요한 경우에 열거형의 각 멤버에 따라 값의 형식은 다를 수 있습니다. 이러한 열거형과 유사한 경우들이 다른 언어에서는 차별된 공용체 (discriminated union), 태깅된 공용체 (tagged unions) 및 변형체 (variants) 로 알려져 있습니다.</p>
+<p>예를 들어 재고 추적 시스템이 각 제품을 두가지 타입의 바코드로 추적할 필요가 있다고 해 봅시다. 어떤 제품들은 UPC-A 포맷의 <strong>0</strong>에서 <strong>9</strong> 사이의 숫자를 사용하는 1차원 바코드로 레이블링 되어 있습니다. 각 바코드는 열 개의 &quot;확인 번호(identifier)&quot; 숫자가 뒤따르는 &quot;번호 시스템&quot; 숫자를 갖고 있습니다. 이 숫자들 뒤에는 각 코드가 제대로 스캔되었는지를 검증하기 위한 &quot;확인(check)&quot; 숫자가 붙습니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/chapter10-fig1.png" alt="chapter10-fig1.png"></p>
+<p>다른 제품들은 모든 ISO 8859-1 문자를 사용할 수 있으며 2,953글자의 길이를 갖는 QR 코드 포맷의 2차원 바코드로 레이블링되어 있습니다.</p>
+<p><img src="https://raw.githubusercontent.com/lean-tra/Swift-Korean/master/images/chapter10-fig2.png" alt="chapter10-fig2.png"></p>
+<p>재고추적 시스템이 UPC-A 바코드를 3개의 숫자 튜플로 저장하고, QR 코드는 임의의 길이의 문자열로 저장할 수 있다면 매우 편할 것입니다.</p>
+<p>Swift에서, 각 유형의 제품의 바코드를 정의하는 열거형은 다음처럼 보일 것입니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Barcode</span> {</span>
+        <span class="hljs-keyword">case</span> UPCA(Int, Int, Int)
+        <span class="hljs-keyword">case</span> QRCode(String)
+    }
+</code></pre>
+<p>이 코드는 다음과 같이 읽을 수 있습니다:</p>
+<p>&quot;<code>(Int, Int, Int)</code> 타입의 <strong>UPCA</strong> 값 또는 <code>String</code> 타입의 <strong>QRCode</strong> 값을 가질 수 있는 <strong>Barcode</strong>라는 열거형 타입을 정의합니다.&quot;</p>
+<p>이 정의는 어떠한 실제 <code>Int</code> 및 <code>String</code> 값을 제공하지 않습니다. 오직 바코드 상수 및 변수들이 <strong>Barcode.UPCA</strong> 또는 <strong>Barcode.QRCode</strong> 중 하나와 같을 때, 그와 연관된 값들의 타입만을 정의합니다.</p>
+<p>이제 새 바코드는 두가지 타입 중 하나로 생성될 수 있습니다:</p>
+<pre><code class="hljs">var productBarcode = Barcode.UPCA(<span class="hljs-number">8</span>, <span class="hljs-number">85909</span>_51226, <span class="hljs-number">3</span>)
+</code></pre>
+<p>이 예제는 <strong>productBarcode</strong> 라는 새 변수를 생성하고, <strong>Barcode.UPCA</strong> 의 값으로 <strong>(8, 8590951226, 3)</strong> 튜플 값을 배정합니다. 제공된 &quot;식별자&quot; 값은 바코드로 읽기 좋도록 정수 표현 안의 밑줄 -<strong>85909_51226</strong>-로 을 갖고 있습니다.</p>
+<p>동일한 제품이 다른 형태의 바코드로 배정될 수도 있습니다.
+<code>productBarcode = .QRCode(&quot;ABCDEFGHIJKLMNOP&quot;)”</code>
+이 경우, 원래 <strong>Barcode.UPCA</strong> 및 정수 값은 새로운 <strong>Barcode.QRCode</strong> 와 문자열 값으로 대체됩니다. <strong>Barcode</strong> 타입의 상수 및 변수들은 <strong>.UPCA</strong> 또는 <strong>.QRCode</strong> 중 하나를 (해당되는 값들과 함께) 저장할 수 있지만, 한번에 둘 중 하나만 저장할 수 있습니다.</p>
+<p>서로 다른 바코드 타입들은 앞에서와 같이 <code>switch</code> 구문을 사용하여 체크할 수 있습니다. 그러나, 이번 경우 관련된 값들은 스위치 구분의 일부로 추출될 수 있습니다. 각각의 연관 값들을 <code>switch</code>의 <code>case</code> 내용으로 사용하기 위하여 (<code>let</code> 접두사와 함께) 상수 또는 (<code>var</code> 접두사와 함께) 변수로 추출할 수 있습니다.</p>
+<pre><code class="hljs">    <span class="hljs-keyword">switch</span> productBarcode {
+    <span class="hljs-keyword">case</span> .<span class="hljs-type">UPCA</span>(<span class="hljs-keyword">let</span> numberSystem, <span class="hljs-keyword">let</span> identifier, <span class="hljs-keyword">let</span> check):
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"UPC-A with value of <span class="hljs-subst">\(numberSystem)</span>, <span class="hljs-subst">\(identifier)</span>, <span class="hljs-subst">\(check)</span>."</span>)
+    <span class="hljs-keyword">case</span> .<span class="hljs-type">QRCode</span>(<span class="hljs-keyword">let</span> productCode):
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"QR code with value of <span class="hljs-subst">\(productCode)</span>."</span>)
+    }
+    <span class="hljs-comment">// prints "QR code with value of ABCDEFGHIJKLMNOP."</span>
+</code></pre>
+<p>만약 열거형 멤버들의 모든 연관 값들이 상수로 추출되었거나 모두 변수로 추출되었다면, 간결함을 위하여 멤버 이름 앞에 하나의 <code>var</code> 또는 <code>let</code> 을 붙일 수 있습니다:</p>
+<pre><code class="hljs">    <span class="hljs-keyword">switch</span> productBarcode {
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .<span class="hljs-type">UPCA</span>(numberSystem, identifier, check):
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"UPC-A with value of <span class="hljs-subst">\(numberSystem)</span>, <span class="hljs-subst">\(identifier)</span>, <span class="hljs-subst">\(check)</span>."</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .<span class="hljs-type">QRCode</span>(productCode):
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"QR code with value of <span class="hljs-subst">\(productCode)</span>."</span>)
+    }
+    <span class="hljs-comment">// prints "QR code with value of ABCDEFGHIJKLMNOP."</span>
+</code></pre>
+<p>‌</p>
+<h2><a class="anchor" aria-hidden="true" id="원시-값-raw-values"></a><a href="#원시-값-raw-values" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>원시 값 (Raw Values)</h2>
+<p>연관값들을 사용한 바코드 예제는 어떻게 열거형의 멤버들이 그들이 저장하는 여러 타입의 관련된 값들을 선언하는지에 대해 보여주었습니다. 연관 값들에 대한 다른 방법으로, 열거형 멤버들은 (원시 값들이라고 부르는) 모두 같은 타입인 기본값들로 미리 채워질 수 있습니다.</p>
+<p>아래는 원시 ASCII 값들을 이름붙은 열거형 멤버들에 저장하는 예입니다.</p>
+<pre><code class="hljs">    <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">ASCIIControlCharacter</span>: <span class="hljs-title">Character</span> {</span>
+        <span class="hljs-keyword">case</span> Tab = <span class="hljs-string">"\t"</span>
+        <span class="hljs-keyword">case</span> LineFeed = <span class="hljs-string">"\n"</span>
+        <span class="hljs-keyword">case</span> CarriageReturn = <span class="hljs-string">"\r"</span>
+    }
+</code></pre>
+<p>여기서 <strong>ASCIIControlCharacter</strong> 열거형을 위한 원시 값들은 <code>Character</code> 타입이 되도록 정의되었으며, 더 일반적인 ASCII 제어 문자들로 할당되었습니다. <code>Character</code> 값들은 <a href="">문자열 및 글자</a> 에 설명되어 있습니다.</p>
+<p>원시 값들은 연관된 값들과 같지 않음을 유의하세요. 원시 값들은 위의 세가지 ASCII 코드들처럼 코드 안에서 처음 열거형을 정의할 때 미리 정의된 값들입니다. 개개의 열거형 멤버들의 원시 값은 언제나 동일합니다. 연관 값들은 새 상수 또는 변수를 열거형의 멤버 중 하나에 기초하여 생성할 때 할당되며, 무엇을 하느냐에 따라 매번 다를 수 있습니다.</p>
+<p>원시 값은 문자열, 글자, 정수 또는 어떠한 부동 소수점 타입이 될 수 있습니다. 각각의 원시 값은 열거형 정의 안에서 반드시 유일해야 합니다. 원시 값으로 정수가 사용되었다면, 열거형 멤버의 일부에 아무 값도 설정되지 않은 경우 자동 증가(Auto-incrementation)할 것입니다.</p>
+<p>아래의 열거형은 태양으로부터의 순서를 원시 정수값으로 표현하는 <strong>Planet</strong> 열거형의 개선된 형태입니다.</p>
+<pre><code class="hljs">    <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Planet</span>: <span class="hljs-title">Int</span> {</span>
+        <span class="hljs-keyword">case</span> Mercury = <span class="hljs-number">1</span>, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+    }
+</code></pre>
+<p>자동 증가는 <strong>Planet.Venus</strong>가 2의 원시 값을 갖는 식으로 진행되는 것을 의미합니다.</p>
+<p>열거형 멤버의 원시 값들을 <strong>toRaw</strong> 메소드로 읽읍시다:</p>
+<pre><code class="hljs">    let earthsOrder = Planet<span class="hljs-selector-class">.Earth</span><span class="hljs-selector-class">.toRaw</span>()
+    <span class="hljs-comment">// earthsOrder is 3</span>
+</code></pre>
+<p>열거형의 <strong>fromRaw</strong> 메소드를 사용하여 특정한 원시 값에 해당되는 열거형 멤버를 찾읍시다. 이 예제는 원시값 <strong>7</strong>에 해당되는 행성이 Uranus임을 판별합니다:</p>
+<pre><code class="hljs">    let possiblePlanet = Planet.fromRaw(<span class="hljs-number">7</span>)
+    // possiblePlanet <span class="hljs-keyword">is</span> <span class="hljs-keyword">of</span> <span class="hljs-keyword">type</span> <span class="hljs-type">Planet? </span><span class="hljs-keyword">and</span> equals Planet.Uranus
+</code></pre>
+<p>모든 <code>Int</code> 값들이 해당되는 행성을 찾을 수 있는 것은 아닙니다. 그러므로, <strong>fromRaw</strong> 메소드는 추가적인 열거형 멤버를 반환합니다. 위의 예에서, <strong>possiblePlanet</strong> 은 <strong>Planet?</strong> 타입이거나 &quot;<strong>optional Planet</strong>&quot; 타입입니다.</p>
+<p>만약 9번째 위치에 있는 행성을 찾는다면, <strong>fromRaw</strong>가 반환하는 추가적 <strong>Planet</strong> 값은 <code>nil</code> 이 될 것입니다:</p>
+<pre><code class="hljs">    <span class="hljs-keyword">let</span> positionToFind = <span class="hljs-number">9</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> somePlanet = <span class="hljs-type">Planet</span>.fromRaw(positionToFind) {
+        <span class="hljs-keyword">switch</span> somePlanet {
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Earth</span>:
+            <span class="hljs-built_in">println</span>(<span class="hljs-string">"Mostly harmless"</span>)
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-built_in">println</span>(<span class="hljs-string">"Not a safe place for humans"</span>)
+        }
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"There isn't a planet at position <span class="hljs-subst">\(positionToFind)</span>"</span>)
+    }
+    <span class="hljs-comment">// prints "There isn't a planet at position 9"</span>
+</code></pre>
+<p>이 예제는 <strong>9</strong>의 원시값에 해당되는 행성을 읽기 위해 추가적인 바인딩을 사용합니다.
+<strong>if let somePlanet = Planet.fromRaw(9)</strong> 는 추가적인 <strong>Planet</strong>을 찾아내고, 찾을 수 있는 경우 추가적인 <strong>Planet</strong>의 내용을 <strong>somePlanet</strong>에 할당합니다. 이 경우, <strong>9</strong>의 위치에 있는 행성을 찾는 것은 불가능하기 때문에 <code>else</code> 브렌치가 대신 실행됩니다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter9.html">← 클로저 (Closures)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#열거형의-값들과-스위치-구문간의-대응-matching-enumeration-values-with-a-switch-statement">열거형의 값들과 스위치 구문간의 대응 (Matching Enumeration Values with a Switch Statement)</a></li><li><a href="#관련된-값들-associated-values">관련된 값들 (Associated Values)</a></li><li><a href="#원시-값-raw-values">원시 값 (Raw Values)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

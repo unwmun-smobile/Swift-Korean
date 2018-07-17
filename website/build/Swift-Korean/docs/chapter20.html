@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>타입 변환 (Type Casting) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : Snowcat8436 (snowcat8436@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="타입 변환 (Type Casting) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : Snowcat8436 (snowcat8436@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">타입 변환 (Type Casting)</h1></header><article><div><span><blockquote>
+<p>Translator : Snowcat8436 (<a href="mailto:snowcat8436@gmail.com">snowcat8436@gmail.com</a>)</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="타입변환type-casting"></a><a href="#타입변환type-casting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입변환(Type Casting)</h2>
+<p>타입 변환이란 인스턴스(instance)의 타입을 체크하기 위한 방법이며, 또한 이것은 인스턴스를 마치 해당 클래스가 가친 계층구조에서 온 상위클래스나 하위클래스처럼 다룬다.
+Swift에서 타입 변환은 <code>is</code>와 <code>as</code>라는 연산자로 구현할 수 있으며, 이 두 연산자는 값의 타입을 체크하거나 다른 타입으로 변환하는 간단하고 표현적인 방법을 제공합니다.
+또한 해당 타입이 프로토콜에 적합하지 아닌지 체크하기 위해서 타입 변환을 사용할 수 있으며 보다 자세한 사항은 <a href="링크">Protocol Conformance</a>를 참조하시기 바랍니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="타입-캐스팅을-위한-클래스-계층-정의defining-a-class-hierarchy-for-type-casting"></a><a href="#타입-캐스팅을-위한-클래스-계층-정의defining-a-class-hierarchy-for-type-casting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입 캐스팅을 위한 클래스 계층 정의(Defining a Class Hierarchy for Type Casting)</h2>
+<p>당신은 특정한 클래스의 인스턴스의 타입을 체크하거나 인스턴스를 같은 계층의 또다른 클래스로 변환하기 위해서 클래스들과 하위클래스들의 계층정보를 사용한 타입캐스팅을 할 수 있다.
+아래의 세가지의 코드조각(code snippets)는 타입 캐스팅이 사용되는 예제를 보여주기 위한 계층적인 클래스들과 각각의 클래스들의 인스턴스를 포함하는 배열(array)를 정의하고 있습니다.
+첫번째 코드 조각은 <code>MediaItem</code>이라는 새로운 기본 클래스(base class)를 정의하고 있습니다. 이 클래스는 디지털 미디어 라이브러리에 있는 모든 아이템들을 위한 기본적인 기능을 제공합니다. 특히   <code>String</code> 타입의 <code>name</code> 속성(Property)를 선언하고, <code>init name</code> initializer를 통해서 초기화 합니다(이것은 모든 미디어 아이템(영화나 노래)들이 이름을 가지고 있다고 가정합니다)</p>
+<pre><code class="hljs"><span class="hljs-built_in">class</span> MediaItem {
+    var <span class="hljs-built_in">name</span>: String
+    init(<span class="hljs-built_in">name</span>: String) {
+        self.<span class="hljs-built_in">name</span> = <span class="hljs-built_in">name</span>
+    }
+}
+</code></pre>
+<p>다음 코드 조각은 <code>MediaItem</code>의 두가지 하위클래스(subclasses)들입니다. 첫번째 하위클래스인 <code>Moive</code>는 내부적으로 영화에 관한 추가적인 데이터를 가지고 있는데. 이는 <code>director</code>라는 속성 및 초기화 부분을 <code>MediaItem</code>클래스의 initalizer의 윗부분에 추가하는것으로 더할 수 있으며. 두번째 하위 클래스인 <code>Song</code>도 <code>artist</code> 속성의 관한 내용을 선언하고 base class의 윗부분에서 이를 초기화 한다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Movie</span>: <span class="hljs-title">MediaItem</span> </span>{ 
+    <span class="hljs-keyword">var</span> director: <span class="hljs-built_in">String</span>
+    init(name: <span class="hljs-built_in">String</span>, director: <span class="hljs-built_in">String</span>) {
+        self.director = director
+        <span class="hljs-keyword">super</span>.init(name: name)
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Song</span>: <span class="hljs-title">MediaItem</span> </span>{
+    <span class="hljs-keyword">var</span> artist: <span class="hljs-built_in">String</span>
+    init(name: <span class="hljs-built_in">String</span>, artist: <span class="hljs-built_in">String</span>) {
+        self.artist = artist
+        <span class="hljs-keyword">super</span>.init(name: name)
+    }
+}
+</code></pre>
+<p>마지막 코드조각은 2개의 <code>Movie</code> 인스탄스와 3개의 <code>Song</code> 인스턴스를 포함하는 <code>library</code>로 불리는 상수형 배열(constant array)를 만든다.
+<code>library</code> 배열의 타입은 각각의 배열 내부의 콘텐츠를 초기화 하는 타입으로 추정할 수 있다.
+Swift의 타입 체커는 <code>Movie</code>나 <code>Song</code>이 공통의 상위 클래스(superclass)인 <code>MediaItem</code>을 가진다고 추정할 수 있고, 따라서 <code>library</code>의 타입은  <code>MediaItem[]</code>로 추정할 수 있다 :</p>
+<pre><code class="hljs">let library = [
+    Movie(<span class="hljs-string">name:</span> <span class="hljs-string">"Casablanca"</span>, <span class="hljs-string">director:</span> <span class="hljs-string">"Michael Curtiz"</span>),
+    Song(<span class="hljs-string">name:</span> <span class="hljs-string">"Blue Suede Shoes"</span>, <span class="hljs-string">artist:</span> <span class="hljs-string">"Elvis Presley"</span>),
+    Movie(<span class="hljs-string">name:</span> <span class="hljs-string">"Citizen Kane"</span>, <span class="hljs-string">director:</span> <span class="hljs-string">"Orson Welles"</span>),
+    Song(<span class="hljs-string">name:</span> <span class="hljs-string">"The One And Only"</span>, <span class="hljs-string">artist:</span> <span class="hljs-string">"Chesney Hawkes"</span>),
+    Song(<span class="hljs-string">name:</span> <span class="hljs-string">"Never Gonna Give You Up"</span>, <span class="hljs-string">artist:</span> <span class="hljs-string">"Rick Astley"</span>)
+]
+<span class="hljs-comment">// the type of "library" is inferred to be MediaItem[]</span>
+</code></pre>
+<p><code>library</code>에 저장된 요소들은 해당 Scenes뒤에서는 여전히 <code>Movie</code>와 <code>Song</code>인스탄스이다. 그러나 만일 네가 이 array의 컨텐츠들을 반복자 등을 이용하여 뽑아낸 다면, 네가 받게된 그 아이템들의 타입은 Song이나 Movie이 아닌 MediaItem일 것이다. 그것들을 원래의 타입으로 작업을 하기 위해얻고 싶다면, 당신은 그들의 타입을 체크하는 것이 필요하고, 또한 그들을 다운캐스트해서 다른 타입으로 변경하여야 한다. 이는 아래서 설명하도록 하겠다.</p>
+<h2><a class="anchor" aria-hidden="true" id="타입-체크checking-type"></a><a href="#타입-체크checking-type" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입 체크(Checking Type)</h2>
+<p>어떠한 인스턴스가 확실히 하위클래스 타입인지 아닌지를 체크하기 위해서는 타입 체크 연산자인 <code>is</code>를 이용합니다. 이 타입체크용 연산자는 만일 해당 인스탄스가 해당 하위 클래스라면 <code>true</code>를, 아니라면 <code>false</code>를 반환합니다.
+아래의 예시는 <code>library</code> 배열에 있는 <code>Movie</code>의 인스턴스의 수와 <code>Song</code>의 인스턴스의 수를 세기 위한 <code>movieCount</code>와 <code>songCount</code>라는 두개의 변수를 선언하는 것을 보여줍니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> movieCount = <span class="hljs-number">0</span>
+<span class="hljs-selector-tag">var</span> songCount = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> library {
+    <span class="hljs-keyword">if</span> item is Movie {
+        ++movieCount
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> item is Song {
+        ++songCount
+    }
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"Media library contains \(movieCount) movies and \(songCount) songs"</span>)</span></span>
+<span class="hljs-comment">// prints "Media library contains 2 movies and 3 songs"</span>
+</code></pre>
+<p>이 예시에서는 <code>library</code>배열의 모든 아이템에 대해서 작업하며, 각각의 1번의 과정마다 <code>for-in</code> 루프는 배열에 <code>MediaItem</code> 상수를 가져옵니다.
+각각의 아이템이 만일 <code>Movie</code> 인스탄스이면 <code>item is Movie</code>에서 <code>true</code>를 아니라면 <code>false</code>를 반환하고, 이와 유시하게 아이템이 만일 Song의 인스탄스인지 아닌지에 따라 <code>item is Song</code> 체크부분의 리턴값이 결정됩니다. <code>for-in</code> 루프의 마지막이 되면, <code>moveCount</code>와 <code>songCount</code>의 값을 보고 전체 <code>MediaItem</code> 인스탄스중에 각각의 타입이 얼마만큼의 수가 들어있는지 찾아낼 수 있다.</p>
+<h2><a class="anchor" aria-hidden="true" id="다운캐스팅-downcasting"></a><a href="#다운캐스팅-downcasting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다운캐스팅( Downcasting )</h2>
+<p>상수와 변수의 명확한 클래스 타입은 사실은 아마도 the scenes뒤에 있는 하위 클래스의 인스탄스에 속할것이다.
+당신이 위와 같은 케이스를 믿는 경우, 당신은 타입 변환 연산자인 <code>as</code>를 통하여 하위클래스타입으로 다운캐스팅을 시도 할 수 있다.
+다운캐스팅은 실패할 수 있기때문에, 타입 캐스팅연산자는 두가지의 다른 형태를 가집니다.
+하나는 <code>as?</code>와 같은 연산자를 사용하는 optional form으로 다운캐스팅을 시도하여 optional value를 리턴합니다.
+다른 하나는 <code>as</code>와 같은 연산자를 사용하는 forced form으로 다운 캐스팅을 시도하고 강제로 unwrap한 결과를 한번에 합한 작업을 합니다.
+네가 만일 다운캐스트가 성공할지 확신을 가지지 못한다면 타입변환 연산자인 <code>as?</code>를 이용하는 optional form을 사용한다. 위 연산자를 사용하는 form은 항상 optional value를 리턴하며 그래서 만일 다운 캐스트가 가능하지 않은 경우에는 <code>nil</code>을 리턴할 수 있도록 할 수 있다. 이 것은 당신이 다운 캐스팅의 성공 유무를 체크할 수 있도록 하게 한다.
+오직 당신이 다운캐스트가 항상 성공할 것이라는 확신이 있다면 타입 변환 연산자인 <code>as</code>를 이용하는 forced form을 사용할 수 있다. 위의 연산자를 사용하는 form은 만일 올바르지 않은 클래스 타입으로 다운캐스팅을 시도했을 시에 런타임 에러를 발생시킨다.
+아래에 <code>library</code> 내의 각 <code>MediaItem</code>을 반복해가면서 각 아이템들을 위한 적절한 설명을 출력하는 예시를 만들었다. 이를 위해서 각 아이템이 단순히 <code>MediaItme</code>이 아닌 진정으로 <code>Movie</code>나 <code>Song</code>인지 억세스 해볼 필요가 있다. 이를 위해서 설명을 출력하기 위해서 <code>Movie</code>나 <code>Song</code>의 <code>director</code>나 <code>artist</code> 속성에 접근할수 있게 할 필요가 있다.
+예시에서 배열내의 각각의 item은 <code>Movie</code>이거나 <code>Song</code>이라고 생각된다. 당신은 각각의 아이템이 실제 어떠한 클래스인지 미리 알 수가 없습니다. 그러므로 optional form을 위한 <code>as?</code> 연산자를 사용하여 루프를 통해 각 케이스마다 다운캐스팅을 체크하는 것이 적절합니다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> library {
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> movie = item <span class="hljs-keyword">as</span>? <span class="hljs-type">Movie</span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Movie: '<span class="hljs-subst">\(movie.name)</span>', dir. <span class="hljs-subst">\(movie.director)</span>"</span>)
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> song = item <span class="hljs-keyword">as</span>? <span class="hljs-type">Song</span> {
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Song: '<span class="hljs-subst">\(song.name)</span>', by <span class="hljs-subst">\(song.artist)</span>"</span>)
+    }
+}
+ 
+<span class="hljs-comment">// Movie: 'Casablanca', dir. Michael Curtiz</span>
+<span class="hljs-comment">// Song: 'Blue Suede Shoes', by Elvis Presley</span>
+<span class="hljs-comment">// Movie: 'Citizen Kane', dir. Orson Welles</span>
+<span class="hljs-comment">// Song: 'The One And Only', by Chesney Hawkes</span>
+<span class="hljs-comment">// Song: 'Never Gonna Give You Up', by Rick Astley</span>
+</code></pre>
+<p>이 예시는 현재 아이템이 <code>Movie</code>라고 생각하고 다운 캐스팅을 시도하는 것으로 시작합니다. 아이템이 <code>MediaItem</code> 인스탄스이므로 이 아이템은 <code>Movie</code>일 수 있습니다, 또한 똑같은 이유로 <code>Song</code>도 가능합니다, 혹은 오로지 단순히 <code>MediaItem</code>일수도 있습니다. 이것이 불확실 하기 때문에, <code>as?</code> 타입변환 연산자를 사용하여 하위 클래스로의 다운캐스팅을 시도시에 optional value를 반환합니다. 그 결과 <code>item as Moive</code>의 결과는 <code>Move?</code> 타입, 즉 optional <code>Movie</code>이 됩니다.
+<code>library</code> 배열안의 두개의 <code>Song</code> 인스탄스에 해당 내용을 적용하여 <code>Movie</code>로 다운캐스팅을 할경우 실패한다.  이것에 대처하기 위해, 위의 예시에서는 결과로 나온 optional <code>Movie</code>값이 실제로 값을 가지고 있는지 체크하기 위한(이 경우는 다운캐스팅이 성공했는지 아닌지 찾는 과정이다) optional binding을 사용한다.
+이 optional binding 은 <code>if let movie = is as? Moive</code>와 같이 적히며, 이는 다음과 같이 해석될 수 있다: &quot;해당 아이템을 <code>Movie</code>로 생각하고 접근을 시도한다. 만일 해당 작업이 상공하면, 반환된 optional <code>Movie</code>값을 저장할 <code>movie</code>라고 불리는 새로운 임시 상수값을 설정한다.
+만일 다운 캐스팅이 성공한다면, <code>movie</code>의 속성들을 가지고 <code>director</code>와 같은 <code>Moive</code> 인스탄스를 위한 설명을 출력하는데 사용할 수 있습니다.
+비슷한 원리로 <code>Song</code> 인스턴스를 위한 체크를 하여, <code>library</code>에서 <code>Song</code> 인스탄스를 찾기만 한다면, <code>artist</code>와 같은 적절한 설명을 출력할 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+변환(Casting)은 실제로 해당 인스턴스를 수정하거나 그 값을 바꾸는 것이 아닙니다. 근본적인 인스턴스는 처음상태 그대로 남아있습니다. 이것은 간단히 특별한 것이며, 캐스팅된 타입의 인스턴스로서 접근이 가능한 것입니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="type-casting-for-any-and-anyobject"></a><a href="#type-casting-for-any-and-anyobject" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Type Casting for Any and AnyObject</h2>
+<p>Swift는 특정한 타입을 가지지 않는 상태로 작업하기 위한 두가지의 특별한 타입을 제공합니다:</p>
+<p><code>AnyObject</code>는 어떠한 클래스타입의 인스턴스라도 표현할 수 있습니다
+<code>Any</code>는 함수형의 타입을 제외하고는 어떠한 타입의 인스턴스라도 표현할 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+<code>Any</code>나 <code>AnyObject</code>는 오로지 당신이 명시적으로 behavior나 그들이 제공하는 능력들이 필요한 경우에만 사용합니다. 이는 항상 당신의 코드 속에서당신이 예상한 특정한 형태의 타입으로 작동하는 것이 더 낫습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="anyobject"></a><a href="#anyobject" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AnyObject</h2>
+<p>Cocoa APIS를 이용하여 작업을 할때, 보통 <code>AnyObject</code>[] 타입의 배열을(<code>AnyObject</code> 타입의 값을 가진 배열) 받는것이 일반적입니다. 이것은 Objective-C가 명시적인 타입의 배열을 가지지 못하기 때문입니다. 그러나 당신이 종종  당신이 알고있는 API가 제공하는 배열을 포함한 여러가지 정보를 포함한 오브젝트들의 타입에 대해서 자신이 있을 수 있다.
+이러한 상황에서, 당신은 optional unwrapping이 필요하지 않은 경우에 한하여 배열의 각각의 아이템을 특정한 클래스의 타입으로 바꾸는 다운캐스팅을하기 위한 타입 변환 연산자 <code>as</code>로 강제로 변경한 형태를 사용할 수 있습니다.</p>
+<pre><code class="hljs">let <span class="hljs-string">someObjects:</span> AnyObject[] = [
+    Movie(<span class="hljs-string">name:</span> <span class="hljs-string">"2001: A Space Odyssey"</span>, <span class="hljs-string">director:</span> <span class="hljs-string">"Stanley Kubrick"</span>),
+    Movie(<span class="hljs-string">name:</span> <span class="hljs-string">"Moon"</span>, <span class="hljs-string">director:</span> <span class="hljs-string">"Duncan Jones"</span>),
+    Movie(<span class="hljs-string">name:</span> <span class="hljs-string">"Alien"</span>, <span class="hljs-string">director:</span> <span class="hljs-string">"Ridley Scott"</span>)
+]
+</code></pre>
+<p>이 배열은 오로지 <code>Moive</code> 인스턴스만 가지는 것을 이미 알고 있으므로, 당신은 다운캐스팅 및 타입 변환 연산자 <code>as</code>를 이용하여 non-optional <code>Moive</code>로 강제로 형태를 바꾸는 unwrap를 할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> object <span class="hljs-keyword">in</span> someObjects {
+    <span class="hljs-keyword">let</span> movie = object <span class="hljs-keyword">as</span> <span class="hljs-type">Movie</span>
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Movie: '<span class="hljs-subst">\(movie.name)</span>', dir. <span class="hljs-subst">\(movie.director)</span>"</span>)
+}
+<span class="hljs-comment">// Movie: '2001: A Space Odyssey', dir. Stanley Kubrick</span>
+<span class="hljs-comment">// Movie: 'Moon', dir. Duncan Jones</span>
+<span class="hljs-comment">// Movie: 'Alien', dir. Ridley Scott</span>
+</code></pre>
+<p>루프를 조금더 짧게 만들기 위해서, 각 아이템을 다운캐스팅하는 대신에 <code>someObjects</code> 배열을 <code>Movie[]</code> 타입으로 다운 캐스팅 할 수도 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> movie <span class="hljs-keyword">in</span> someObjects as Movie[] {
+    println(<span class="hljs-string">"Movie: '\(movie.name)', dir. \(movie.director)"</span>)
+}
+<span class="hljs-regexp">//</span> Movie: <span class="hljs-string">'2001: A Space Odyssey'</span>, dir. Stanley Kubrick
+<span class="hljs-regexp">//</span> Movie: <span class="hljs-string">'Moon'</span>, dir. Duncan Jones<span class="hljs-regexp">//</span> Movie: <span class="hljs-string">'Alien'</span>, dir. Ridley Scott
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="any"></a><a href="#any" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Any</h2>
+<p>이곳에 non-class타입을 포함한 여러가지 다른 타입을 섞어서 작업하기 위한 <code>Any</code>를 사용한 예제가 있다. 이 예제는 <code>Any</code>타입의 값을 저장할 수 있는 <code>things</code>이라는 한 배열을 생성한다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">var</span> things = Any[]()
+ 
+things.<span class="hljs-built_in">append</span>(<span class="hljs-number">0</span>)
+things.<span class="hljs-built_in">append</span>(<span class="hljs-number">0.0</span>)
+things.<span class="hljs-built_in">append</span>(<span class="hljs-number">42</span>)
+things.<span class="hljs-built_in">append</span>(<span class="hljs-number">3.14159</span>)
+things.<span class="hljs-built_in">append</span>(<span class="hljs-string">"hello"</span>)
+things.<span class="hljs-built_in">append</span>((<span class="hljs-number">3.0</span>, <span class="hljs-number">5.0</span>))
+things.<span class="hljs-built_in">append</span>(Movie(name: <span class="hljs-string">"Ghostbusters"</span>, director: <span class="hljs-string">"Ivan Reitman"</span>))
+</code></pre>
+<p><code>things</code>배열은 두개의 <code>int</code> 값, 두개의 <code>Double</code>값, 하나의 <code>String</code>값, 하나의 (<code>Double</code>,<code>Double</code>)타입의 tuple, 그리고 &quot;Ghostbusters&quot;의 name과 &quot;Ivan Retiman&quot;의 director속성을 가진 Moive를 한개 가지고 있다.
+당신은 <code>Any</code>나 <code>AnyObject</code>로 알고있는 변수에서 특정한 타입의 상수나 변수 찾기 위한 스위치 구문의 <code>case</code> 항목에 <code>is</code>와 <code>as</code> 연산자를 사용할수 있습니다.
+아래의 예제는 아이템들의 <code>things</code> 배열의 각 아이템을 반복하면서 스위치 문을 통해서 각각의 타입을 요청한다.
+몇몇의 <code>switch</code>문의 <code>case</code>항목에서 비교항목과 동일한 값과 타입을 가지는 상수의 경우는 해당 값과 형태를 출력한다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> thing <span class="hljs-keyword">in</span> things {
+    <span class="hljs-keyword">switch</span> thing {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span> <span class="hljs-keyword">as</span> <span class="hljs-type">Int</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"zero as an Int"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span> <span class="hljs-keyword">as</span> <span class="hljs-type">Double</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"zero as a Double"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> someInt <span class="hljs-keyword">as</span> <span class="hljs-type">Int</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"an integer value of <span class="hljs-subst">\(someInt)</span>"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> someDouble <span class="hljs-keyword">as</span> <span class="hljs-type">Double</span> <span class="hljs-keyword">where</span> someDouble &gt; <span class="hljs-number">0</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"a positive double value of <span class="hljs-subst">\(someDouble)</span>"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">is</span> <span class="hljs-type">Double</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"some other double value that I don't want to print"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> someString <span class="hljs-keyword">as</span> <span class="hljs-type">String</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"a string value of \"<span class="hljs-subst">\(someString)</span>\""</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> (x, y) <span class="hljs-keyword">as</span> (<span class="hljs-type">Double</span>, <span class="hljs-type">Double</span>):
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"an (x, y) point at <span class="hljs-subst">\(x)</span>, <span class="hljs-subst">\(y)</span>"</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> movie <span class="hljs-keyword">as</span> <span class="hljs-type">Movie</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"a movie called '<span class="hljs-subst">\(movie.name)</span>', dir. <span class="hljs-subst">\(movie.director)</span>"</span>)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"something else"</span>)
+    }
+}
+ 
+<span class="hljs-comment">// zero as an Int</span>
+<span class="hljs-comment">// zero as a Double</span>
+<span class="hljs-comment">// an integer value of 42</span>
+<span class="hljs-comment">// a positive double value of 3.14159</span>
+<span class="hljs-comment">// a string value of "hello"</span>
+<span class="hljs-comment">// an (x, y) point at 3.0, 5.0</span>
+<span class="hljs-comment">// a movie called 'Ghostbusters', dir. Ivan Reitman</span>
+</code></pre>
+<blockquote>
+<p>NOTE
+<code>switch</code>문의 <code>case</code>항목들은 체크 및 특정한 타입으로의 변환을 위해서 <code>as</code>나 <code>as?</code>를 통해서 강제로 변경된 형태를 사용한다. 이런 체크는 <code>switch</code>문의 문맥안에 있는 이상 항상 안전하다.</p>
+</blockquote>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter19.html">← 옵셔널 체인 (Optional Chaining)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types ) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#타입변환type-casting">타입변환(Type Casting)</a></li><li><a href="#타입-캐스팅을-위한-클래스-계층-정의defining-a-class-hierarchy-for-type-casting">타입 캐스팅을 위한 클래스 계층 정의(Defining a Class Hierarchy for Type Casting)</a></li><li><a href="#타입-체크checking-type">타입 체크(Checking Type)</a></li><li><a href="#다운캐스팅-downcasting">다운캐스팅( Downcasting )</a></li><li><a href="#type-casting-for-any-and-anyobject">Type Casting for Any and AnyObject</a></li><li><a href="#anyobject">AnyObject</a></li><li><a href="#any">Any</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

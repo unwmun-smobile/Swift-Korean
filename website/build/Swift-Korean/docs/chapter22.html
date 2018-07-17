@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>확장 (Extensions) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : Dongwoo Son (easthelper@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="확장 (Extensions) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : Dongwoo Son (easthelper@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">확장 (Extensions)</h1></header><article><div><span><blockquote>
+<p>Translator : Dongwoo Son (<a href="mailto:easthelper@gmail.com">easthelper@gmail.com</a>)</p>
+</blockquote>
+<p>확장(Extensions)은 이미 존재하는 클래스, 구조체, 열거형 타입에 새 기능성을 추가합니다. 이는  원본 소스코드에 접근할 수 없는 타입들도 확장할 수 있습니다. (Retroactive modeling) 확장은 Objective-c 의 카테고리 와 유사합니다.</p>
+<p>Swift 의 확장이 할수있는 것:</p>
+<ul>
+<li>computed properties, computed static properties의 추가</li>
+<li>인스턴스 메소드와 타입 메소드 정의</li>
+<li>새로운 이니셜라이저 제공</li>
+<li>서브스크립트 정의</li>
+<li>기존 타입에 프로토콜 적용시키기</li>
+</ul>
+<blockquote>
+<p>NOTE
+만약 기존 타입에 새로운 기능성을 추가하기 위해 확장을 정의 한다면, 확장이 정의 되기 이전에 생성된 해당 타입의 모든 인스턴스들도 새 기능성이 적용이 됩니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="확장-문법"></a><a href="#확장-문법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>확장 문법</h2>
+<p><code>extension</code> 키워드로 확장을 선언합니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">SomeType</span> </span>{
+    <span class="hljs-comment">// SomeType에 추가할 새 기능</span>
+}
+</code></pre>
+<p>확장은 기존의 타입을 하나 이상의 프로토콜을 적용하기 위해서 확장시킬 수 있습니다. 이 경우 클래스 또는 구조체와 같은 방식으로 적용시킬 프로토콜 이름을 적습니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">SomeType</span>: <span class="hljs-title">SomeProtocol</span>, <span class="hljs-title">AnotherProtocol</span> </span>{
+    <span class="hljs-comment">// 프로토콜의 요구사항을 이곳에 구현</span>
+}
+</code></pre>
+<p>확장으로 프로토콜 준수의 추가는 <a href="">Adding Protocol Conformance with an Extension</a> 에 설명 되어 있습니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="연산-속성"></a><a href="#연산-속성" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>연산 속성</h2>
+<p>확장은 연산 인스턴스 속성과 연산 타입 속성을 기존의 타입에 추가할 수 있습니다. 이 예제는 거리 단위를 제공하기 위해 다섯개의 연산 인스턴스 속성을 Swift의 내장 <code>Double</code> 타입에 추가합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Double</span> </span>{
+    <span class="hljs-keyword">var</span> km: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> * <span class="hljs-number">1_000.0</span> }
+    <span class="hljs-keyword">var</span> m: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> }
+    <span class="hljs-keyword">var</span> cm: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> / <span class="hljs-number">100.0</span> }
+    <span class="hljs-keyword">var</span> mm: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> / <span class="hljs-number">1_000.0</span> }
+    <span class="hljs-keyword">var</span> ft: <span class="hljs-type">Double</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> / <span class="hljs-number">3.28084</span> }
+}
+<span class="hljs-keyword">let</span> oneInch = <span class="hljs-number">25.4</span>.mm
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"One inch is <span class="hljs-subst">\(oneInch)</span> meters"</span>)
+<span class="hljs-comment">// prints "One inch is 0.0254 meters"</span>
+<span class="hljs-keyword">let</span> threeFeet = <span class="hljs-number">3</span>.ft
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"Three feet is <span class="hljs-subst">\(threeFeet)</span> meters"</span>)
+<span class="hljs-comment">// prints "Three feet is 0.914399970739201 meters"</span>
+</code></pre>
+<p>이러한 연산 속성들은 <code>Double</code> 값이 특정 길이의 단위로 간주됨을 나타냅니다. 연산 속성들로 구현되었지만 부동소수점 리터럴 값에 점 문법으로 속성의 이름을 덧붙여 리터럴 값을 거리값으로 변환시킬 수 있습니다.</p>
+<p>예를들어, <code>1.0</code>이라는 <code>Double</code> 값은 &quot;1 미터&quot;로 간주됩니다. 때문에 <code>m</code> 연산 속성은 <code>self</code> 를 반환합니다. - <code>1.m</code> 표현은 <code>1.0</code> <code>Double</code> 값 입니다.</p>
+<p>다른 단위들은 미터 측정값으로 표현되기 위한 변환이 필요합니다. 1 킬로미터는 1000 미터와 같습니다. 따라서 <code>km</code> 연산 속성은 미터로 표현되기 위해 <code>1_000.00</code> 을 곱합니다. 같은 방식으로 1 미터는 3.28024 피트입니다. 따라서 피트를 미터로 바꾸기 위해 <code>ft</code> 연산 속성은 <code>double</code> 값을 <code>3.28024</code> 로 나눕니다.</p>
+<p>이 속성들은 읽기 전용 속성이고 간결함을 위해 <code>get</code> 키워드 없이 사용될 수 있습니다. 속성들의 반환 값은 <code>Double</code> 형이기 때문에 <code>Double</code> 을 사용하는 어느 곳에서나 수학적 계산과 함께 사용 될 수 있습니다.</p>
+<pre><code class="hljs">let aMarathon = <span class="hljs-number">42</span><span class="hljs-selector-class">.km</span> + <span class="hljs-number">195</span><span class="hljs-selector-class">.m</span>
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"A marathon is \(aMarathon) meters long"</span>)</span></span>
+<span class="hljs-comment">// prints "A marathon is 42195.0 meters long"</span>
+</code></pre>
+<blockquote>
+<p>NOTE
+확장은 새로운 연산속성을 추가할 수 있습니다. 하지만 저장 속성 또는 기존 속성에 프로퍼티 옵저버를 추가할 수는 없습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="이니셜라이저"></a><a href="#이니셜라이저" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이니셜라이저</h2>
+<p>확장은 기존 타입에 새로운 이니셜라이저를 추가할 수 있습니다. 이는 다른 타입들이 여러분의 커스텀 타입을 이니셜라이저의 인자로 받을 수 있도록 하거나 또는 타입의 기본 구현에 포함되어 있지 않은 추가 적인 이니셜라이저 옵션을 제공할 수 있도록 확장하는 것을 가능하게 합니다.</p>
+<p>확장은 새 convenience 이니셜라이저를 클래스에 추가할 수 있습니다. 하지만 새 designated 이니셜라이저 또는 디이니셜라이저를 추가할 수는 없습니다. designated 이니셜라이저와 디이니셜라이저는 반드시 본래의 클래스 구현에서 제공되어야 합니다.</p>
+<blockquote>
+<p>NOTE
+만약 확장을 사용해서 모든 저장 속성의 기본 값을 제공하는 값 타입에 새로운 이니셜라이저를 추가하고, 어떠한 커스텀 이니셜라이저도 정의하지 않았다면, 기본 이니셜라이저와 memberwise 이니셜라이저를 호출 할 수 있습니다.
+<a href="">Initializer Delegation for Value Type</a>에서 설명한 것 처럼 이니셜라이저를 값 타입의 본래 구현에 작성을 한 경우에는 해당 되지 않습니다.</p>
+</blockquote>
+<p>아래의 예제는 직사각형을 나타내기 위한 커스텀 <code>Rect</code> 구조체를 정의합니다. 또한 모든 속성의 기본값이 <code>0.0</code>인 <code>Size</code>와 <code>Point</code>구조체를 정의합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Size</span> </span>{
+    <span class="hljs-keyword">var</span> width = <span class="hljs-number">0.0</span>, height = <span class="hljs-number">0.0</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Rect</span> </span>{
+    <span class="hljs-keyword">var</span> origin = <span class="hljs-type">Point</span>()
+    <span class="hljs-keyword">var</span> size = <span class="hljs-type">Size</span>()
+}
+</code></pre>
+<p><a href="">Default Initailizers</a> 에서 언급했던 것처럼 <code>Rect</code> 구조체는 모든 속성의 기본값을 제공하기 때문에 기본 이니셜라이저와 memberwise 이니셜라이저를 자동으로 받습니다. 이 이니셜라이저들은 새로운 <code>Rect</code> 인스턴스를 생성하기 위해 사용될 수 있습니다.</p>
+<pre><code class="hljs">let defaultRect = Rect()
+let memberwiseRect = Rect(<span class="hljs-name">origin</span>: Point(<span class="hljs-name">x</span>: <span class="hljs-number">2.0</span>, y: <span class="hljs-number">2.0</span>),
+    size: Size(<span class="hljs-name">width</span>: <span class="hljs-number">5.0</span>, height: <span class="hljs-number">5.0</span>))
+</code></pre>
+<p><code>Rect</code> 구조체에 특정 중심점과 크기를 받기 위한 추가 이니셜라이저를 제공하기 위해 확장할 수 있습니다.</p>
+<pre><code class="hljs">extension Rect {
+    init(<span class="hljs-built_in">center</span>: Point, size: Size) {
+        <span class="hljs-built_in">let</span> originX = <span class="hljs-built_in">center</span>.x - (size.<span class="hljs-built_in">width</span> / <span class="hljs-number">2</span>)
+        <span class="hljs-built_in">let</span> originY = <span class="hljs-built_in">center</span>.y - (size.<span class="hljs-built_in">height</span> / <span class="hljs-number">2</span>)
+        self.init(<span class="hljs-built_in">origin</span>: Point(x: originX, y: originY), size: size)
+    }
+}
+</code></pre>
+<p>이 새 이니셜라이저는 처음에 제공된 <code>center</code> 값과 <code>size</code>값을 기반으로 적절한 origin point를 계산합니다. 그 다음 구조체의 자동 memberwise 이니셜라이저 <code>init(origin:size:)</code>를 호출하여 새 origin 과 size 값을 적절한 속성에 저장합니다.</p>
+<pre><code class="hljs">let centerRect = Rect(<span class="hljs-name">center</span>: Point(<span class="hljs-name">x</span>: <span class="hljs-number">4.0</span>, y: <span class="hljs-number">4.0</span>),
+    size: Size(<span class="hljs-name">width</span>: <span class="hljs-number">3.0</span>, height: <span class="hljs-number">3.0</span>))
+// centerRect's origin is (<span class="hljs-number">2.5</span>, <span class="hljs-number">2.5</span>) and its size is (<span class="hljs-number">3.0</span>, <span class="hljs-number">3.0</span>)
+</code></pre>
+<blockquote>
+<p>NOTE
+확장으로 새 이니셜라이저를 제공 할 경우 이니셜라이저가 완료되었을 때 각 인스턴스가 완전히 초기화 되었는지 확인하는 책임은 작성자에게 있습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="메소드"></a><a href="#메소드" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메소드</h2>
+<p>확장은 기존 타입에 새 인스턴스 메소드와 타입 메소드를 추가할 수 있습니다. 다음 예제는 새 인스턴스 메소드  <code>repetitions</code> 를 <code>Int</code> 타입에 추가합니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">repetitions</span><span class="hljs-params">(task: <span class="hljs-params">()</span></span></span> -&gt; ()) {
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>..<span class="hljs-keyword">self</span> {
+            task()
+        }
+    }
+}
+</code></pre>
+<p><code>repetitions</code> 메소드는 매개변수가 없고 반환 값이 없음을 나타내는 하나의 <code>()-&gt;()</code>인자를 받습니다.</p>
+<p>이 확장을 정의한 후에 여러번의 반복작업을 위해 어느 정수값에서 <code>repetitions</code> 메소드를 호출 할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-number">3.</span>repetitions({
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Hello!"</span>)
+    })
+<span class="hljs-comment">// Hello!</span>
+<span class="hljs-comment">// Hello!</span>
+<span class="hljs-comment">// Hello!</span>
+</code></pre>
+<p>호출을 더 간결하게 하기위해 후행 클로저 문법을 사용:</p>
+<pre><code class="hljs"><span class="hljs-number">3</span><span class="hljs-selector-class">.repetitions</span> {
+    println(<span class="hljs-string">"Goodbye!"</span>)
+}
+<span class="hljs-comment">// Goodbye!</span>
+<span class="hljs-comment">// Goodbye!</span>
+<span class="hljs-comment">// Goodbye!</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="mutating-인스턴스-메소드"></a><a href="#mutating-인스턴스-메소드" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mutating 인스턴스 메소드</h3>
+<p>확장을 이용해 인스턴스 메소드 추가함으로써 인스턴스 스스로 또한 수정할 수 있습니다. <code>self</code> 또는 자신의 속성을 수정하는 구조체와 enumeration 메소드들은 반드시 인스턴스 메소드를 <code>mutating</code>으로 표시 해야합니다.</p>
+<p>아래 예제는 원래의 값을 제곱하는 새 mutating 메소드 <code>square</code> 를 Swift의 <code>Int</code>타입에 추가합니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">square</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">self</span> = <span class="hljs-keyword">self</span> * <span class="hljs-keyword">self</span>
+    }
+}
+<span class="hljs-keyword">var</span> someInt = <span class="hljs-number">3</span>
+someInt.square()
+<span class="hljs-comment">// someInt is now 9</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="subscripts"></a><a href="#subscripts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Subscripts</h2>
+<p>확장은 기존 타입에 새 subscripts 를 추가할 수 있습니다. 이 예제는 integer subscript 를 Swift 내장 <code>Int</code> 타입에 추가합니다. 이 subscript <code>[n]</code> 는 수의 오른쪽으로 부터 <code>n</code>번째 자리에 있는 10진수 숫자 하나를 반환합니다:</p>
+<ul>
+<li><code>123456789[0]</code> returns <code>9</code></li>
+<li><code>123456789[1]</code> returns <code>8</code></li>
+</ul>
+<p>... 기타 등등:</p>
+<pre><code class="hljs">extension <span class="hljs-built_in">Int</span> {
+    subscript(digitIndex: <span class="hljs-built_in">Int</span>) -&gt; <span class="hljs-built_in">Int</span> {
+        <span class="hljs-keyword">var</span> decimalBase = <span class="hljs-number">1</span>
+            <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span>..digitIndex {
+                decimalBase *= <span class="hljs-number">10</span>
+            }
+            <span class="hljs-keyword">return</span> (self / decimalBase) % <span class="hljs-number">10</span>
+    }
+}
+<span class="hljs-number">746381295</span>[<span class="hljs-number">0</span>]
+<span class="hljs-comment">// returns 5</span>
+<span class="hljs-number">746381295</span>[<span class="hljs-number">1</span>]
+<span class="hljs-comment">// returns 9</span>
+<span class="hljs-number">746381295</span>[<span class="hljs-number">2</span>]
+<span class="hljs-comment">// returns 2</span>
+<span class="hljs-number">746381295</span>[<span class="hljs-number">8</span>]
+<span class="hljs-comment">// returns 7</span>
+</code></pre>
+<p>만약 <code>Int</code> 값이 길이가 요구된 인덱스 보다 적다면 수 왼쪽이 0들로 채워져 있다 여기고 <code>0</code>을 반환합니다.</p>
+<pre><code class="hljs"><span class="hljs-number">746381295</span>[<span class="hljs-number">9</span>]
+<span class="hljs-comment">// 다음을 요청한것 같이 처리되어 0 을 반환 합니다:</span>
+<span class="hljs-number">0746381295</span>[<span class="hljs-number">9</span>]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="nested-types"></a><a href="#nested-types" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nested Types</h2>
+<p>확장은 새 Nested 타입을 기존 클래스, 구조체, enumeration에 추가할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Character</span> </span>{
+    <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Kind</span> </span>{
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Vowel</span>, <span class="hljs-type">Consonant</span>, <span class="hljs-type">Other</span>
+    }
+    <span class="hljs-keyword">var</span> kind: <span class="hljs-type">Kind</span> {
+    <span class="hljs-keyword">switch</span> <span class="hljs-type">String</span>(<span class="hljs-keyword">self</span>).lowercaseString {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"a"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"i"</span>, <span class="hljs-string">"o"</span>, <span class="hljs-string">"u"</span>:
+        <span class="hljs-keyword">return</span> .<span class="hljs-type">Vowel</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>, <span class="hljs-string">"d"</span>, <span class="hljs-string">"f"</span>, <span class="hljs-string">"g"</span>, <span class="hljs-string">"h"</span>, <span class="hljs-string">"j"</span>, <span class="hljs-string">"k"</span>, <span class="hljs-string">"l"</span>, <span class="hljs-string">"m"</span>,
+    <span class="hljs-string">"n"</span>, <span class="hljs-string">"p"</span>, <span class="hljs-string">"q"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-string">"s"</span>, <span class="hljs-string">"t"</span>, <span class="hljs-string">"v"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-string">"x"</span>, <span class="hljs-string">"y"</span>, <span class="hljs-string">"z"</span>:
+        <span class="hljs-keyword">return</span> .<span class="hljs-type">Consonant</span>
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> .<span class="hljs-type">Other</span>
+        }
+    }
+}
+</code></pre>
+<p>이 예제는 새 nested enumeration을 <code>Character</code>에 추가합니다. 이 <code>Kind</code> enumeration 은 각 문자의 종류를 나타냅니다. 특히 문자가 표준 로마자에서 모음 또는 자음인지(강세나 지역적 다양성을 고려하지 않고), 또는 그 외의 문자인지를 나타냅니다.</p>
+<p>이 예제는 또한 새 연산 인스턴스 속성 <code>kind</code>을 <code>Character</code>에 추가합니다. 이 속성은 해당 문자에 적절한 <code>Kind</code> enumeration 멤버를 반환합니다.</p>
+<p>이제 <code>Character</code> 값에서 nested enumeration 을 사용할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printLetterKinds</span><span class="hljs-params">(word: String)</span></span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"'<span class="hljs-subst">\(word)</span>' is made up of the following kinds of letters:"</span>)
+    <span class="hljs-keyword">for</span> character <span class="hljs-keyword">in</span> word {
+        <span class="hljs-keyword">switch</span> character.kind {
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Vowel</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"vowel "</span>)
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Consonant</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"consonant "</span>)
+        <span class="hljs-keyword">case</span> .<span class="hljs-type">Other</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"other "</span>)
+        }
+    }
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"\n"</span>)
+}
+printLetterKinds(<span class="hljs-string">"Hello"</span>)
+<span class="hljs-comment">// 'Hello' is made up of the following kinds of letters:</span>
+<span class="hljs-comment">// consonant vowel consonant consonant vowel</span>
+</code></pre>
+<p><code>printLetterinds</code> 함수는 <code>String</code> 값을 받아서 문자열의 각 문자를 iterate 합니다. 각 문자에 대해서 <code>kind</code> 연산 속성에 따라 그 글자에 알맞는 종류를 출력합니다. 위 &quot;Hello&quot; 단어의 결과 처럼 <code>printLetterinds</code> 함수를 호출해서 단어 안의 모든 문자의 종류들을 출력할 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+<code>character.kind</code> 는 이미 <code>Character.Kind</code> 타입으로 알려져 있기 때문에 모든 <code>Character.Kind</code> 멤버 값들은 <code>switch</code> 문에서 <code>Character.Kind.Vowel</code>보다 <code>.Vowel</code>같이 생략된 형식으로 쓸 수 있습니다.</p>
+</blockquote>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter21.html">← 중첩 타입 (Nested Types )</a><a class="docs-next button" href="/Swift-Korean/docs/chapter23.html">프로토콜 →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#확장-문법">확장 문법</a></li><li><a href="#연산-속성">연산 속성</a></li><li><a href="#이니셜라이저">이니셜라이저</a></li><li><a href="#메소드">메소드</a><ul class="toc-headings"><li><a href="#mutating-인스턴스-메소드">Mutating 인스턴스 메소드</a></li></ul></li><li><a href="#subscripts">Subscripts</a></li><li><a href="#nested-types">Nested Types</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

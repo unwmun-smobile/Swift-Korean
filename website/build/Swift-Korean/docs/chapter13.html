@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>메서드 (Methods) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : 북극산펭귄 (say8425@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="메서드 (Methods) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : 북극산펭귄 (say8425@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">메서드 (Methods)</h1></header><article><div><span><blockquote>
+<p>Translator : 북극산펭귄 (<a href="mailto:say8425@gmail.com">say8425@gmail.com</a>)
+Translator : 허혁 (<a href="mailto:hyukhur@gmail.com">hyukhur@gmail.com</a>)</p>
+</blockquote>
+<h1><a class="anchor" aria-hidden="true" id="methods"></a><a href="#methods" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Methods</h1>
+<p>메서드Method는 타입type에 의존적인 함수입니다. 모든 클래스와 구조체 그리고 이너멀레이션Enumeration은, 타입이 정해진 인스턴스Instance가 수행하는 작업을 캡슐화하는 인스턴스 메소드를 정의 할 수 있습니다. 또한 타입 자체에 관여하는 타입 메소드를 정의 할 수 있습니다. 이 타입 메소드는 오브젝티브-C에서의 클래스Class Method와 유사합니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="instance-methods"></a><a href="#instance-methods" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instance Methods</h2>
+<p>인스턴스 메소드Instance Method는 특정 클래스, 구조체 혹은 이너멀레이션의 인스턴스에 속하는 함수입니다. 이것은 인스턴스 속성에 접근하고 수정하는 방법이나, 인스턴스의 용도에 관련된 기능을 지원합니다. <a href="">함수</a>에서 설명된대로 인스턴스 메소드는 특히 함수와 동일한 문법을 가집니다.</p>
+<p>여러분은 인스턴스 메소드를 해당 타입이 속한 괄호내에서 작성합니다. 인스턴스 메소드는 다른 인스턴스 메소드와 해당 타입의 속성에 대한 암시적 권한Implict access을 가지고 있습니다. 인스턴스 메소드는 오직 해당 타입이 속한 특정한 인스턴스에 의해서만 호출 될 수 있습니다. 이것은 속해있는 인스턴스 없이 독립적으로 호출 될 수 없습니다.</p>
+<p>여기 작업을 수행한 횟수를 세는, 카운터<code>Counter</code>클래스를 정의한 간단한 예제가 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> </span>{
+  <span class="hljs-keyword">var</span> <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">increment</span><span class="hljs-params">()</span></span> {
+      <span class="hljs-built_in">count</span>++
+  }
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementBy</span><span class="hljs-params">(amount: Int)</span></span> {
+      <span class="hljs-built_in">count</span> += amount
+  }
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reset</span><span class="hljs-params">()</span></span> {
+      <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span>
+  }
+}
+</code></pre>
+<p>이 <code>Counter</code>클래스는 세가지 인스턴스 메소드를 정의합니다.</p>
+<ul>
+<li><code>increment</code> 1만큼 counter를 증가시킵니다.</li>
+<li><code>incrementBy(amount: Int)</code> 특정한 정수값만큼 counter를 증가시킵니다.</li>
+<li><code>reset</code> counter를 0으로 재설정합니다.</li>
+</ul>
+<p>또한 <code>Counter</code>클래스는 현재 카운터 값을 추적하기 위해 변수 프로퍼티Property, <code>count</code>를 선언하였습니다.</p>
+<p>당신은 프로퍼티와 같은 점 문법으로 인스턴스 메소드를 호출합니다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> counter = Counter()
+<span class="hljs-comment">// 초기 counter값은 0입니다</span>
+counter.increment()
+<span class="hljs-comment">// counter값은 이제 1입니다</span>
+counter.incrementBy(<span class="hljs-number">5</span>)
+<span class="hljs-comment">// counter값은 이제 6입니다</span>
+counter.reset()
+<span class="hljs-comment">// counter값은 이제 0입니다</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="메소드를-위한-지역-및-외부-변수-이름"></a><a href="#메소드를-위한-지역-및-외부-변수-이름" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메소드를 위한 지역 및 외부 변수 이름</h3>
+<p>함수 매개 변수는 외부 변수 이름 섹션에서 설명한대로 지역 이름(함수 바디에서 사용될)과 외부 이름(함수가 호출될 때 사용될)을 가질 수 있습니다. 메소드 매개 변수 또한 그렇습니다. 매소드는 그저 타입에 의존적인 함수와 마찬가지이기 때문입니다. 그러나 이 둘의 지역 이름과 외부 이름의 작명법은 다름니다.</p>
+<p>스위프트의 메소드는 오브젝티브-C에서 사용하던 것과 매우 유사합니다. 오브젝티브-C에서 그러하였듯이, 스위프트에서 메소드 이름은, 앞서살펴본 <code>Counter</code> 클래스 예제의 <code>incrementBy</code> 메소드와 같이, 형식적으로 첫번째 파라미터parameter가 <code>with</code>, <code>for</code> 또는 <code>by</code>와 같은 전치사를 사용합니다. 이 전치사가 사용되었다는 점은 메소드가 호출될 때 문장처럼 읽히는 것을 가능하게 만듭니다. 스위프트는 이 관습적으로 인정받은 작명법을 매서드 파라미터에 다른 기본 접근법을 사용하여 함수 파라미터보다 작성하기 쉽게 만들었습니다.</p>
+<p>구체적으로, 스위프트는 메소드내 첫 번째 파라미터 이름은 기본적으로 지역 파라미터 이름으로 지정합니다, 그리고 두 번째 파라미터부터는 지역 파라미터와 외부 파라미터 둘다 지정합니다. 이 관습은 오브젝티브-C 메소드에서 형식적으로 이름을 짓고,  작성하던 것과 유사합니다. 그리고 파라미터 이름에 자격을 부여할 필요없이 알아보기 쉬운 메소드 호출을 만들 수 있습니다.</p>
+<p><code>IncrementBy</code>메소드가 좀 더 복잡하게 정의된 또 다른 버전의 이 <code>Counter</code>클래스를 보십시오:</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> </span>{
+  <span class="hljs-keyword">var</span> <span class="hljs-built_in">count</span>: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementBy</span><span class="hljs-params">(amount: Int, numberOfTimes: Int)</span></span> {
+      <span class="hljs-built_in">count</span> += amount * numberOfTimes
+  }
+}
+</code></pre>
+<p>이 <code>incrementBy</code>메소드는 <code>amount</code>와 <code>numberofTimes</code>라는 두가지 파라미터를 가지고 있습니다. 기본적으로 스위프트는 <code>amount</code>를 지역 이름으로만 취급합니다, 하지만 <code>numberofTimes</code>는 지역 이름과 외부 이름 두가지 모두로서 취급합니다. 다음 예제와 같이 호출 할 수 있습니다:</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> counter = Counter()
+Counter.incrementBy(5, numberOfTimes: 3)
+// Counter value <span class="hljs-keyword">is</span> <span class="hljs-keyword">now</span> 15
+</code></pre>
+<p>당신은 첫번째 인수값에 대해 외부 파라미터 이름을 정의 해줄 필요가 없습니다, 왜냐면 <code>incrementBy</code>라는 함수 이름에서 그것의 용도는 명확해졌기 때문입니다. 하지만 두번째 인수는 메소드가 호출 되었을 때, 그 용도를 명확히하기 위해서 외부 파라미터 이름으로 규정됩니다.</p>
+<p>이 기본적인 동작은 <code>numberOfTimes</code>파라미터 앞에 해쉬 심볼(<code>#</code>)을 붙임으로서 좀 더 효율적으로 취급할 수 있습니다:</p>
+<pre><code class="hljs">Func incrementBy(amoun<span class="hljs-variable">t:</span> <span class="hljs-keyword">int</span>, #numberOfTime<span class="hljs-variable">s:</span> <span class="hljs-keyword">int</span>) {
+    Count += amount * numberOfTimes
+}
+</code></pre>
+<p>위의 기본적인 동작은 스위프트의 메소드 정의는 오브젝티브-C의 문법 스타일과 유사하게 쓰인다는 것을 의미하며, 자연스럽게 호출되고 표현적으로 풍부하게 표현된다는 것을 의미합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="메소드의-외부파라미터-이름-수정법"></a><a href="#메소드의-외부파라미터-이름-수정법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메소드의 외부파라미터 이름 수정법</h3>
+<p>기본적인 방법은 아니지만, 가끔씩 메소드의 첫번째 파라미터에 외부 파라미터 이름을 제공하는 것이 유용 할 수 있습니다. 당신은 직접 명시적으로 외부 이름을 추가 할 수 있으며, 혹은 해쉬 심볼을 첫번째 파라미터의 이름 앞에서 붙여서 지역 이름을 외부 이름과 같이 사용할 수 있습니다.</p>
+<p>반대로, 메소드의 두번째 파라미터나 추가 파라미터에 대해 외부 이름을 제공하고 싶지 않으면, 언더바(_)로 사용해 해당 파라미터를 명시적 외부 파라미터이름으로 오버라이드override해줄 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="self-프로퍼티"></a><a href="#self-프로퍼티" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>self</code> 프로퍼티</h3>
+<p>모든 인스턴스 타입은 인스턴스 자체와 명확하게 동일한, 셀프라고 불리는 명시적 프로퍼티를 가지고 있습니다. 이 명시적 셀프 프로퍼티는, 자신이 속한 인스턴스 메소드내에서 현재 인스턴스를 참조하는 데 사용 할 수 있습니다.</p>
+<p>다음 예제의 <code>increment</code>메소드는 그 와같이 작성되었습니다.</p>
+<pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">increment</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-keyword">self</span>.<span class="hljs-built_in">count</span>++;
+}
+</code></pre>
+<p>실제로는 여러분이 코드에서 <code>self</code>를 작성해줄 필요가 별로 없습니다.  여러분이 명시적으로 <code>self</code>를 작성하지 않았다면, 스위프트는 여러분이 메소드내에서 알려진 프로퍼티나 메소드를 사용할 때마다, 현재 인스턴스의 프로퍼티나 메소드를 참조할 것을 상정하고 있습니다.</p>
+<p>이 가정은 <code>Counter</code>의 세가지 인스턴스 메소드 내부에서 (<code>self.count</code> 대신)<code>count</code>를 사용함으로서 실증되었습니다.</p>
+<p>인스턴스 메소드의 파라미터 이름이 해당 인스턴트의 속성과 동일한 이름을 가진 경우, 이 규칙의 주요 예외가 발생합니다. 이렇게 된다면, 파라미터 이름은 우선적으로 좀 더 확실하게 속성을 참조할 필요가 있습니다. 여러분은 <code>self</code>속성을 확실하게 사용해서 파라미터 이름과 프로퍼티 이름을 구분지을 수 있습니다.</p>
+<p>여기 <code>self</code>는 <code>x</code>라고 불리는 메소드 파라미터와 역시 <code>x</code>라고 불리는 인스턴스 파라미터 사이에서 명확하게 구분지어주고 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">isToTheRightOfX</span><span class="hljs-params">(x: Double)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.x -&gt; x
+    }
+}
+<span class="hljs-keyword">let</span> somePoint = <span class="hljs-type">Point</span>(x: <span class="hljs-number">4.0</span>, y: <span class="hljs-number">5.0</span>)
+<span class="hljs-keyword">if</span> somePoint.isToTheRightOfX(<span class="hljs-number">1.0</span>) {
+    <span class="hljs-built_in">println</span>(“<span class="hljs-type">This</span> point to the <span class="hljs-keyword">right</span> of the line <span class="hljs-keyword">where</span> x == <span class="hljs-number">1.0</span>”)
+}
+<span class="hljs-comment">// prints “This point is to the right of the line where x == 1.0”</span>
+</code></pre>
+<p><code>self</code> 접두사가 없다면, 아마도 스위프트는 두 <code>x</code> 모두 메소드 파라미터 <code>x</code>를 참조한다고 여깁니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="인스턴스-메소드-안에서의-값타입-변경"></a><a href="#인스턴스-메소드-안에서의-값타입-변경" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>인스턴스 메소드 안에서의 값타입 변경</h3>
+<p>구조체와 열거형는 값타입이다. 기본적으로 값타입의 프로퍼티는 인스턴스 메소드 안에서 변경될 수 없다.
+그러나 만약 특정 메소드 안에서 구고체나 열거형을 변경할 필요가 있다면, 그 메소드에 변화(<code>mutating</code>)동작을 선택할 수 있다.  그러면 메소드는 자신 안에서 해당 프로터리를 변화(즉, 변경)시킬 수 있고, 적용된 모든 변경은 메소드가 끝나면 원본 구조체에 쓰여지게 된다. 메소드는 내포된 <code>self</code> 프로퍼티에 완전히 새로운 인스턴스를 할당할 수도 있다.
+어떤 메소드 <code>func</code>키워드 앞에 <code>mutating</code> 키워드를 둬서 이 동작을 선택할 수 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">moveByX</span><span class="hljs-params">(deltaX: Double, y deltaY: Double)</span></span> {
+        x += deltaX
+        y += deltaY
+    }
+}
+<span class="hljs-keyword">var</span> somePoint = <span class="hljs-type">Point</span>(x: <span class="hljs-number">1.0</span>, y: <span class="hljs-number">1.0</span>)
+somePoint.moveByX(<span class="hljs-number">2.0</span>, y: <span class="hljs-number">3.0</span>)
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"The point is now at (<span class="hljs-subst">\(somePoint.x)</span>, <span class="hljs-subst">\(somePoint.y)</span>)"</span>)
+<span class="hljs-comment">// prints "The point is now at (3.0, 4.0)</span>
+</code></pre>
+<p>상단의 <code>Point</code>구조체는 <code>moveByX</code> 변화할 메소드로 정의했는데, 이는 <code>Point</code> 인스턴스를 특정 크기만큼 옮긴다. 그런 프로퍼티를 변경시킬 수 있게 만들기 위해서 <code>mutating</code> 키워드를 그 정의에 추가했다.
+구조체 타입의 상수에 변화메소드를 호출할 수 없다는 것을 유의해라. 왜냐하면 비록 해당 프로퍼티가 변수형태로 되어 있어도 그 프로퍼티는 변경될 수 없기 때문이다. <a href="">상수 구조체 인스턴스의 저장속성</a>에 설명되어 있다.</p>
+<pre><code class="hljs">let fixedPoint = Point(<span class="hljs-string">x:</span> <span class="hljs-number">3.0</span>, <span class="hljs-string">y:</span> <span class="hljs-number">3.0</span>)
+fixedPoint.moveByX(<span class="hljs-number">2.0</span>, <span class="hljs-string">y:</span> <span class="hljs-number">3.0</span>)
+<span class="hljs-comment">// this will report an error</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="변하는-mutating-메소드안에서-self-에-할당하기"></a><a href="#변하는-mutating-메소드안에서-self-에-할당하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>변하는(<code>Mutating</code>) 메소드안에서 <code>self</code>에 할당하기</h3>
+<p>변하는(<code>Mutating</code>) 메소드는 암시적으로 <code>self</code>프로퍼티에 완전한 새 인스턴스를 할당할 수도 있다. 위 예제에서 보여준 <code>Point</code>는 아래와 같이 재 작성해볼 수 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">moveByX</span><span class="hljs-params">(deltaX: Double, y deltaY: Double)</span></span> {
+        <span class="hljs-keyword">self</span> = <span class="hljs-type">Point</span>(x: x + deltaX, y: y + deltaY)
+    }
+}
+</code></pre>
+<p>이 버전의 변하는 <code>moveByX</code> 메소드는 <code>x</code>값과 <code>y</code>값을 받아 대상 위치에 설정에 완전히 새로운 구조체를 만든다. 대안 버전의 메소드 호출 최종 결과는 이전 버전 호출에서와 정확하게 동일할 것이다.
+열거형에서 변하는 메소드는 동일 열거형에서 다른 구성원이 될 수 있게 암시적 <code>self</code> 매개변수를 설정할 수 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">TriStateSwitch</span> {</span>
+    <span class="hljs-keyword">case</span> Off, Low, High
+    mutating func <span class="hljs-keyword">next</span>() {
+        switch <span class="hljs-keyword">self</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-symbol">Off:</span>
+            <span class="hljs-keyword">self</span> = Low
+        <span class="hljs-keyword">case</span> <span class="hljs-symbol">Low:</span>
+            <span class="hljs-keyword">self</span> = High
+        <span class="hljs-keyword">case</span> <span class="hljs-symbol">High:</span>
+            <span class="hljs-keyword">self</span> = Off
+        }
+    }
+}
+var ovenLight = TriStateSwitch.Low
+ovenLight.<span class="hljs-keyword">next</span>()
+/<span class="hljs-regexp">/ ovenLight is now equal to .High
+ovenLight.next()
+/</span><span class="hljs-regexp">/ ovenLight is now equal to .Off
+</span></code></pre>
+<p>이 예제에서 열거형은 3가지 상태 전이가 정의되어 있다. 3가지 전력 상태 (끔 <code>Off</code>, 낮음 <code>Low</code>, 높음 <code>High</code>) 사이의 전이 주기는 <code>next</code> 메소드가 호출되는 매회이다.</p>
+<h2><a class="anchor" aria-hidden="true" id="타입-메소드"></a><a href="#타입-메소드" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>타입 메소드</h2>
+<p>위에서 설명한대로, 인스턴스 메소드는 특정타입의 인스턴스에서 호출되는 메소드이다. 타입 자체에서 호출하는 메소드 또한 정의할 수 있다. 이런 종류의 메소드를 타입 메소드라고 한다. 클래스를 위한 타입 메소드는 <code>func</code> 키워드 앞에 <code>class</code> 키워드를 써서 그리고 구조체와 열거형을 위한 타입 메소드는 <code>func</code> 키워드 앞에 <code>static</code> 키워드를 써서 지칭할 수 있다.</p>
+<blockquote>
+<p>노트
+오브젝티브씨에서는 오브젝티브씨 클래스를 위한 타입 단계 메소드만을 정의할 수 있었다. 스위프트에서는 모든 클래스, 구조체, 열거형에 타입 단계 메소드를 정의할 수 있다. 개별 타입 메소드는 지원하는 타입에 대해 명시적으로 범위를 지정한다.</p>
+</blockquote>
+<p>타입 메소드는 인스턴스 메소드처럼 점표기법(dot syntax)으로 호출한다. 그러나 타입에 대한 타입 메소드를 호출해야지 그 타입에 대한 인스턴스를 호출하는 것이 아니다. 여기에 어떻게 <code>SomeClass</code>라는 클래스에 타입 메소드를 호출하는지가 있다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span> {</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">func</span> <span class="hljs-title">someTypeMethod</span>() {</span>
+        // type <span class="hljs-function"><span class="hljs-keyword">method</span> <span class="hljs-title">implementation</span> <span class="hljs-title">goes</span> <span class="hljs-title">here</span></span>
+    }
+}
+SomeClass.someTypeMethod()
+</code></pre>
+<p>타입 메소드 본체 안에서는 암시적 <code>self</code> 프로퍼티는 타입에 대한 인스턴스가 아니라 타입 그 자체를 가르킨다. 구조체와 열거형에서는 마치 인스턴스 프로퍼티와 인스턴스 메소드 매개변수에서 그랬던 것처럼 <code>static</code> 프로퍼티와 <code>static</code> 메소드 매개변수 사이의 명확하게 하기 위해 <code>self</code>를 쓸 수 있다라는 것을 뜻한다.
+좀 더 일반적으로, 어떤 타입 메소드의 본체 안에서 사용하는 제한없는 메소드와 프로퍼티는 다른 타입단계 메소드와 프로퍼티를 참조 할 것이다. 타입 메소드는 어떤 다른 타입 메소드의 이름과 함께 또다른 타입 메소드를 호출할 수 있다. 비슷하게, 구조체와 열거형 타입 메소드는 타입 이름 접두사 없이 정적 프로퍼티 이름을 사용해서 정적 프로퍼티에 접근할 수 이다.
+아래 예제는 여러 레벨이나 게임 단계를 통해 플레이어의 진척도를 추적하는 <code>LevelTracker</code>이란 구조체를 정의한다. 어떤 레벨을 끝낼때마다 그 레벨은 장비에 있는 모든 플레이어를 풀 수 있다.  <code>LevelTracker</code> 구조체는 정적 프로퍼티와 메소드를 사용해 게임이 풀리는 레벨에 도달했는지 여부를 추적한다. 또한 개별 플레이어의 현재 수준에 대해 또한 추적한다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">LevelTracker</span> </span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">var</span> highestUnlockedLevel = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unlockLevel</span><span class="hljs-params">(level: Int)</span></span> {
+        <span class="hljs-keyword">if</span> level &gt; highestUnlockedLevel { highestUnlockedLevel = level }
+    }
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">levelIsUnlocked</span><span class="hljs-params">(level: Int)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">return</span> level &lt;= highestUnlockedLevel
+    }
+    <span class="hljs-keyword">var</span> currentLevel = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">advanceToLevel</span><span class="hljs-params">(level: Int)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">if</span> <span class="hljs-type">LevelTracker</span>.levelIsUnlocked(level) {
+            currentLevel = level
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+        }
+    }
+}
+</code></pre>
+<p><code>LevelTracker</code> 구조체는 어떤 플레이어가 락을 풀고 도달한 가장 높은 레벨를 추적한다. 이 값은 <code>highestUnlockedLevel</code>이라고 불리는 정적 프로퍼티이다.
+<code>LevelTracker</code>는 또한 <code>highestUnlockedLevel</code>프로퍼티와 동작하는 두가지 타입 함수를 정의한다. 첫번째는 <code>unlockLevel</code>이란 타입 함수인데 언제 새 레벨이 풀리는지에 상관없이 <code>highestUnlockedLevel</code>값을 갱신한다. 두번째는 <code>levelIsUnlocked</code>이라는 편리한 타입 함수로 만약 특정 레벨이 이미 풀렸으면 <code>true</code>를 반환한다. (이 타입 함수들이 <code>LevelTracker.highestUnlockedLevel</code>이라고 쓸 필요 없이 <code>highestUnlockedLevel</code> 정적 프로퍼티에 접근할 수 있다는 것을 알아둬라.
+정적 프로퍼티와 타입 메소드에 추가로 <code>LevelTracker</code>은 개별 플레이어의 게임 전반에 걸친 진행 상태를 추적한다. 플레이어가 현재 진행하고 있는 레벨을 추적하기 위해 <code>currentLevel</code>이라는 인스턴스 프로퍼티를 사용한다.
+<code>currentLevel</code> 프로퍼티를 관리하는데 도움이 되고자, <code>LevelTracker</code>은 <code>advanceToLevel</code>이라는 인스턴스 메소드를 정의했다. <code>currentLevel</code>를 업데이트 하기 전에 이 메소드는 요청 받은 새 레벨이 이미 풀렸는지 아닌지를 확인한다. <code>advanceToLevel</code> 메소드는 실제로 <code>currentLevel</code>에 설정할 수 있는지 아닌지를 알려주기 위해 <code>Boolean</code>값을 반환한다.
+<code>LevelTracker</code> 구조체는 <code>Player</code> 클래스와 사용하는데, 아래 보여지는 것처럼, 개별 플레이어의 진행 상태를 추적하고 갱신한다.</p>
+<pre><code class="hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span> </span>{
+    <span class="hljs-keyword">var</span> tracker = <span class="hljs-type">LevelTracker</span>()
+    <span class="hljs-keyword">let</span> playerName: <span class="hljs-type">String</span>
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">completedLevel</span><span class="hljs-params">(level: Int)</span></span> {
+        <span class="hljs-type">LevelTracker</span>.unlockLevel(level + <span class="hljs-number">1</span>)
+        tracker.advanceToLevel(level + <span class="hljs-number">1</span>)
+    }
+    <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
+        playerName = name
+    }
+}
+</code></pre>
+<p><code>Player</code> 클래스는 플레이어의 진행상태를 추적하기 위해 <code>LevelTracker</code>의 새 인스턴스를 생성한다. 또한 <code>completedLevel</code>이란 메소드를 제공하는데 언제 플레이어가 특정 레벨을 완료했을 때 호출한다. 이 메소드는 모든 플레이어의 다음 레벨을 풀고 플레이어을 다음 레벨로 이동시키기 위해 진행 상태를 갱신한다. ( <code>advanceToLevel</code>의 <code>Boolean</code>반환값은 무시되는데 왜냐하면 레벨이란 이전줄의 <code>LevelTracker.unlockLevel</code>을 호출해서 풀렸는지를 알기 위함이기 때문이다.)
+신규 플레이어를 위해 <code>Player</code> 클래스의 인스턴스를 만들어서 플레이어가 레벨 1을 달성 했을때 어떤일이 벌어지는지 보여주겠다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> player = Player(name: <span class="hljs-string">"Argyrios"</span>)
+player.completedLevel(<span class="hljs-number">1</span>)
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"highest unlocked level is now \(LevelTracker.highestUnlockedLevel)"</span>)</span></span>
+<span class="hljs-comment">// prints "highest unlocked level is now 2"</span>
+</code></pre>
+<p>만약 게임에서 어떤 플레이어도 아직 풀지 못한 레벨로 옮기려는 두번째 플레이어를 생성한다면, 플레이어의 현재 레벨을 설정하려는 시도는 실패할 것이다.</p>
+<pre><code class="hljs"><span class="hljs-built_in">player</span> = <span class="hljs-built_in">Player</span>(<span class="hljs-built_in">name</span>: <span class="hljs-string">"Beto"</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-built_in">player</span>.tracker.advanceToLevel(<span class="hljs-number">6</span>) {
+    println(<span class="hljs-string">"player is now on level 6"</span>)
+} <span class="hljs-keyword">else</span> {
+    println(<span class="hljs-string">"level 6 has not yet been unlocked"</span>)
+}
+<span class="hljs-comment">// prints "level 6 has not yet been unlocked"</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter12.html">← 속성 (Properties)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#instance-methods">Instance Methods</a><ul class="toc-headings"><li><a href="#메소드를-위한-지역-및-외부-변수-이름">메소드를 위한 지역 및 외부 변수 이름</a></li><li><a href="#메소드의-외부파라미터-이름-수정법">메소드의 외부파라미터 이름 수정법</a></li><li><a href="#self-프로퍼티"><code>self</code> 프로퍼티</a></li><li><a href="#인스턴스-메소드-안에서의-값타입-변경">인스턴스 메소드 안에서의 값타입 변경</a></li><li><a href="#변하는-mutating-메소드안에서-self-에-할당하기">변하는(<code>Mutating</code>) 메소드안에서 <code>self</code>에 할당하기</a></li></ul></li><li><a href="#타입-메소드">타입 메소드</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>문자열과 문자 (Strings and Characters) · Swift 가이드</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; Translator : 해탈 (kimqqyun@gmail.com)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="문자열과 문자 (Strings and Characters) · Swift 가이드"/><meta property="og:type" content="website"/><meta property="og:url" content="https://unwmun-smobile.github.io/Swift-Korean/index.html"/><meta property="og:description" content="&gt; Translator : 해탈 (kimqqyun@gmail.com)"/><meta property="og:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://unwmun-smobile.github.io/Swift-Korean/img/docusaurus.png"/><link rel="shortcut icon" href="/Swift-Korean/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/Swift-Korean/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Swift-Korean/"><img class="logo" src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드"/><h2 class="headerTitleWithLogo">Swift 가이드</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Swift-Korean/docs/chapter1.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>LANGUAGE GUIDE</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">WELCOME TO SWIFT</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter1.html">Swift에 대해서 (About Swift)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter2.html">Swift 둘러보기 (Swift Tour)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE GUIDE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter3.html">기초 다지기 (The Basics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter4.html">기본 연산자 (Basic Operators)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Swift-Korean/docs/chapter5.html">문자열과 문자 (Strings and Characters)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter7.html">흐름 제어  (Control Flow)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter8.html">함수 (Functions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter9.html">클로저 (Closures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter10.html">열거형 (Enumerations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter11.html">클래스와 구조체 (Classes and Structures)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter12.html">속성 (Properties)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter13.html">메서드 (Methods)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter14.html">서브스크립트 (Subscripts)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter15.html">상속 (Inheritance)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter16.html">초기화 (Intialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter17.html">해제 (Deinitialization)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter18.html">자동 참조 계수 (Automatic Reference Counting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter19.html">옵셔널 체인 (Optional Chaining)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter20.html">타입 변환 (Type Casting)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter21.html">중첩 타입 (Nested Types )</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter22.html">확장 (Extensions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter23.html">프로토콜</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter24.html">제네릭스 (Generics)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter25.html">고급 연산자 (Advanced Operators)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">LANGUAGE REFERENCE</h3><ul><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter26.html">언어 레퍼런스에 대하여 (About the Language Reference)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter27.html">언어 구조 (Lexcial Structure)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter28.html">타입 (Types)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter29.html">익스프레션 (Expressions)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter30.html">스테이트먼트 (Statements)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter31.html">선언 (Declarations)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter32.html">속성 (Attributes)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter33.html">패턴 (Patterns)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter34.html">제너릭 매개변수와 인자 (Generic Parameters and Arguments)</a></li><li class="navListItem"><a class="navItem" href="/Swift-Korean/docs/chapter35.html">문법 요약(Summary of the Grammar)</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">문자열과 문자 (Strings and Characters)</h1></header><article><div><span><blockquote>
+<p>Translator : 해탈 (<a href="mailto:kimqqyun@gmail.com">kimqqyun@gmail.com</a>)</p>
+</blockquote>
+<p><em>문자열</em>은 <code>&quot;hello, world&quot;</code> 또는 <code>&quot;albatross&quot;</code> 와 같은 문자의 컬렉션입니다. Swift 문자열은 <code>String</code> 타입으로 표시되며 이는 문자 타입의 컬렉션 값 표현입니다.</p>
+<p>Swift <code>String</code> 및 <code>Character</code> 타입은 코드와 함께 텍스트 작업에서 유니코드호환을 완벽호환하며 빠릅니다. 문자 생성 및 조작을 위한 구문은 C 문자열과 유사한 구문을 사용하여 가볍게 읽을 수 있습니다. 문자열 연결은 두 문자열을 추가할 때 <code>+</code> 연산자를 추가하는 것만큼 간단하며 문자열의 가변성은 Swift의 다른 값과 상수나 변수 그리고 다른 값들의 선택으로 관리됩니다.</p>
+<p>Swift의 <code>String</code> 유형은 빠르고 현대적인 구현에도 불구하고 문법이 단순합니다. 모든 문자열 인코딩이 독립적인 유니코드 문자로 구성, 다양한 유니코드 표현에 접근하기 위한 지원을 제공합니다.</p>
+<p>문자열 삽입 과정에서 상수, 변수, 리터럴 및 긴 문자열을 삽입할 수 있습니다. 이것은 사용자 정의 문자열 값을 만들어서 보여주거나 저장을 쉽게 할 수 있습니다.</p>
+<blockquote>
+<p>NOTE
+Swift의 <code>String</code> 타입은 Foundation의 <code>NSString</code> 클래스에 연결됩니다. 당신은 Cocoa 또는 Cocoa Touch의 Foundation 프레임워크로 작업하는 경우 <code>NSString</code>의 API를 이용하여 <code>String</code> 값 호출을 만드는 것이 가능하며 또한 이 장에서 설명한 <code>String</code> 기능도 사용 가능합니다. 또한, <code>NSString</code>의 API 인스턴스를 필요로 하는 <code>String</code> 값도 사용 가능합니다.
+Foundation 과 Cocoa 에 대한 자세한 정보는 <a href="">Using Swift With Cocoa and Objective-C</a> 를 참조하십시오.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="문자열-리터럴"></a><a href="#문자열-리터럴" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 리터럴</h2>
+<p>코드 내에서 미리 정의된 <code>String</code> 값인 리터럴등을 포함할 수 있습니다. 문자열 리터럴이란 큰따옴표로 둘러싸인 텍스트 문자의 고정된 순서입니다.</p>
+<p>문자열 리터럴은 상수나 변수의 초기값을 제공하는것에 사용될 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">someString</span> = <span class="hljs-string">"Some string literal value"</span>
+</code></pre>
+<p>Swift는 초기화된 문자열 리터럴 값으로 <code>someString</code> 상수에 대한 <code>String</code>의 형식을 유추합니다.</p>
+<p>문자열 리터럴은 다음과 같은 특수 문자를 포함할 수 있습니다.</p>
+<ul>
+<li>이스케이프 특별 문자 <code>\0</code> (null 문자), <code>\\</code> (백슬래시), <code>\t</code> (수평 탭), <code>\n</code> (줄 바꿈), <code>\r</code> (캐리지 리턴), <code>\&quot;</code> (큰따옴표), <code>\'</code> (작은따옴표)</li>
+<li>1바이트 유니코드 스칼라는 <code>\xnn</code> 이며 <code>nn</code>은 두개의 16진수 숫자입니다.</li>
+<li>2바이트 유니코드 스칼라는 <code>\unnnn</code> 이며 <code>nnnn</code>은 4개의 16진수 숫자입니다.</li>
+<li>4바이트 유니코드 스칼라는 <code>\Unnnnnnnn</code> 이며 <code>nnnnnnnn</code>은 8개의 16진수 숫자입니다.</li>
+</ul>
+<p>아래의 코드는 여러 종류의 특수문자의 예를 나타냅니다.
+<code>wiseWords</code> 상수는 두 개의 이스케이프 문자가 포함되어 있습니다. <code>dollarSign</code> 과 <code>blackHeart</code> 및 <code>sparklingHeart</code> 상수는 세 가지 다른 유니코드 스칼라 문자 형식을 보여줍니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> wiseWords = <span class="hljs-string">"\"</span>Imagination <span class="hljs-keyword">is</span> more important than knowledge\<span class="hljs-string">" - Einstein"</span>
+<span class="hljs-comment">// "Imagination is more important than knowledge" - Einstein</span>
+<span class="hljs-keyword">let</span> dollarSign = <span class="hljs-string">"\x24"</span>        <span class="hljs-comment">// $,  Unicode scalar U+0024</span>
+<span class="hljs-keyword">let</span> blackHeart = <span class="hljs-string">"\u2665"</span>      <span class="hljs-comment">// ♥,  Unicode scalar U+2665</span>
+<span class="hljs-keyword">let</span> sparklingHeart = <span class="hljs-string">"\U0001F496"</span>  <span class="hljs-comment">// 💖, Unicode scalar U+1F496</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="빈-문자의-초기화-initializing-an-empty-string"></a><a href="#빈-문자의-초기화-initializing-an-empty-string" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>빈 문자의 초기화 (Initializing an Empty String)</h2>
+<p>긴 문자열을 만들기 위한 포인트를 위해 빈 <code>String</code> 값을 만들려면 빈 문자열 리터럴을 변수에 할당하거나 초기화 문법을 사용하여 새 <code>String</code> 인스턴스를 초기화합니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> emptyString = <span class="hljs-string">""</span>               <span class="hljs-comment">// 빈 문자열 리터럴</span>
+<span class="hljs-selector-tag">var</span> anotherEmptyString = String()  <span class="hljs-comment">// 초기화 문법</span>
+<span class="hljs-comment">// 두 문자열 모두 비어있으며 서로 똑같다.</span>
+
+</code></pre>
+<p><code>isEmpty</code>의 불리언 속성을 체크하여 문자열 값이 비어있는지 여부를 확인할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">if</span> emptyString<span class="hljs-selector-class">.isEmpty</span> {
+    println(<span class="hljs-string">"여기엔 아무것도 보이지 않습니다."</span>)
+}
+<span class="hljs-comment">// prints 여긴 아무것도 보이지 않습니다."</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="문자열-가변성"></a><a href="#문자열-가변성" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 가변성</h2>
+<p>특정 <code>String</code>을 변수에 할당하여(수정될 수 있는 경우) 수정(또는 변경)할 수 있는지를 나타내거나 상수(수정될 수 없는 경우)를 말합니다.</p>
+<pre><code class="hljs">var variableString = <span class="hljs-string">"Horse"</span>
+variableString += <span class="hljs-string">" and carriage"</span>
+// variableString 은 <span class="hljs-string">"Horse and carriage"</span> 입니다.
+
+let constantString = <span class="hljs-string">"Highlander"</span>
+constantString += <span class="hljs-string">" and another Highlander"</span>
+// 컴파일 에러 - 상수 문자열은 변경될 수 없습니다.
+</code></pre>
+<blockquote>
+<p>NOTE
+이 방법은 Objective-C 또는 Cocoa에서 다른 방법으로 접근합니다. 문자열이 변경될 수 있는지를 나타내기 위해 두 개의 클래스 (<code>NSString</code> 또는 <code>NSMutableString</code>) 사이에서 선택할 수 있습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="문자열-값-타입-strings-are-value-types"></a><a href="#문자열-값-타입-strings-are-value-types" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 값 타입 (Strings Are Value Types)</h2>
+<p>Swift의 <code>String</code> 타입은 값 타입입니다. 새 <code>String</code> 값을 만드는 경우에 상수 또는 변수에 할당되면 그 문자열 값이 함수나 메소드에 전달 될 때 복사됩니다. 각각의 경우에 기존의 <code>String</code> 값의 새 복사본이 전달되거나 복사되며 이는 원래의 버전이 아닙니다. 값 타입은 <a href="">Structurs and Enumerations Are Value Types</a>를 참조하십시오.</p>
+<blockquote>
+<p>NOTE
+이 동작은 Cocoa에 있는 <code>NSString</code> 과는 다릅니다. Cocoa에 있는 <code>NSString</code> 인스턴스를 생성할 때와 함수나 메소드에 전달하거나 변수에 할당 및 전달될 때 같은 단일 <code>NSString</code>에 대한 참조를 할당합니다. 특별히 요청하지 않는 한 문자열에 대해 어떠한 복사는 수행되지 않습니다.</p>
+</blockquote>
+<p>Swift의 <code>String</code> 기본 복사 동작(copy-by-default)은 문자열 값이 함수나 메소드에의해 수행될 때 어디에서 오는지 상관없이 정확한 <code>String</code> 값을 소유하고 깨끗한지 확인합니다. 스스로 수정하지 않는 한 전달된 문자열이 수정되지 않는다는 것을 보장합니다.</p>
+<p>내부적으로 Swift의 컴파일러는 실제 복사가 반드시 필요한 경우에만 발생하도록 최적화하고 있습니다. 이 뜻은 문자열로 작업할 때 항상 좋은 성능을 의미합니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="문자와-작업하기-working-with-charaters"></a><a href="#문자와-작업하기-working-with-charaters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자와 작업하기 (Working with Charaters)</h2>
+<p>Swift의 <code>String</code> 타입은 지정된 순서로 <code>Character</code> 값의 컬렉션을 나타냅니다. 각 <code>Character</code>의 값은 하나의 유니코드 문자를 나타냅니다. 각 <code>Character</code>에 대해 <code>for-in</code> 루프의 문자 반복을 사용하여 각각의 문자의 값에 접근할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> <span class="hljs-keyword">character</span> <span class="hljs-keyword">in</span> <span class="hljs-string">"Dog!🐶"</span>{
+    println(<span class="hljs-keyword">character</span>)
+}
+<span class="hljs-comment">// D</span>
+<span class="hljs-comment">// o</span>
+<span class="hljs-comment">// g</span>
+<span class="hljs-comment">// !</span>
+<span class="hljs-comment">// 🐶</span>
+</code></pre>
+<p><code>for-in</code> 루프에 대해서는 For Loops 를 참조하십시오 // 링크</p>
+<p>또한, <code>Character</code> 타입 표시를 제공하여 단일 문자열 리터럴에서 독립(stand-alone) <code>Character</code> 상수나 변수를 만들 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> yenSign: <span class="hljs-attr">Character</span> = <span class="hljs-string">"¥"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="문자-세기-counting-characters"></a><a href="#문자-세기-counting-characters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자 세기 (Counting Characters)</h2>
+<p>문자열의 문자의 수를 검색하려면 전역 함수인 <code>countElements</code>를 호출하여 함수의 유일한 매개변수인 문자열을 전달합니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> unusualMenagerie = <span class="hljs-string">"Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"</span>
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"unusualMenagerie has <span class="hljs-subst">\(<span class="hljs-built_in">countElements</span>(unusualMenagerie)</span>) characters"</span>)
+<span class="hljs-comment">// prints "unusualMenagerie has 40 characters"</span>
+</code></pre>
+<blockquote>
+<p>NOTE
+다른 유니코드 문자와 같은 유니코드 문자의 다른 표현은 메모리의 저장된 다른 양을 필요로 할 수 있습니다. 이 때문에 Swift의 문자는 각 문자의 표현에서 동일한 양의 메모리를 차지하지 않습니다. 결과에 따라 문자열의 길이는 차례로 그 문자의 각각 반복하지 않고는 계산될 수 없다. 당신이 특히 긴 문자열 값으로 작업하는 경우 <code>CountElements</code> 기능이 해당 문자열에 대한 정확한 글자수를 계산하기 위해 문자열에서 문자 세기를 반복해야 한다는 것을 인식해야 합니다.
+또한 <code>countElements</code>에 의해 반환된 문자 수는 항상 같은 문자가 포함되어있는 <code>NSSString</code>의 길이 속성과 동일하지 않습니다. 길이는 <code>NSString</code>을 기초로 한 문자열 UTF-16 표현 내의 16bit 유닛 숫자에 기반을 두고 문자열에서 유니코드 문자의 수에 기반을 두지는 않습니다.
+이 사실을 반영하기 위해 길이 속성은 Swift가 <code>NSString</code> 문자열 값에 접근할 때 <code>utf16count</code>라고 합니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="문자열-및-문자-합치기concatenating-strings-and-characters"></a><a href="#문자열-및-문자-합치기concatenating-strings-and-characters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 및 문자 합치기(Concatenating Strings and Characters)</h2>
+<p><code>String</code> 및 <code>Character</code>를 덧셈 연산자(<code>+</code>)와 함께 추가하여 새로운 문자열(또는 연결된) 값을 만들 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">string1</span> = <span class="hljs-string">"hello"</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">string2</span> = <span class="hljs-string">"there"</span>
+<span class="hljs-keyword">let</span> character1: <span class="hljs-attr">Character</span> = <span class="hljs-string">"!"</span>
+<span class="hljs-keyword">let</span> character2: <span class="hljs-attr">Character</span> = <span class="hljs-string">"?"</span>
+
+<span class="hljs-keyword">let</span> <span class="hljs-attr">stringPlusCharacter</span> = string1 + character1        // equals <span class="hljs-string">"hello!"</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">stringPlusString</span> = string1 + string2              // equals <span class="hljs-string">"hello there"</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">characterPlusString</span> = character1 + string1        // equals <span class="hljs-string">"!hello"</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">characterPlusCharacter</span> = character1 + character2  // equals <span class="hljs-string">"!?"</span>
+</code></pre>
+<p>또한 덧셈 할당연산자(+=)로 기존의 <code>String</code> 변수에 <code>String</code>이나 <code>Character</code> 값을 추가할 수 있습니다.</p>
+<pre><code class="hljs">var instruction = <span class="hljs-string">"look over"</span>
+instruction += sting2
+// instriction 은 <span class="hljs-string">"look over there"</span> 와 같습니다.
+
+var welcome = <span class="hljs-string">"good mornig"</span>
+welcome += character1
+// welcome 은 <span class="hljs-string">"good morning!"</span> 과 같습니다.
+</code></pre>
+<blockquote>
+<p>NOTE
+<code>Character</code> 값은 하나의 문자만을 포함해야만 하기 때문에 기존의 <code>Character</code> 변수에 <code>String</code>이나 <code>Character</code>를 추가할 수 없습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="문자열-삽입"></a><a href="#문자열-삽입" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 삽입</h2>
+<p>문자열 삽입은 상수, 변수, 리터럴 그리고 표현식을 혼합하여 이용 및 문자열 안에 문자 값을 포함하여 새로운 <code>String</code> 값을 만드는 방법입니다. 문자열 리터럴에 삽입된 각 항목은 백슬래시가 앞에 있으며 한 쌍의 괄호로 싸여있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">multiplier</span> = <span class="hljs-number">3</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">message</span> = <span class="hljs-string">"\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"</span>
+// message is <span class="hljs-string">"3 times 2.5 is 7.5"</span>
+</code></pre>
+<p>위의 예에서 <code>multiplier</code>의 값은 <code>\(multiplier)</code> 문자열 리터럴로 삽입됩니다. 이 플레이스홀더는 실제 문자열 삽입이 평가될 때 <code>multiplier</code>의 실제 값으로 치환됩니다.</p>
+<p><code>multiplier</code>의 값은 큰 문자열 표현식 나중의 일부입니다. 이 표현식은 <code>Double(mutiplier) * 2.5</code> 의 값을 계산하고 문자열로 결과 (<code>7.5</code>)를 삽입됩니다. 이 경우에 문자열 리터럴 내부에 포함된 경우 표현은 <code>\(Double(multiplier) * 2.5)</code>로 기록됩니다.</p>
+<blockquote>
+<p>NOTE
+문자열에 삽입된 괄호안에 쓰는 표현으로 이스케이프 큰 따옴표 (<code>&quot;</code>) 또는 백 슬래시(<code>\</code>)와 캐리지 리턴 및 줄바꿈을 포함할 수 없습니다.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="문자열-비교"></a><a href="#문자열-비교" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열 비교</h2>
+<p>Swift는 <code>String</code> 값을 비교하는 세가지 방법을 제공합니다 : 문자열 같음, 전위 같음, 후위 같음 // 디스커션에 올림</p>
+<h3><a class="anchor" aria-hidden="true" id="string-equality"></a><a href="#string-equality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String Equality</h3>
+<p>두개의 <code>String</code> 값이 동일한 순서로 포함되어 있는 경우 두개의 문자열 값이 동일한 것으로 간주됩니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">quotation</span> = <span class="hljs-string">"We're a lot alike, you and I."</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">sameQuotation</span> = <span class="hljs-string">"We're a lot alike, you and I."</span>
+<span class="hljs-keyword">if</span> <span class="hljs-attr">quotation</span> == sameQuotation {
+    pinrtln(<span class="hljs-string">"These two strings are considered equal"</span>)
+}
+// prints <span class="hljs-string">"These two strings are considered equal"</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="prefix-and-suffix-equality"></a><a href="#prefix-and-suffix-equality" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prefix and Suffix Equality</h3>
+<p>문자열이 특정 문자열의 전위 또는 후위가 있는지를 확인하여 문자열의 <code>hasPrefix</code> 및 <code>hasSuffix</code> 메서드를 호출, <code>String</code> 타입의 단일 인수인 부울값을 각각 반환합니다. 두 가지 방법은 기본 문자열과 전위나 문자열 사이에 문자별 비교를 수행합니다. 두 가지 방법은 기본 문자열과 전위나 후위 및 문자열 사이의 문자별 비교를 수행합니다.</p>
+<p>아래의 예는 <em>셰익스피어의 로미오와 줄리엣</em> 의 처음 두 액트인 장면의 위치를 나타내는 문자열의 배열을 고려하였습니다.</p>
+<pre><code class="hljs">let romeoAndJuliet = [
+    <span class="hljs-string">"Act 1 Scene 1: Verona, A public place"</span>,
+    <span class="hljs-string">"Act 1 Scene 2: Capulet'</span>s mansion<span class="hljs-string">",
+    "</span>Act <span class="hljs-number">1</span> Scene <span class="hljs-number">3</span>: A room in Capulet<span class="hljs-string">'s mansion"</span>,
+    <span class="hljs-string">"Act 1 Scene 4: A street outside Capulet'</span>s mansion<span class="hljs-string">",
+    "</span>Act <span class="hljs-number">1</span> Scene <span class="hljs-number">5</span>: The Great Hall in Capulet<span class="hljs-string">'s mansion"</span>,
+    <span class="hljs-string">"Act 2 Scene 1: Outside Capulet'</span>s mansion<span class="hljs-string">",
+    "</span>Act <span class="hljs-number">2</span> Scene <span class="hljs-number">2</span>: Capulet<span class="hljs-string">'s orchard"</span>,
+    <span class="hljs-string">"Act 2 Scene 3: Outside Friar Lawrence'</span>s cell<span class="hljs-string">",
+    "</span>Act <span class="hljs-number">2</span> Scene <span class="hljs-number">4</span>: A street in Verona<span class="hljs-string">",
+    "</span>Act <span class="hljs-number">2</span> Scene <span class="hljs-number">5</span>: Capulet<span class="hljs-string">'s mansion"</span>,
+    <span class="hljs-string">"Act 2 Scene 6: Friar Lawrence'</span>s cell<span class="hljs-string">"
+]
+</span></code></pre>
+<p>Act 1의 장면의 수를 <code>romeoAndJuliet</code> 배열에 <code>hasPrefix</code>를 사용하여 계산할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> act1SceneCount = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> scene <span class="hljs-keyword">in</span> romeoAndJuliet {
+    <span class="hljs-keyword">if</span> scene.hasPrefix(<span class="hljs-string">"Act 1 "</span>) {
+        ++act1SceneCount
+    }
+}
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"There are \(act1SceneCount) scenes in Act 1"</span>)</span></span>
+<span class="hljs-comment">// prints "There are 5 scenes in Act 1"</span>
+</code></pre>
+<p>마찬가지로 <code>hasSiffix</code> 메소드를 사용하여 Capulet's mansion and Friar Lawrence's cell의 장면의 수를 계산합니다.</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">var</span> mansionCount = <span class="hljs-number">0</span>
+<span class="hljs-selector-tag">var</span> cellCount = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> scene <span class="hljs-keyword">in</span> romeoAndJuliet {
+    <span class="hljs-keyword">if</span> scene.hasSuffix(<span class="hljs-string">"Capulet's mansion"</span>) {
+        ++mansionCount
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> scene.hasSuffix(<span class="hljs-string">"Friar Lawrence's cell"</span>) {
+        ++cellCount
+    }
+}
+<span class="hljs-function"><span class="hljs-title">println</span><span class="hljs-params">(<span class="hljs-string">"\(mansionCount) mansion scenes; \(cellCount) cell scenes"</span>)</span></span>
+<span class="hljs-comment">// prints "6 mansion scenes; 2 cell scenes"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="대문자와-소문자-문자열"></a><a href="#대문자와-소문자-문자열" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>대문자와 소문자 문자열</h2>
+<p><code>uppercaseString</code> 과 <code>lowercaseString</code> 속성을 가진 문자열에 대문자와 소문자 버전에 접근할 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-keyword">normal</span> = <span class="hljs-string">"Could you help me, please?"</span>
+<span class="hljs-keyword">let</span> shouty = <span class="hljs-keyword">normal</span>.uppercaseString
+// shouty <span class="hljs-keyword">is</span> equal <span class="hljs-keyword">to</span> <span class="hljs-string">"COULD YOU HELP ME, PLEASE?"</span>
+<span class="hljs-keyword">let</span> whispered = <span class="hljs-keyword">normal</span>.lowercaseString
+// whispered <span class="hljs-keyword">is</span> equal <span class="hljs-keyword">to</span> <span class="hljs-string">"could you help me, please?"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="유니코드"></a><a href="#유니코드" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>유니코드</h2>
+<p>유니코드는 국제 표준 인코딩 및 텍스트를 나타내는 것입니다. 유니코드는 표준화된 형태로 거의 모든 문자를 표시하고 텍스트 파일 또는 웹페이지와 같은 외부 소스로부터 해당 문자를 읽고 쓸 수 있습니다.</p>
+<p>Swift의 <code>String</code> 및 <code>Character</code> 유형은 유니코드를 완벽하게 준수합니다. 아래에 설명으로 그들은 서로 다른 유니코드 인코딩의 숫자를 지원합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="유니코드-용어"></a><a href="#유니코드-용어" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>유니코드 용어</h3>
+<p>유니코드의 모든 문자는 하나 이상의 유니코드 스칼라로 표현될 수 있습니다. 유니코드 스칼라는 문자 또는 수정에 대한 고유한 21bit(그리고 이름) 입니다, 이러한 <code>U+0061</code>나 <code>LOWERCASE LATINLETTER A(&quot;a&quot;)</code> 과 같이 <code>U+1F425</code>와 <code>FRONT-FACING BABY CHICK(&quot;🐥&quot;)</code> 같은 경우입니다.</p>
+<p>유니코드 문자열이 텍스트 파일이나 다른 저장소에 기록될 때 이러한 유니코드 스칼라는 여러 유니코드 정의 중 하나의 형식으로 인코딩됩니다. 각 형식은 코드 단위로 알려진 작은 덩어리의 문자열을 인코딩합니다. 이들은 UTF-8 (8bit 코드 단위로 문자열을 인코딩) 형식과 UTF-16 (16bit 코드 단위로 문자열을 인코딩) 형식을 포함하고 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="문자열의-유니코드-표현"></a><a href="#문자열의-유니코드-표현" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>문자열의 유니코드 표현</h3>
+<p>Swift는 문자열의 유니코드 표현에 접근할 수 있는 여러 가지 방법을 제공합니다.</p>
+<p>유니코드 문자로 개별 <code>Character</code> 값에 접근을 <code>for-in</code> 구문으로 반복할 수 있습니다. 이 과정은 <a href="">문자와 작업하기</a>에 설명되어있습니다.</p>
+<p>또한, 유니코드 호환 표현 중 하나의 <code>String</code> 값에 접근:</p>
+<ul>
+<li>UTF-8 코드단위의 컬렉션(문자열의 <code>UTF-8</code> 속성에 접근)</li>
+<li>UTF-16 코드단위의 컬렉션 (문자열의 <code>UTF-16</code> 속성에 접근)</li>
+<li>UTF-21bit 유니코드 스칼라값의 컬렉션 (문자열의 <code>unicodeScalars</code> 속성에 접근)</li>
+</ul>
+<p>아래의 각 예제에서는 D,O,G,! 및 (DOG FACE) 문자로 구성되어 있으며 문자열은 다른 표현을 보여줍니다. (<code>DOG FACE</code> 또는 `유니코드 스칼라 U+1F436)</p>
+<pre><code class="hljs"><span class="hljs-keyword">let</span> <span class="hljs-attr">dogString</span> = <span class="hljs-string">"Dog!🐶"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="utf-8"></a><a href="#utf-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>UTF-8</h4>
+<p>문자열의 UTF-8 속성을 반복하여 <code>String</code>의 <code>UTF-8</code> 표현에 접근할 수 있습니다.
+<code>UTF8View</code> 타입의 속성은 부호 없는 8 bit(<code>UInt8</code>) 값의 모음이며 문자열의 UTF-8 의 각 바이트 문자열 표현입니다.:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> codeUnit <span class="hljs-keyword">in</span> dogString<span class="hljs-selector-class">.utf8</span> {
+    print(<span class="hljs-string">"\(codeUnit) "</span>)
+}
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"\n"</span>)</span></span>
+<span class="hljs-comment">// 68 111 103 33 240 159 144 182</span>
+</code></pre>
+<p>위의 예에서 첫 번째 네개의 십진수 <code>codeUnit</code> 값(<code>68</code>,<code>111</code>,<code>103</code>,<code>33</code>)은 그 문자 UTF-8로 표현과 동일한 <code>D</code>,<code>o</code>,<code>g</code> 그리고 <code>!</code>를 나타내며 이것들은 ASCII의 표현과 동일합니다. 마지막 네개의 <code>codeUnit</code>의 값(<code>240</code>,<code>159</code>,<code>144</code>,<code>182</code>)은 <code>DOG FACE</code>의 4바이트 UTF-8 표현입니다.</p>
+<h4><a class="anchor" aria-hidden="true" id="utf-16"></a><a href="#utf-16" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>UTF-16</h4>
+<p>UTF-16 속성에 반복하여 UTF-16 표현에 접근할수 있습니다. <code>UTF16View</code> 타입의 속성은  부호 없는 16 bit(<code>UInt16</code>)값의 모음이며 문자열의 UTF-16의 각 바이트 문자열 표현입니다.:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> codeUnit <span class="hljs-keyword">in</span> dogString<span class="hljs-selector-class">.utf16</span> {
+    print(<span class="hljs-string">"\(codeUnit) "</span>)
+}
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"\n"</span>)</span></span>
+<span class="hljs-comment">// 68 111 103 33 55357 56374</span>
+
+</code></pre>
+<p>다시 처음 4가지 <code>codeUnit</code>의 값(<code>68</code>,<code>111</code>, <code>103</code>, <code>33</code>)은 UTF-16 코드 단위의 값은 UTF-8의 문자열 표현과 같은 값을 가지며 <code>D</code>,<code>o</code>,<code>g</code> 그리고 <code>!</code>의 문자를 표현합니다.</p>
+<p>다섯 번째와 여섯 번째 <code>codeUnit</code>의 값(<code>55357</code> 과 <code>56374</code>)는 <code>DOG FACE</code> 문자를 UTF-16을 써로게이트 페어로 표현한것이다. 이 값은 <code>U+D83D</code>(십진수 값 <code>55357</code>)의 lead 써로게이트 값과 <code>U+DC36</code>(십진수 값 <code>56374</code>)의 trail 써로게이트 값입니다.</p>
+<h4><a class="anchor" aria-hidden="true" id="유니코드-스칼라"></a><a href="#유니코드-스칼라" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>유니코드 스칼라</h4>
+<p><code>unicodeScalars</code> 속성을 반복하여 <code>String</code> 값의 유니코드 스칼라 표현에 접근할 수 있습니다. 이 속성타입은 <code>UnicodeScalarView</code> 이며 <code>UnicodeScalar</code> 값 타입의 컬렉션입니다. 유니코드 스칼라 21bit 코드 포인트는 lead 써로게이트나 trail 써로게이트가 아닙니다.</p>
+<p>각 <code>UnicodeScalar</code>는 값 속성(value property)이 있으며 이것은 스칼라의 21bit 값을 반환합니다. <code>UInt32</code> 안의 값을 표현한 것입니다.:</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> scalar <span class="hljs-keyword">in</span> dogString<span class="hljs-selector-class">.unicodeScalars</span> {
+    print(<span class="hljs-string">"\(scalar.value) "</span>)
+}
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"\n"</span>)</span></span>
+<span class="hljs-comment">// 68 111 103 33 128054</span>
+</code></pre>
+<p><code>Value</code> 속성들은 처음 4개의 <code>UnicodeScalar</code> 값(<code>68</code>, <code>11</code>, <code>103</code>, <code>33</code>)을 다시 문자 <code>D</code>, <code>o</code>, <code>g</code> 와 <code>!</code>를 표현합니다.
+다섯 번째이면서 마지막인 <code>UnicodeScalar</code>의 <code>Value</code> 속성은 십진법의 <code>12804</code>이며 16진법 <code>1F436</code>과 같습니다. 이는 <code>DOG FACE</code> 문자인 유니코드 스칼라 <code>U+1F436</code>과 같습니다.</p>
+<p><code>Value</code> 속성들을 쿼리하는 대신 각 <code>UnicodeScalar</code> 값은 또한 문자열 삽입으로 새로운 <code>String</code> 값을 생성하는데 사용될 수 있습니다.</p>
+<pre><code class="hljs"><span class="hljs-keyword">for</span> scalar <span class="hljs-keyword">in</span> dogString<span class="hljs-selector-class">.unicodeScalars</span> {
+    println(<span class="hljs-string">"\(scalar) "</span>)
+}
+<span class="hljs-comment">// D</span>
+<span class="hljs-comment">// o</span>
+<span class="hljs-comment">// g</span>
+<span class="hljs-comment">// !</span>
+<span class="hljs-comment">// 🐶</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Swift-Korean/docs/chapter4.html">← 기본 연산자 (Basic Operators)</a><a class="docs-next button" href="/Swift-Korean/docs/chapter6.html">컬렉션 타입 (Collection Types) →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#문자열-리터럴">문자열 리터럴</a></li><li><a href="#빈-문자의-초기화-initializing-an-empty-string">빈 문자의 초기화 (Initializing an Empty String)</a></li><li><a href="#문자열-가변성">문자열 가변성</a></li><li><a href="#문자열-값-타입-strings-are-value-types">문자열 값 타입 (Strings Are Value Types)</a></li><li><a href="#문자와-작업하기-working-with-charaters">문자와 작업하기 (Working with Charaters)</a></li><li><a href="#문자-세기-counting-characters">문자 세기 (Counting Characters)</a></li><li><a href="#문자열-및-문자-합치기concatenating-strings-and-characters">문자열 및 문자 합치기(Concatenating Strings and Characters)</a></li><li><a href="#문자열-삽입">문자열 삽입</a></li><li><a href="#문자열-비교">문자열 비교</a><ul class="toc-headings"><li><a href="#string-equality">String Equality</a></li><li><a href="#prefix-and-suffix-equality">Prefix and Suffix Equality</a></li></ul></li><li><a href="#대문자와-소문자-문자열">대문자와 소문자 문자열</a></li><li><a href="#유니코드">유니코드</a><ul class="toc-headings"><li><a href="#유니코드-용어">유니코드 용어</a></li><li><a href="#문자열의-유니코드-표현">문자열의 유니코드 표현</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Swift-Korean/" class="nav-home"><img src="/Swift-Korean/img/docusaurus.svg" alt="Swift 가이드" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Swift-Korean/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/Swift-Korean/docs/en/doc2.html">Guides (or other categories)</a><a href="/Swift-Korean/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/Swift-Korean/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Swift-Korean/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/Swift-Korean/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>
