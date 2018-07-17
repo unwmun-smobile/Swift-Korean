@@ -47,7 +47,7 @@ func swapTwoDoubles(inout a: Double, inout b: Double) {
 
 > ***Note***
 > 
-이 모든 세 함수에서 `a`와 `b`의 타입은 서로 같도록 정의되어 있습니다. 만약 `a`와 `b`의 타입이 같지 않다면 두 값을 바꾸는 것은 불가능할 것입니다. Swift는 타입-안전 언어이기에 (예를 들어) `String` 타입의 변수와 `Double` 타입의 변수를 서로 바꾸도록 지원하지 않습니다. 그런 시도는 컴파일-타임 에러를 생성합니다.
+>이 모든 세 함수에서 `a`와 `b`의 타입은 서로 같도록 정의되어 있습니다. 만약 `a`와 `b`의 타입이 같지 않다면 두 값을 바꾸는 것은 불가능할 것입니다. Swift는 타입-안전 언어이기에 (예를 들어) `String` 타입의 변수와 `Double` 타입의 변수를 서로 바꾸도록 지원하지 않습니다. 그런 시도는 컴파일-타임 에러를 생성합니다.
 
 ## 제네릭 함수들 (Generic Functions)
 제네릭 함수들은 어떤 타입과도 같이 동작합니다. 여기에 `swapTwoValues`라 불리는, 위에 언급된 `swapTwoInts` 함수의 제네릭 버전이 있습니다:
@@ -81,7 +81,7 @@ swapTwoValues(&someString, &anotherString)
 ```
 > ***Note***
 > 
-위에 정의된 `swapTwoValues` 함수는 Swift 표준 라이브라리에 있는 제네릭 버전 `swap` 함수에서 비롯되었습니다. 이 함수는 자동으로 앱 코드에 사용 가능합니다. `swapTwoValues`의 기능이 필요하다면 스스로 이 기능을 작성하기보다는 Swift에 미리 정의된 `swap` 함수를 쓰기 바랍니다.
+>위에 정의된 `swapTwoValues` 함수는 Swift 표준 라이브라리에 있는 제네릭 버전 `swap` 함수에서 비롯되었습니다. 이 함수는 자동으로 앱 코드에 사용 가능합니다. `swapTwoValues`의 기능이 필요하다면 스스로 이 기능을 작성하기보다는 Swift에 미리 정의된 `swap` 함수를 쓰기 바랍니다.
 
 
 ## 타입 패러미터 (Type Parameters)
@@ -101,7 +101,7 @@ swapTwoValues(&someString, &anotherString)
 
 > ***Note***
 > 
-값이 아닌 타입을 위한 placeholder임을 표시하기 위해, 타입 패러미터 이름은 항상 `UpperCamelCase`로 지정하세요. (예:  `T`, `KeyType`)
+>값이 아닌 타입을 위한 placeholder임을 표시하기 위해, 타입 패러미터 이름은 항상 `UpperCamelCase`로 지정하세요. (예:  `T`, `KeyType`)
 
 
 ## 제네릭 타입들 (Generic Types)
@@ -112,7 +112,7 @@ Swift는 제네릭 함수는 물론, *제네릭 타입*도 제공합니다. 이�
 
 > ***Note***
 > 
-스택 컨셉은 네비게이션 계층 상에서 뷰-제어기를 모델링하기 위해 `UINavigationController` 클래스에 사용되었습니다. 하나의 뷰-제어기를 네비게이션 스택에 추가(또는 push)하기 위해 `UINavigationController` 클래스의 `pushViewController:animated:` 메서드를 호출하거나 , 하나의 뷰-제어기를 네비게이션 스택에서 삭제(또는 pop)하기 위해 `popViewControllerAnimated:` 메서드를 호출할 수 있습니다. 스택은 컬렉션에서 엄격한 "후입선출(last in, first oout)" 방식을 관리할 때 유용합니다.
+>스택 컨셉은 네비게이션 계층 상에서 뷰-제어기를 모델링하기 위해 `UINavigationController` 클래스에 사용되었습니다. 하나의 뷰-제어기를 네비게이션 스택에 추가(또는 push)하기 위해 `UINavigationController` 클래스의 `pushViewController:animated:` 메서드를 호출하거나 , 하나의 뷰-제어기를 네비게이션 스택에서 삭제(또는 pop)하기 위해 `popViewControllerAnimated:` 메서드를 호출할 수 있습니다. 스택은 컬렉션에서 엄격한 "후입선출(last in, first oout)" 방식을 관리할 때 유용합니다.
 
 아래 그림은 스택의 push/pop 동작을 보여줍니다.
 
